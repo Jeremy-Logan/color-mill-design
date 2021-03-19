@@ -4,7 +4,7 @@ import Footer from '@components/Footer'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div >
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
@@ -12,7 +12,7 @@ export default function Home() {
 
       <main>
         <Header title="Welcome to my app!" />
-        <p className="description">
+        <p className="text-3xl font-serif">
           Get started by editing <code>pages/index.js</code>
         </p>
       </main>
