@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useCycle, motion } from 'framer-motion'
-import { MenuToggle } from './MenuToggle'
-import { Navigation } from './Navigation'
+import { MenuToggle } from './menuToggle'
+import { Navigation } from './navigation'
 
 const menu = {
 	closed: {
