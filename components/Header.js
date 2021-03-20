@@ -34,7 +34,7 @@ export default function Header({ title }) {
 		<>
 			<motion.div className='relative w-screen h-screen overflow-hidden'>
 				<motion.nav
-					className='w-screen h-screen top-0 left-0'
+					className='w-screen  top-0 left-0'
 					// initial={false}
 					animate={isOpen ? 'open' : 'closed'}
 					// custom={height}
