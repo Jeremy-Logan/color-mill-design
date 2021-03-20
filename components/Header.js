@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useCycle, motion } from 'framer-motion'
 import { MenuToggle } from './menuToggle'
 import { Navigation } from './navigation'
+import Link from 'next/link'
 
 const menu = {
 	closed: {
@@ -29,11 +30,6 @@ export default function Header({ title }) {
 	return (
 		<>
 			<motion.div class='relative w-screen h-screen overflow-hidden'>
-				<img
-					src='https://res.cloudinary.com/the-color-mill/image/upload/v1616105305/Color%20Mill%20Design/color-mill-animated-logo_bxjcpm.webp'
-					class='absolute top-0 right-10 text-5xl'
-				/>
-
 				<motion.nav
 					class='absolute w-screen h-screen top-0 right-0'
 					initial={false}
@@ -42,13 +38,19 @@ export default function Header({ title }) {
 					// ref={containerRef}
 				>
 					<motion.div
-						class='absolute top-0 right-0 bottom-0 w-screen bg-blue-200 z-30 overflow-visible '
+						class='absolute top-0 right-0 bottom-0 w-screen bg-cyan-300 z-30 overflow-visible '
 						variants={menu}
 					/>
 					<MenuToggle toggle={() => toggleOpen()} />
 					<Navigation />
 				</motion.nav>
-
+        
+<a class='absolute top-0 right-10 text-4xl cursor-pointer flex flex-row'><Link href='/'><h1 className='font-bold my-auto'>Color Mill Design</h1></Link><Link href='/'>
+				<img
+					src='https://res.cloudinary.com/the-color-mill/image/upload/v1616105305/Color%20Mill%20Design/color-mill-animated-logo_bxjcpm.webp'
+					
+				/>
+</Link></a>
 				{/* <AnimatePresence>
 					<motion.div
 						class={

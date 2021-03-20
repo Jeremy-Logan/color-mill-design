@@ -6,15 +6,16 @@ export default function Home() {
   return (
     <div >
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Color Mill Design</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="text-3xl font-serif">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <Header/>
+        <div className='absolute top-60 mx-[12vw] w-[40vw] z-0'>
+        <h1 className="text-6xl font-serif font-bold">
+          Designing delightful branding and web experiences.
+        </h1></div>
       </main>
 
       <Footer />
