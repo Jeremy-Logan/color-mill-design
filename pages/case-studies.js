@@ -12,7 +12,7 @@ export default function CaseStudies() {
 
 			<main>
 				<Header title='Welcome to my app!' />
-				<h1 class='text-6xl'>Case Studies</h1>
+				<h1 className='text-6xl'>Case Studies</h1>
 			</main>
 
 			<Footer />

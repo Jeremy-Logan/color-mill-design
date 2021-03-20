@@ -11,8 +11,8 @@ export default function About() {
 			</Head>
 
 			<main>
-				<Header title='Welcome to my app!' />
-				<h1 class='text-6xl'>About</h1>
+				<Header />
+				<h1 className='text-6xl'>About</h1>
 			</main>
 
 			<Footer />

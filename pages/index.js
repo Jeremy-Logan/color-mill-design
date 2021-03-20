@@ -13,7 +13,7 @@ export default function Home() {
       <main>
         <Header/>
         <div className='absolute top-60 mx-[12vw] w-[40vw] z-0'>
-        <h1 className="text-6xl font-serif font-bold">
+        <h1 className="text-6xl font-serif font-bold leading-normal">
           Designing delightful branding and web experiences.
         </h1></div>
       </main>

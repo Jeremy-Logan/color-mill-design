@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { useCycle, motion } from 'framer-motion'
 import { MenuToggle } from './menuToggle'
 import { Navigation } from './navigation'
@@ -26,26 +26,30 @@ const menu = {
 
 export default function Header({ title }) {
 	const [isOpen, toggleOpen] = useCycle(false, true)
+  const containerRef = useRef(null);
+
+
 
 	return (
 		<>
-			<motion.div class='relative w-screen h-screen overflow-hidden'>
+			<motion.div className='relative w-screen h-screen overflow-hidden'>
 				<motion.nav
-					class='absolute w-screen h-screen top-0 right-0'
-					initial={false}
+					className='w-screen h-screen top-0 left-0'
+					// initial={false}
 					animate={isOpen ? 'open' : 'closed'}
 					// custom={height}
-					// ref={containerRef}
+					ref={containerRef}
 				>
 					<motion.div
-						class='absolute top-0 right-0 bottom-0 w-screen bg-cyan-300 z-30 overflow-visible '
+						className='absolute top-0 left-0 bottom-0 w-screen bg-cyan-300 z-30 overflow-visible '
 						variants={menu}
+            initial='closed'
 					/>
 					<MenuToggle toggle={() => toggleOpen()} />
 					<Navigation />
 				</motion.nav>
         
-<a class='absolute top-0 right-10 text-4xl cursor-pointer flex flex-row'><Link href='/'><h1 className='font-bold my-auto'>Color Mill Design</h1></Link><Link href='/'>
+<a className='absolute top-0 right-10 text-4xl cursor-pointer flex flex-row'><Link href='/'><h1 className='font-bold my-auto'>Color Mill Design</h1></Link><Link href='/'>
 				<img
 					src='https://res.cloudinary.com/the-color-mill/image/upload/v1616105305/Color%20Mill%20Design/color-mill-animated-logo_bxjcpm.webp'
 					
@@ -53,14 +57,14 @@ export default function Header({ title }) {
 </Link></a>
 				{/* <AnimatePresence>
 					<motion.div
-						class={
+						className={
 							open
 								? 'absolute bg-blue-200 w-screen h-screen right-0 top-0 origin-center'
 								: 'absolute bg-blue-200 w-20 h-20 rounded-full right-12 top-10 origin-center'
 						}>
 						<button
 							onClick={() => setOpen(!open)}
-							class='absolute top-5 left-7 text-4xl'>
+							className='absolute top-5 left-7 text-4xl'>
 							X
 						</button>
 					</motion.div>

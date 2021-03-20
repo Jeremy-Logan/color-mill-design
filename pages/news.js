@@ -12,7 +12,7 @@ export default function News() {
 
 			<main>
 				<Header title='Welcome to my app!' />
-				<h1 class='text-6xl'>News</h1>
+				<h1 className='text-6xl'>News</h1>
 			</main>
 
 			<Footer />
