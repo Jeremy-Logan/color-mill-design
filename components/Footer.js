@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <>
       <footer className='w-full pin-b'>
-        Made with <img src="/netliheart.svg" alt="Netlify Logo" className={styles.logo} /> for you
+        Color Mill Design
       </footer>
     </>
   )
