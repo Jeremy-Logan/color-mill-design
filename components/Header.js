@@ -49,14 +49,14 @@ export default function Header({ title }) {
 					</motion.div>
 				</motion.nav>
 
-				<a className='absolute top-0 right-10 text-4xl cursor-pointer flex flex-row'>
+				<button className='absolute top-0 lg:right-10 right-4 flex flex-row '>
 					<Link href='/'>
-						<h1 className='font-bold my-auto'>Color Mill Design</h1>
+						<h1 className='font-bold my-auto lg:text-4xl md:text-3xl text-2xl'>Color Mill Design</h1>
 					</Link>
 					<Link href='/'>
-						<img src='https://res.cloudinary.com/the-color-mill/image/upload/v1616105305/Color%20Mill%20Design/color-mill-animated-logo_bxjcpm.webp' />
+						<img className='h-[10vw] ' src='https://res.cloudinary.com/the-color-mill/image/upload/v1616105305/Color%20Mill%20Design/color-mill-animated-logo_bxjcpm.webp' />
 					</Link>
-				</a>
+				</button>
 			</motion.div>
 		</>
 	)

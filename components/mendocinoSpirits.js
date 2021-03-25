@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
+import Link from 'next/link'
 import {
 	motion,
 	useAnimation,
@@ -65,21 +66,29 @@ export default function MendocinoSpirits() {
 	return (
 		<div className='h-[4000px] w-screen overflow-hidden'>
 			<div className='flex '>
-				<div className='w-1/3 my-auto ml-[20vw]'>
+				<div className='w-1/3 my-auto ml-[20vw] z-40'>
 					<SlideIn>
-						<h3 className='text-5xl font-bold my-auto text-left '>
-							Mendocino Spirits
-						</h3>
-						<h4 className='text-lg text-left'>
-							Branding, Package Design, Web Design,{' '}
-						</h4>
+						<Link href='/mendocino-spirits'>
+							<button >
+								<h3 className='text-5xl font-bold my-auto text-left z-30'>
+									Mendocino Spirits
+								</h3>
+								<h4 className='text-lg text-left z-30'>
+									Branding, Package Design, Web Design,{' '}
+								</h4>
+							</button>
+						</Link>
 					</SlideIn>
 				</div>
 				<FadeIn>
-					<motion.img
-						className=' h-[600px] z-30 mr-[20vw]'
-						src='https://res.cloudinary.com/the-color-mill/image/upload/ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_1000/v1616447175/Color%20Mill%20Design/mendocino-spirits-cover_tzgrip.jpg'
-					/>
+					<button>
+						<Link href='/mendocino-spirits'>
+							<motion.img
+								className=' h-[600px] z-30 mr-[20vw]'
+								src='https://res.cloudinary.com/the-color-mill/image/upload/ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_1000/v1616447175/Color%20Mill%20Design/mendocino-spirits-cover_tzgrip.jpg'
+							/>
+						</Link>
+					</button>
 				</FadeIn>
 				<div className='absolute top-[1300px] '>
 					<HexGrid className='z-0' />
