@@ -1,10 +1,61 @@
+import { useEffect } from 'react'
+import { useInView } from 'react-intersection-observer'
 import {
 	motion,
+	useAnimation,
 	useViewportScroll,
 	useTransform,
 	useSpring,
 } from 'framer-motion'
 import HexGrid from '@components/hexGrid'
+
+const FadeIn = ({ children }) => {
+	const controls = useAnimation()
+	const [ref, inView] = useInView()
+
+	useEffect(() => {
+		inView ? controls.start('visible') : controls.start('hidden')
+	}, [controls, inView])
+
+	return (
+		<motion.div
+			className='z-30'
+			ref={ref}
+			animate={controls}
+			initial='hidden'
+			transition={{ type: 'spring', duration: 1, delay: 0.25 }}
+			variants={{
+				visible: { opacity: 1, scale: 1 },
+				hidden: { opacity: 0, scale: 0.5 },
+			}}>
+			{children}
+		</motion.div>
+	)
+}
+
+const SlideIn = ({ children }) => {
+	const controls = useAnimation()
+	const [ref, inView] = useInView()
+
+	useEffect(() => {
+		inView ? controls.start('visible') : controls.start('hidden')
+	}, [controls, inView])
+
+	return (
+		<motion.div
+			className='z-30'
+			ref={ref}
+			animate={controls}
+			initial='hidden'
+			transition={{ type: 'spring', duration: 1, delay: 0.25 }}
+			variants={{
+				visible: { opacity: 1, x: 1 },
+				hidden: { opacity: 0, x: -100 },
+			}}>
+			{children}
+		</motion.div>
+	)
+}
 
 export default function MendocinoSpirits() {
 	const { scrollYProgress } = useViewportScroll()
@@ -15,22 +66,23 @@ export default function MendocinoSpirits() {
 		<div className='h-[4000px] w-screen overflow-hidden'>
 			<div className='flex '>
 				<div className='w-1/3 my-auto ml-[20vw]'>
-					<h3 className='text-5xl font-bold my-auto text-left '>
-						Mendocino Spirits
-					</h3>
-					<h4 className='text-lg text-left'>
-						Branding, Package Design, Web Design,{' '}
-					</h4>
+					<SlideIn>
+						<h3 className='text-5xl font-bold my-auto text-left '>
+							Mendocino Spirits
+						</h3>
+						<h4 className='text-lg text-left'>
+							Branding, Package Design, Web Design,{' '}
+						</h4>
+					</SlideIn>
 				</div>
-				<motion.img
-					transition={{ duration: 0.5, type:'spring' }}
-					initial={{ opacity: 0.5, scale: 0.75 }}
-					animate={{ opacity: 1, scale: 1 }}
-					className=' h-[600px] z-30 mr-[20vw]'
-					src='https://res.cloudinary.com/the-color-mill/image/upload/ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_1000/v1616447175/Color%20Mill%20Design/mendocino-spirits-cover_tzgrip.jpg'
-				/>
+				<FadeIn>
+					<motion.img
+						className=' h-[600px] z-30 mr-[20vw]'
+						src='https://res.cloudinary.com/the-color-mill/image/upload/ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_1000/v1616447175/Color%20Mill%20Design/mendocino-spirits-cover_tzgrip.jpg'
+					/>
+				</FadeIn>
 				<div className='absolute top-[1300px] '>
-					<HexGrid />
+					<HexGrid className='z-0' />
 				</div>
 				<svg
 					className='absolute top-[550px]'
