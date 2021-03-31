@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+
 
 export default function About() {
 	return (
@@ -11,11 +10,11 @@ export default function About() {
 			</Head>
 
 			<main>
-				<Header />
+				
 				<h1 className='text-6xl'>About</h1>
 			</main>
 
-			<Footer />
+			
 		</div>
 	)
 }

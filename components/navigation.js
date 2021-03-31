@@ -11,12 +11,13 @@ const variants = {
 	},
 }
 
-export const Navigation = () => {
+export const Navigation = ({toggle}) => {
 	
 	return (
 		<motion.ul
 			className=' absolute top-0 -left-32 w-[230px] z-10'
 			variants={variants}
+			onClick={toggle}
             >
             
 			{itemIds.map((i) => (

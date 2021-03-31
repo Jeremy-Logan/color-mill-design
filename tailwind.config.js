@@ -17,6 +17,15 @@ module.exports = {
       red: colors.rose,
       yellow: colors.amber,
       cyan: colors.cyan
+    },
+    fontFamily:{
+      'sans': ['ui-sans-serif', 'system-ui'],
+      'serif': ['ui-serif', 'Georgia'],
+      'mono': ['ui-monospace', 'SFMono-Regular'],
+      'display': ['Oswald'],
+      'body': ['Open Sans'],
+      'alice':[ 'Alice' ],
+      'fira': [ 'Fira Sans' ]
     }
   }
 }

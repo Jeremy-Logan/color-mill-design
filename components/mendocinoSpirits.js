@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 import Link from 'next/link'
+import Image from 'next/image'
 import {
 	motion,
 	useAnimation,
@@ -44,7 +45,7 @@ const SlideIn = ({ children }) => {
 
 	return (
 		<motion.div
-			className='z-30'
+			className='z-30 '
 			ref={ref}
 			animate={controls}
 			initial='hidden'
@@ -66,10 +67,10 @@ export default function MendocinoSpirits() {
 	return (
 		<div className='h-[4000px] w-screen overflow-hidden'>
 			<div className='flex '>
-				<div className='w-1/3 my-auto ml-[20vw] z-40'>
+				<div className='w-1/3 my-36 ml-[20vw] z-40 '>
 					<SlideIn>
 						<Link href='/mendocino-spirits'>
-							<button >
+							<button>
 								<h3 className='text-5xl font-bold my-auto text-left z-30'>
 									Mendocino Spirits
 								</h3>
@@ -81,14 +82,21 @@ export default function MendocinoSpirits() {
 					</SlideIn>
 				</div>
 				<FadeIn>
-					<button>
+					<motion.button className='w-[50%vw] pr-6 '>
 						<Link href='/mendocino-spirits'>
-							<motion.img
-								className=' h-[600px] z-30 mr-[20vw]'
-								src='https://res.cloudinary.com/the-color-mill/image/upload/ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_1000/v1616447175/Color%20Mill%20Design/mendocino-spirits-cover_tzgrip.jpg'
-							/>
+						
+								<Image
+									
+									layout='intrinsic'
+									width='600'
+									height='600'
+									alt='Mendocino Spirits'
+									quality='100'
+									src='ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_600/v1616447175/Color%20Mill%20Design/mendocino-spirits-cover_tzgrip.jpg'
+								/>
+						
 						</Link>
-					</button>
+					</motion.button>
 				</FadeIn>
 				<div className='absolute top-[1300px] '>
 					<HexGrid className='z-0' />

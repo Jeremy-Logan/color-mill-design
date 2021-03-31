@@ -45,11 +45,11 @@ export default function Header({ title }) {
 					<motion.div
 						initial={{ opacity: 0 }}
 						animate={{ opacity: [0, 0, 0, 0, 1] }}>
-						<Navigation />
+						<Navigation toggle={() => toggleOpen()} />
 					</motion.div>
 				</motion.nav>
 
-				<button className='absolute top-0 lg:right-10 right-4 flex flex-row '>
+				<button className='absolute top-0 lg:right-10 right-4 flex flex-row focus:outline-none'>
 					<Link href='/'>
 						<h1 className='font-bold my-auto lg:text-4xl md:text-3xl text-2xl'>Color Mill Design</h1>
 					</Link>

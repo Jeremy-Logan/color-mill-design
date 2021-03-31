@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+
 
 export default function CaseStudies() {
 	return (
@@ -11,11 +10,11 @@ export default function CaseStudies() {
 			</Head>
 
 			<main>
-				<Header title='Welcome to my app!' />
+
 				<h1 className='text-6xl'>Case Studies</h1>
 			</main>
 
-			<Footer />
+
 		</div>
 	)
 }
