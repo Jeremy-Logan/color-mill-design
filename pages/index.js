@@ -15,10 +15,8 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<main className='overflow-hidden'>
-
-				{console.log()}
-				<div className='absolute md:top-80 px-8 md:pl-24 lg:pl-36 w-screen md:w-[70vw] lg:w-[60vw] z-0 '>
+			<main className='overflow-hidden '>
+				<div className='md:top-80 px-8 md:pl-24 lg:pl-36 w-screen md:w-[70vw] lg:w-[60vw] z-0 mt-36 h-[600px] '>
 					<h1 className='text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-loose'>
 						Designing delightful branding and web experiences.
 					</h1>
@@ -29,7 +27,7 @@ export default function Home() {
 						businesses tell their story.
 					</h2>
 				</div>
-				<MendocinoSpirits />
+				<MendocinoSpirits/>
 			</main>
 
 

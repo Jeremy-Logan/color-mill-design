@@ -27,5 +27,5 @@ module.exports = {
       'alice':[ 'Alice' ],
       'fira': [ 'Fira Sans' ]
     }
-  }
+  },
 }
