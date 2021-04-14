@@ -3,5 +3,5 @@ module.exports = {
 		loader: 'cloudinary',
         path: 'https://res.cloudinary.com/the-color-mill/',
 	},
-	
+	target: 'serverless',
 }
