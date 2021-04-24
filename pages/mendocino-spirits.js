@@ -1,5 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import {
+	motion,
+	useAnimation,
+	useViewportScroll,
+	useTransform,
+	useSpring,
+} from 'framer-motion'
 
 export default function MendocinoSpirits() {
 	return (
