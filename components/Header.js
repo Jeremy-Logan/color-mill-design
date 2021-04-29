@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useCycle, motion } from 'framer-motion'
 import { MenuToggle } from './menuToggle'
 import { Navigation } from './navigation'
@@ -25,28 +25,33 @@ const menu = {
 }
 
 const logo = {
-	hidden:{
-opacity : 0,
+	hidden: {
+		opacity: 0,
 	},
-	visible:{
-opacity: 1,
-transition: {
+	visible: {
+		opacity: 1,
+		transition: {
 			delay: 0.5,
 			type: 'spring',
 			stiffness: 400,
 			damping: 40,
 		},
-	}
+	},
 }
 
 export default function Header({ title }) {
 	const [isOpen, toggleOpen] = useCycle(false, true)
 	const containerRef = useRef(null)
 
+	useEffect(() => {
+		isOpen ? (document.body.style.overflow = 'hidden')
+		: (document.body.style.overflow = '')
+	}, [isOpen])
+
 	return (
 		<>
 			<div className='h-36 w-screen '>
-				<motion.div className='w-screen h-screen'>
+				<motion.div className='w-screen h-screen overflow-hidden'>
 					<motion.nav
 						className='w-screen z-50 '
 						// initial={false}

@@ -18,10 +18,10 @@ export default function MendocinoSpirits() {
 			<main>
 				<section className='px-[5vw] mt-24 h-[180vh] overflow-hidden'>
 					<div className='w-screen ml-12'>
-						<h2 className='font-alice text-6xl text-[#23160c]'>
+						<motion.h2 animate={{ x: [-70, 0], opacity: [0.2, 1]}} className='font-alice text-6xl text-[#23160c]'>
 							Mendocino Spirits
-						</h2>
-						<svg height='6' width='500' className='mt-6'>
+						</motion.h2>
+						<motion.svg height='6' width='500' className='mt-6' animate={{ x: [-100, 0], opacity: [0.2, 1]}}>
 							<line
 								x1='0'
 								y1='0'
@@ -29,10 +29,10 @@ export default function MendocinoSpirits() {
 								y2='0'
 								style={{ stroke: '#23160c', strokeWidth: 5 }}
 							/>
-						</svg>
+						</motion.svg>
 					</div>
 					<div className='relative mt-16'>
-						<div className='absolute h-auto p-16 ml-12 top-40 left-0 w-1/2 bg-[#F5E4C5] z-20'>
+						<motion.div className='absolute h-auto p-16 ml-12 top-40 left-0 w-1/2 bg-[#F5E4C5] z-20' animate={{y:[600, 0], opacity:[0,1]}}>
 							<h3>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit, sed do eiusmod tempor
@@ -45,8 +45,8 @@ export default function MendocinoSpirits() {
 								occaecat cupidatat non proident, sunt in culpa
 								qui officia deserunt mollit anim id est laborum.
 							</h3>
-						</div>
-						<div className='absolute ml-[25vw] top-0 right-0 z-10'>
+						</motion.div>
+						<motion.div className='absolute ml-[25vw] top-0 right-0 z-10' animate={{x:[500, 0], opacity:[0,1], scale: [0.8, 1]}}>
 							<Image
 								src='v1616447175/Color%20Mill%20Design/mendocino-spirits-cover_tzgrip.jpg'
 								layout='intrinsic'
@@ -54,7 +54,7 @@ export default function MendocinoSpirits() {
 								height='1280'
 								alt='Mendocino Spirits'
 								quality='100'></Image>
-						</div>
+						</motion.div>
 						<div className='absolute top-[600px] bg-[#57a89b] h-[900px] w-screen -ml-24 z-0'>
 							<Image
 								src='v1618268630/Color%20Mill%20Design/Mendocino-Spirits-wallpaper_wsyhyj.svg'

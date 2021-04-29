@@ -16,7 +16,7 @@ export default function Hotdog({ delay }) {
 		'#B06F6B',
         '#fff5de'
 	]
-	const opacities = [0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 1]
+	const opacities = [0.2, 0.3, 0.4, 0.5, 0.6, 0.7]
 	const lengths = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
     const startsLeft = [-3500, -3000, -2500, -2000, -1500, -1000]
 	const translatesLeft = [1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500]
@@ -25,7 +25,7 @@ export default function Hotdog({ delay }) {
 	const { scrollYProgress } = useViewportScroll()
 	const randomColor = colors[(Math.random() * colors.length) | 0]
 	const randomOpacity = opacities[(Math.random() * opacities.length) | 0]
-	const opacityDelay = [0.6, 1, 1.3]
+	const opacityDelay = [0.1, 0.5, 0.8]
 	const opacity = useTransform(scrollYProgress, opacityDelay, [
 		0,
 		randomOpacity,
@@ -38,10 +38,10 @@ export default function Hotdog({ delay }) {
 	const randomSpeedLeft = translatesLeft[(Math.random() * translatesLeft.length) | 0]
     const randomStartRight = startsRight[(Math.random() * startsRight.length) | 0]
 	const randomSpeedRight = translatesRight[(Math.random() * translatesRight.length) | 0]
-	const translateDelay = [0.5, 1.4]
+	const translateDelay = [0.1, 1.2]
 	const translate = useTransform(scrollYProgress, translateDelay, leftOrRight==='left' ? [
 		randomStartLeft,
-		randomSpeedLeft,
+		randomSpeedLeft
 	] : [randomStartRight, randomSpeedRight])
 
 	return (

@@ -1,6 +1,9 @@
 import Head from 'next/head'
-import MendocinoSpirits from '@components/mendocinoSpirits'
-import FoodBank from '@components/foodBank'
+// import Instagram from 'instagram-web-api'
+import InstagramFeed from '@components/instagramFeed'
+import MendocinoSpiritsSection from '@components/mendocinoSpiritsSection'
+import FoodBankSection from '@components/foodBankSection'
+import CapabilitiesSection from '@components/capabilitiesSection'
 import {
 	motion,
 	useViewportScroll,
@@ -8,9 +11,9 @@ import {
 	useSpring,
 } from 'framer-motion'
 
-export default function Home() {
+export default function Home({ data }) {
 	const { scrollYProgress } = useViewportScroll()
-	const yRange = useTransform(scrollYProgress, [0, 0.2], [0, 1])
+	const yRange = useTransform(scrollYProgress, [0, 1.5], [0, 1])
 	const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 })
 	return (
 		<div className='overflow-hidden'>
@@ -32,29 +35,69 @@ export default function Home() {
 					</h2>
 				</div>
 				<svg
-						className='absolute top-[550px]'
-						xmlns='http://www.w3.org/2000/svg'
-						viewBox='0 0 1200 2200'>
-						<motion.path
-							style={{ pathLength }}
-							fill='none'
-							stroke='#27aae1'
-							strokeMiterlimit='10'
-							strokeWidth='3px'
-							d='M1200,25.2h-159.5c-5.3,0-9.5,4.3-9.5,9.5v330.9c0,5.3-4.3,9.5-9.5,9.5H878c-5.3,0-9.5-4.3-9.5-9.5v-44.7
+					className='absolute top-[550px]'
+					xmlns='http://www.w3.org/2000/svg'
+					viewBox='0 0 1200 2200'>
+					<motion.path
+						style={{ pathLength }}
+						fill='none'
+						stroke='#27aae1'
+						strokeMiterlimit='10'
+						strokeWidth='3px'
+						d='M1200,25.2h-159.5c-5.3,0-9.5,4.3-9.5,9.5v330.9c0,5.3-4.3,9.5-9.5,9.5H878c-5.3,0-9.5-4.3-9.5-9.5v-44.7
 	c0-5.3-4.3-9.5-9.5-9.5H585.3c-5.3,0-9.5,4.3-9.5,9.5V717c0,5.3-4.3,9.5-9.5,9.5H293.8c-5.3,0-9.5,4.3-9.5,9.5v396.7
 	c0,6.4,5.2,11.5,11.5,11.5h208.6c6.4,0,11.5-5.2,11.5-11.5V892c0-6.4-5.2-11.5-11.5-11.5H184.6c-6.4,0-11.5,5.2-11.5,11.5v582.2
 	c0,6.4,5.2,11.5,11.5,11.5h588.2c6.4,0,11.5,5.2,11.5,11.5v114.5c0,6.4,5.2,11.5,11.5,11.5h229.6c6.4,0,11.5,5.2,11.5,11.5v523
 	c0,6.4-5.2,11.5-11.5,11.5H768.2c-6.4,0-11.5-5.2-11.5-11.5v-86.2c0-6.4,5.2-11.5,11.5-11.5h135.5c6.4,0,11.5,5.2,11.5,11.5v175.7
 	c0,6.4-5.2,11.5-11.5,11.5H285.9c-6.4,0-11.5,5.2-11.5,11.5v562.2'
-						/>
-					</svg>
-				<MendocinoSpirits/>
-				<FoodBank/>
-
+					/>
+				</svg>
+				<div>
+					<MendocinoSpiritsSection />
+					<FoodBankSection />
+					<CapabilitiesSection />
+					<div className='w-64'>
+						<img src={data.thumbnail_url} />
+						{console.log(data)}
+					</div>
+				</div>
 			</main>
-
-
 		</div>
 	)
+}
+
+export async function getStaticProps(context) {
+	const username = process.env.IG_USERNAME
+	const token = process.env.IG_TOKEN
+	// const post = [
+	// 	'CNvS8bOruNQ',
+	// 	'CKXn_6mL-ND',
+	// 	'CJuPZ-RLmnb',
+	// 	'CJFR10IrLet',
+	// 	'CGk5SF7haOQ',
+	// 	'CGBNL8uhBRy',
+	// 	'CK4WciCLWzs',
+	// ]
+
+	const post = 'CNvS8bOruNQ'
+
+
+	const res = await fetch(
+
+				`https://graph.facebook.com/v10.0/instagram_oembed?url=https://www.instagram.com/p/${post}/&access_token=${token}`
+		
+	)
+	const data = await res.json()
+
+	if (!data) {
+		return {
+			notFound: true,
+		}
+	}
+
+	return {
+		props: {
+			data,
+		},
+	}
 }
