@@ -12,7 +12,7 @@ export default function MendocinoSpirits() {
 	return (
 		<div>
 			<Head>
-				<title>Color Mill Design - Mendocino Spirits</title>
+				<title>Color Mill Design | Mendocino Spirits</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<main>

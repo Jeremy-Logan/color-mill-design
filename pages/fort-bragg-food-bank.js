@@ -12,7 +12,7 @@ export default function MendocinoSpirits() {
 	return (
 		<>
 			<Head>
-				<title>Color Mill Design - Fort Bragg Food Bank</title>
+				<title>Color Mill Design | Fort Bragg Food Bank</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<main>

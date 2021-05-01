@@ -1,9 +1,9 @@
 import Head from 'next/head'
 // import Instagram from 'instagram-web-api'
-import InstagramFeed from '@components/instagramFeed'
 import MendocinoSpiritsSection from '@components/mendocinoSpiritsSection'
 import FoodBankSection from '@components/foodBankSection'
 import CapabilitiesSection from '@components/capabilitiesSection'
+import { instagramPosts } from '../lib/instagramPosts.js'
 import {
 	motion,
 	useViewportScroll,
@@ -11,7 +11,21 @@ import {
 	useSpring,
 } from 'framer-motion'
 
+const posts = [
+		'CNvS8bOruNQ',
+		'CKXn_6mL-ND',
+		'CJuPZ-RLmnb',
+		'CJFR10IrLet',
+		'CGk5SF7haOQ',
+		'CGBNL8uhBRy',
+		'CK4WciCLWzs',
+	]
+	const post = 'CNvS8bOruNQ'
+	const instagramUrl = 'https://www.instagram.com/p/'+ post
+
 export default function Home({ data }) {
+	
+	const token = process.env.IG_TOKEN
 	const { scrollYProgress } = useViewportScroll()
 	const yRange = useTransform(scrollYProgress, [0, 1.5], [0, 1])
 	const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 })
@@ -56,10 +70,10 @@ export default function Home({ data }) {
 					<MendocinoSpiritsSection />
 					<FoodBankSection />
 					<CapabilitiesSection />
-					<div className='w-64'>
-						<img src={data.thumbnail_url} />
-						{console.log(data)}
-					</div>
+					<div className='grid grid-cols-5 gap-6 mx-12'>
+					{instagramPosts.map(post => <div throwIfNamespace='false' className="content" key={post.id} dangerouslySetInnerHTML={{__html: post.post}}>
+						
+					</div>)}</div>
 				</div>
 			</main>
 		</div>
@@ -69,24 +83,15 @@ export default function Home({ data }) {
 export async function getStaticProps(context) {
 	const username = process.env.IG_USERNAME
 	const token = process.env.IG_TOKEN
-	// const post = [
-	// 	'CNvS8bOruNQ',
-	// 	'CKXn_6mL-ND',
-	// 	'CJuPZ-RLmnb',
-	// 	'CJFR10IrLet',
-	// 	'CGk5SF7haOQ',
-	// 	'CGBNL8uhBRy',
-	// 	'CK4WciCLWzs',
-	// ]
+	
 
-	const post = 'CNvS8bOruNQ'
-
-
+	// request photos for a specific instagram user
 	const res = await fetch(
-
-				`https://graph.facebook.com/v10.0/instagram_oembed?url=https://www.instagram.com/p/${post}/&access_token=${token}`
 		
-	)
+				`https://graph.facebook.com/v10.0/instagram_oembed?url=https://www.instagram.com/p/CNvS8bOruNQ/&access_token=${token}`
+				)
+		
+	
 	const data = await res.json()
 
 	if (!data) {

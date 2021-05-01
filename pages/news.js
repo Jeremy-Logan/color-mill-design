@@ -6,7 +6,7 @@ export default function News() {
 	return (
 		<div>
 			<Head>
-				<title>Color Mill Design News</title>
+				<title>Color Mill Design | News</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
