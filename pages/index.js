@@ -111,7 +111,7 @@ export default function Home({ data }) {
 					<FoodBankSection />
 					<CapabilitiesSection />
 					<SlideIn>
-							<h3 className='text-5xl font-bold my-36 z-20 mx-[15vw]'>
+							<h3 className='text-5xl font-bold mt-36 mb-12 z-20 mx-[15vw]'>
 								From Instagram
 							</h3>
 						</SlideIn>
