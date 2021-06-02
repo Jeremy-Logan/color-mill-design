@@ -91,12 +91,13 @@ export default function FoodBankSection() {
 								<h4 className='text-lg text-left mt-2 z-30'>
 									Print Design, Web Design,{' '}
 								</h4>
+								<h5 className='text-[#2da8dc] underline text-left mt-2'>See the case study...</h5>
 							</button>
 						</Link>
 					</SlideIn>
 				</div>
 
-				<div className='absolute top-[2050px] width-screen '>
+				<div className='absolute top-[2050px] w-screen '>
 					<WallOfHotdogs className='z-0' />
 				</div>
 			</div>

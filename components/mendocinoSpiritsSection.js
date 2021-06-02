@@ -63,25 +63,26 @@ const SlideIn = ({ children }) => {
 
 export default function MendocinoSpiritsSection() {
 	return (
-		<div className='h-[1000px] w-screen z-30'>
+		<div className='h-[1000px] w-screen z-50'>
 			
-				<div className='flex '>
-					<div className='w-1/3 my-36 ml-[20vw] z-20 '>
+				<div className='flex flex-col md:flex-row'>
+					<div className='w-screen md:my-36 mb-12 ml-8 md:ml-[20vw] z-20 '>
 						<SlideIn>
 							<Link href='/mendocino-spirits'>
-								<button>
-									<h3 className='text-5xl font-bold my-auto text-left z-20'>
+								<button className='focus:outline-none'>
+									<h3 className='text-2xl md:text-5xl font-bold my-auto text-left z-20'>
 										Mendocino Spirits
 									</h3>
 									<h4 className='text-lg text-left z-30 mt-2'>
-										Branding, Package Design, Web Design,{' '}
+										Branding, Package Design, Web Design{' '}
 									</h4>
+									<h5 className='text-[#2da8dc] underline text-left mt-2'>See the case study...</h5>
 								</button>
 							</Link>
 						</SlideIn>
 					</div>
 					<FadeIn>
-						<motion.button className='w-[50%vw] pr-6 focus:outline-none'>
+						<motion.button className='w-[100vw] md:w-[40vw] mr-[10vw] focus:outline-none'>
 							<Link href='/mendocino-spirits'>
 								<Image
 									layout='intrinsic'
@@ -94,7 +95,7 @@ export default function MendocinoSpiritsSection() {
 							</Link>
 						</motion.button>
 					</FadeIn>
-					<div className='absolute top-[1200px] '>
+					<div className='absolute top-[1200px] hidden md:block'>
 						<HexGrid className='z-0' />
 					</div>
 					

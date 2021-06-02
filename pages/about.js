@@ -9,18 +9,26 @@ import {
 
 export default function About() {
 	const { scrollYProgress } = useViewportScroll()
-	const rotateRange1 = useTransform(scrollYProgress, [0, 0.2], [0, 10])
+	const rotateRange1 = useTransform(scrollYProgress, [0, 0.3], [0, 10])
 	const heightRange1 = useTransform(
 		scrollYProgress,
 		[0, 0.2],
 		['200px', '600px']
 	)
-	const rotateRange2 = useTransform(scrollYProgress, [0.3, 0.5], [0, -8])
+	const rotateRange2 = useTransform(scrollYProgress, [0.4, 0.6], [0, -8])
 	const heightRange2 = useTransform(
 		scrollYProgress,
 		[0.3, 0.5],
 		['200px', '600px']
 	)
+
+	
+	const opacity1 = useTransform(scrollYProgress, [0, 0.01], [0.8, 1])
+	const opacity2 = useTransform(scrollYProgress, [0, 0.02, 0.07], [0, 0, 1])
+	const opacity3 = useTransform(scrollYProgress, [0, 0.04, 0.09], [0, 0, 1])
+	const opacity4 = useTransform(scrollYProgress, [0, 0.06, 0.11], [0, 0, 1])
+	const opacity5 = useTransform(scrollYProgress, [0, 0.08, 0.13], [0, 0, 1])
+	
 
 	return (
 		<div>
@@ -46,15 +54,75 @@ export default function About() {
 						with every one of our clients and nimble enough to
 						deliver what we say we will.{' '}
 					</h2>
-				</section>
+				
+				
+				<div className=' grid grid-cols-1 gap-6 justify-items-center mt-16'>
+					<svg className=''
+						xmlns='http://www.w3.org/2000/svg'
+						width='60'
+						height='60'
+						viewBox='0 0 86.6 75'>
+						<motion.polygon
+							points='43.3 75 86.6 0 0 0 43.3 75'
+							fill='#FF006A'
+							opacity={opacity1}
+						/>
+					</svg>
+					<svg
+						xmlns='http://www.w3.org/2000/svg'
+						width='60'
+						height='60'
+						viewBox='0 0 86.6 75'>
+						<motion.polygon
+							points='43.3 75 86.6 0 0 0 43.3 75'
+							fill='#00B3A1'
+							opacity={opacity2}
+						/>
+					</svg>
+					<svg
+						xmlns='http://www.w3.org/2000/svg'
+						width='60'
+						height='60'
+						viewBox='0 0 86.6 75'>
+						<motion.polygon
+							points='43.3 75 86.6 0 0 0 43.3 75'
+							fill='#C1C71F'
+							opacity={opacity3}
+						/>
+					</svg>
+					<svg
+						xmlns='http://www.w3.org/2000/svg'
+						width='60'
+						height='60'
+						viewBox='0 0 86.6 75'>
+						<motion.polygon
+							points='43.3 75 86.6 0 0 0 43.3 75'
+							fill='#FF7A2E'
+							opacity={opacity4}
+						/>
+					</svg>
+					<svg
+						xmlns='http://www.w3.org/2000/svg'
+						width='60'
+						height='60'
+						viewBox='0 0 86.6 75'>
+						<motion.polygon
+							points='43.3 75 86.6 0 0 0 43.3 75'
+							fill='#FFB312'
+							opacity={opacity5}
+						/>
+					</svg>
+					
+				</div></section>
 				<section className='overflow-hidden flex flex-col h-[400vh]'>
-					<div className='w-screen bg-white h-96 z-30 relative'>
-						<div className='absolute flex flex-row top-[550px] w-screen z-50'>
+					<div className='w-screen bg-white h-12 z-30 relative mb-24'>
+						<div className='absolute flex flex-row top-[250px] w-screen z-50'>
 							<div className='w-2/12'></div>
-							<div className='w-5/12 pl-36 p-36 mt-24'>
+							<div className='w-5/12 m-20 mt-0 p-16 z-40 bg-white shadow-2xl'>
 								{' '}
 								<h2 className='font-bold text-3xl mb-2'>
-									Aspen Logan <h3 className='text-xl mt-2'>CEO</h3> 
+									Aspen Logan{' '}
+									<h3 className='text-xl mt-2'>CEO</h3>
 								</h2>
 								<h3 className='text-md leading-7'>
 									Aspen is a project manager, writer, a Myers
@@ -79,12 +147,14 @@ export default function About() {
 								</h3>
 							</div>
 							<div className='w-3/12'>
-								<Image
-									src='c_scale,h_1200,w_800/v1619826510/Color%20Mill%20Design/Aspen-portrait.jpg'
-									height={473}
-									width={315}
-									layout='intrinsic'
-									className=' z-50'></Image>
+								<div className='shadow-2xl w-[315px] h-[473px]'>
+									<Image
+										src='c_scale,h_1200,w_800/v1621889891/Color%20Mill%20Design/aspen-portrait-web_xgufpr.jpg'
+										height={473}
+										width={315}
+										layout='intrinsic'
+										className=' z-50'></Image>
+								</div>
 							</div>
 
 							<div className='w-2/12'></div>
@@ -96,23 +166,29 @@ export default function About() {
 							rotate: rotateRange1,
 							height: heightRange1,
 						}}
-						className='w-[150vw] bg-[indigo] -mt-96 z-0'></motion.div>
+						className='w-[150vw] bg-gradient-to-r to-[indigo] from-[red] -mt-96 z-0'></motion.div>
 					<div className='h-[600px] bg-transparent'></div>
 					<div className='w-screen bg-white h-96 z-30 relative'>
-						<div className='absolute flex flex-row top-[550px] w-screen z-50'>
+						<div className='absolute flex flex-row top-[580px] w-screen z-50'>
 							<div className='w-2/12'></div>
-							<div className='w-3/12 pl-36'>
-								<Image
-									src='c_scale,h_1200,w_800/v1619826510/Color%20Mill%20Design/Jeremy-portrait.jpg'
-									height={473}
-									width={315}
-									layout='intrinsic'
-									className=' z-50'></Image>
+							<div className='w-3/12 pl-[5vw] '>
+								<div className='shadow-2xl w-[315px] h-[473px]'>
+									<Image
+										src='c_scale,h_1200,w_800/v1619826510/Color%20Mill%20Design/Jeremy-portrait.jpg'
+										height={473}
+										width={315}
+										layout='intrinsic'
+										className=' z-50'></Image>
+								</div>
 							</div>
-							<div className='w-5/12 pl-36 p-36 mt-24'>
+							<div className='w-5/12 m-20 mt-0 p-16 bg-white shadow-2xl'>
 								{' '}
 								<h2 className='font-bold text-3xl mb-2'>
-									Jeremy Logan<h3 className='text-xl mt-2'> Creative Director and CFO</h3>
+									Jeremy Logan
+									<h3 className='text-xl mt-2'>
+										{' '}
+										Creative Director and CFO
+									</h3>
 								</h2>
 								<h3 className='text-md leading-7'>
 									Jeremy is a fine art oil painter, animator
@@ -143,7 +219,7 @@ export default function About() {
 							rotate: rotateRange2,
 							height: heightRange2,
 						}}
-						className='transform -ml-96 w-[150vw] bg-[cyan] -mt-96  z-0'></motion.div>
+						className='transform -ml-96 w-[150vw] bg-gradient-to-r from-[cyan] to-[indigo] -mt-96  z-0'></motion.div>
 				</section>
 			</main>
 		</div>

@@ -10,18 +10,24 @@ import {
 
 export default function MendocinoSpirits() {
 	return (
-		<div>
+		<div >
 			<Head>
 				<title>Color Mill Design | Mendocino Spirits</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<main>
+			<main >
 				<section className='px-[5vw] mt-24 h-[180vh] overflow-hidden'>
-					<div className='w-screen ml-12'>
-						<motion.h2 animate={{ x: [-70, 0], opacity: [0.2, 1]}} className='font-alice text-6xl text-[#23160c]'>
+					<div className='w-screen m-12 '>
+						<motion.h2
+							animate={{ x: [-70, 0], opacity: [0.2, 1] }}
+							className='font-alice text-6xl text-[#23160c]'>
 							Mendocino Spirits
 						</motion.h2>
-						<motion.svg height='6' width='500' className='mt-6' animate={{ x: [-100, 0], opacity: [0.2, 1]}}>
+						<motion.svg
+							height='6'
+							width='500'
+							className='mt-6'
+							animate={{ x: [-100, 0], opacity: [0.2, 1] }}>
 							<line
 								x1='0'
 								y1='0'
@@ -31,22 +37,31 @@ export default function MendocinoSpirits() {
 							/>
 						</motion.svg>
 					</div>
-					<div className='relative mt-16'>
-						<motion.div className='absolute h-auto p-16 ml-12 top-40 left-0 w-1/2 bg-[#F5E4C5] z-20' animate={{y:[600, 0], opacity:[0,1]}}>
-							<h3>
-								Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. Ut
-								enim ad minim veniam, quis nostrud exercitation
-								ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in
-								reprehenderit in voluptate velit esse cillum
-								dolore eu fugiat nulla pariatur. Excepteur sint
-								occaecat cupidatat non proident, sunt in culpa
-								qui officia deserunt mollit anim id est laborum.
+					<div className='relative mt-16 '>
+						<motion.div
+							className='absolute h-auto p-16 ml-[20vw] top-40 left-0 w-1/2 bg-[#F5E4C5] z-20'
+							animate={{ y: [600, 0], opacity: [0, 1] }}>
+							<h3 className='text-lg leading-loose'>
+								<span className='font-bold'>Mendocino Spirits is quality, integrity and
+								excellence.</span> A small craft distillery born of
+								tradition and old world practices stretching
+								back generations, always innovating and building
+								on what is known to create something new and
+								fresh. Mendocino Spirits is lighthearted yet
+								take traditional distilling methods seriously.
+								These may seem like contrasting elements, but
+								when they combine they make a spirit that fills
+								the palette with the warmth, love and passion
+								distilled into every barrel.
 							</h3>
 						</motion.div>
-						<motion.div className='absolute ml-[25vw] top-0 right-0 z-10' animate={{x:[500, 0], opacity:[0,1], scale: [0.8, 1]}}>
+						<motion.div
+							className='absolute ml-[25vw] top-0 right-0 z-10 '
+							animate={{
+								x: [500, 0],
+								opacity: [0, 1],
+								scale: [0.8, 1],
+							}}>
 							<Image
 								src='v1616447175/Color%20Mill%20Design/mendocino-spirits-cover_tzgrip.jpg'
 								layout='intrinsic'
@@ -55,14 +70,14 @@ export default function MendocinoSpirits() {
 								alt='Mendocino Spirits'
 								quality='100'></Image>
 						</motion.div>
-						<div className='absolute top-[600px] bg-[#57a89b] h-[900px] w-screen -ml-24 z-0'>
+						<div className='relative top-[600px] bg-[#57a89b] h-[900px] w-screen -ml-24 z-0'>
 							<Image
 								src='v1618268630/Color%20Mill%20Design/Mendocino-Spirits-wallpaper_wsyhyj.svg'
 								width='1440'
 								height='900px'
 								layout='responsive'></Image>
 						</div>
-						<div className='absolute h-auto p-16 ml-12 top-[700px] left-0 w-1/2 bg-[#F5E4C5] z-30'>
+						<div className='absolute h-auto p-16 ml-12 top-[700px] left-0 w-1/2 bg-[#F5E4C5] z-30 shadow-lg '>
 							<h4 className='font-alice text-5xl text-[#23160c]'>
 								Alice
 							</h4>
@@ -77,7 +92,7 @@ export default function MendocinoSpirits() {
 								Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp
 								Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
 							</h5>
-							<ul className=' bg-white w-[1500px] ml-[150px] py-8 px-8 grid grid-cols-10 gap-12 mt-12'>
+							<ul className=' bg-white w-[77vw] ml-[130px] py-8 px-8 grid grid-cols-5 xl:grid-cols-10 gap-6 mt-12 shadow-lg '>
 								<li>
 									<div className=' h-24 w-24 bg-[#f5e4c5] text-lg'></div>
 									<h5 className='mt=2 '>#f5e4c5</h5>
@@ -163,13 +178,13 @@ export default function MendocinoSpirits() {
 								style={{ stroke: '#23160c', strokeWidth: 5 }}
 							/>
 						</svg>
+						<div className='relative w-[90vw] h-[20vw] shadow-lg mb-12'>
 						<Image
 							src='v1618251531/Color%20Mill%20Design/Mendocino-Spirits-Stylescape_md0ylw.jpg'
-							layout='intrinsic'
-							width='1920'
-							height='420'
+							layout='fill'
+							objectFit='contain'
 							alt='Mendocino Spirits'
-							quality='100'></Image>
+							quality='100'></Image></div>
 					</div>
 				</section>
 				<section className='mx-[5vw] mt-24 '>
@@ -187,7 +202,7 @@ export default function MendocinoSpirits() {
 							/>
 						</svg>
 					</div>
-					<div className='grid grid-rows-2 grid-flow-col gap-24 w-3/4 mx-auto'>
+					<div className='grid grid-rows-2 grid-flow-col gap-12 lg:gap-24 w-3/4 mx-auto '>
 						<div className='row-span-2 '>
 							<Image
 								src='v1618350804/Color%20Mill%20Design/Mendocino-Spirits-3-labels_rrdnxk.jpg'
@@ -216,7 +231,7 @@ export default function MendocinoSpirits() {
 							/>
 						</div>
 					</div>
-					<div className='grid grid-rows-1 grid-flow-col gap-48 mt-12 w-3/4 m-12 mx-auto'>
+					<div className='grid grid-rows-1 grid-flow-col gap-12 lg:gap-48 mt-12 w-3/4 m-12 mx-auto '>
 						<Image
 							src='v1618251040/Color%20Mill%20Design/Mendocino-Spirits-Bourbon-label_boulyi.jpg'
 							width='414'
@@ -255,7 +270,7 @@ export default function MendocinoSpirits() {
 							/>
 						</svg>
 					</div>
-					<div className='mx-auto w-7/12'>
+					<div className='mx-auto w-6/12 shadow-lg'>
 						<Image
 							src='v1618329431/Color%20Mill%20Design/Mendocino-Spirits-Brochure-and-Cards_cvrp69.jpg'
 							layout='intrinsic'
@@ -265,7 +280,7 @@ export default function MendocinoSpirits() {
 							quality='80'></Image>
 					</div>
 					<div className='grid grid-cols-2 grid-rows-3 grid-flow-col gap-8 w-10/12 mx-auto mt-12'>
-						<div className='col-span-1 row-span-2'>
+						<div className='col-span-1 row-span-2 shadow-lg'>
 							<Image
 								src='v1618360236/Color%20Mill%20Design/Mendocino-Spirits-Brochure-01_es8fhg.jpg'
 								layout='intrinsic'
@@ -274,7 +289,7 @@ export default function MendocinoSpirits() {
 								quality='80'
 							/>
 						</div>
-						<div className='col-span-1 row-start-2 row-span-2'>
+						<div className='col-span-1 row-start-2 row-span-2 shadow-lg mb-8 h-24'>
 							<Image
 								src='v1618360236/Color%20Mill%20Design/Mendocino-Spirits-Brochure-02_ncnvdk.jpg'
 								layout='intrinsic'

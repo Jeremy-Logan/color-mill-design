@@ -32,10 +32,10 @@ export const MenuItem = ({ i }) => {
 	return (
 		<motion.li variants={variants}>
 			<motion.div
-				className='absolute md:w-[180vw] w-[300vw] h-[800px] transform origin-top-left z-10 overflow-hidden'
+				className='absolute md:w-[180vw] w-[300vw] h-[800px] transform origin-top-left overflow-hidden'
 				style={{ backgroundColor: `${colors[i]}` }}>
 				{' '}
-				<h2 className='text-white pl-48 lg:pl-16 text-4xl m:pl-0 xl:text-8xl lg:text-7xl md:text-6xl ml-[40vw] mt-0 xl:mt-[1.5vw] lg:mt-2 md:mt-2 transform rotate-6 origin-left font-bold transition duration-300 ease-in-out transform hover:scale-110'>
+				<h2 className='text-white pl-16 lg:pl-16 text-4xl m:pl-0 xl:text-8xl lg:text-7xl md:text-6xl ml-[40vw] mt-0 xl:mt-[1.5vw] lg:mt-2 md:mt-2 transform rotate-6 origin-left font-bold transition duration-300 ease-in-out hover:scale-110'>
 					<Link href={menuLink}>{menuName}</Link>
 				</h2>
 			</motion.div>

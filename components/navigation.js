@@ -16,7 +16,7 @@ export const Navigation = ({toggle}) => {
 	return (
 		<div className='z-40 overflow-hidden w-screen absolute top-0 left-0 bottom-0' >
 		<motion.ul
-			className=' absolute top-0 bottom-0 left-0'
+			className=' absolute top-0 bottom-0 md:left-0 -left-8 '
 			variants={variants}
 			onClick={toggle}
             >

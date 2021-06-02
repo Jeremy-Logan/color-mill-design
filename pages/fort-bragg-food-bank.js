@@ -95,7 +95,7 @@ export default function MendocinoSpirits() {
 								width='1228'
 								height='3200'
 								alt='Fort Bragg Food Bank Webpage 1'
-								quality='80'
+								quality='100'
 							/>
 						</div>
 						<div className='w-1/2 pt-32'>
@@ -105,7 +105,7 @@ export default function MendocinoSpirits() {
 								width='1134'
 								height='3200'
 								alt='Fort Bragg Food Bank Webpage 1'
-								quality='80'
+								quality='100'
 							/>
 						</div><div className='h-[150vh] bg-black'></div></div>
 					</div>
