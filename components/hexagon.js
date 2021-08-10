@@ -17,9 +17,9 @@ export default function Hexagon({ delay }) {
 	]
 	const randomColor = colors[(Math.random() * colors.length) | 0]
 	const { scrollYProgress } = useViewportScroll()
-	const opacityDelay = [delay + 0, delay + 0.1, delay + 0.2, delay + 0.3]
+	const opacityDelay = [delay - 0.05, delay + 0, delay + 0.1, delay + 0.2]
 	const opacity = useTransform(scrollYProgress, opacityDelay, [0, 0.75, 1, 0])
-	const scaleDelay = [delay + 0, delay + 0.1, delay + 0.15, delay + 0.4]
+	const scaleDelay = [delay - 0.05, delay + 0, delay + 0.1, delay + 0.2]
 	const scale = useTransform(scrollYProgress, scaleDelay, [0, 1, 1, 0])
 	const mobileScale = useTransform(scrollYProgress, scaleDelay, [0, 2, 2, 0])
 

@@ -38,7 +38,7 @@ export default function Hotdog({ delay }) {
 	const randomSpeedLeft = translatesLeft[(Math.random() * translatesLeft.length) | 0]
     const randomStartRight = startsRight[(Math.random() * startsRight.length) | 0]
 	const randomSpeedRight = translatesRight[(Math.random() * translatesRight.length) | 0]
-	const translateDelay = [0.1, 0.8]
+	const translateDelay = [0, 0.6]
 	const translate = useTransform(scrollYProgress, translateDelay, leftOrRight==='left' ? [
 		randomStartLeft,
 		randomSpeedLeft

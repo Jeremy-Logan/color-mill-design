@@ -12,31 +12,48 @@ const Post = (props) => {
 		title = 'Missing title',
 		name = 'Missing name',
 		categories,
+		mainImage,
 		authorImage,
-		body
+		publishedAt,
+		body,
 	} = props
+
+	
+
 	return (
-		<article>
-			<h1>{title}</h1>
-			<span>By {name}</span>
-			{categories && (
-				<ul>
-					Posted in
-					{categories.map((category) => (
-						<li key={category}>{category}</li>
-					))}
-				</ul>
-			)}
-			{authorImage && (
-				<div>
-					<img src={urlFor(authorImage).width(50).url()} />
+		<article className='mt-24 mx-[10vw]'>
+			{mainImage && <img className='mx-auto' src={urlFor(mainImage).width(1440).url()} />}
+			<div className='flex w-[1440px] mx-auto'>
+				<aside className='w-1/5 m-10 flex flex-col'>
+					{authorImage && (
+						<div className='my-2 mx-auto mr-0'>
+							<img
+								className='rounded-full'
+								src={urlFor(authorImage).width(70).url()}
+							/>
+						</div>
+					)}
+					<span className='text-right font-bold'>{name}</span>
+					<span className='text-right mb-8'>{publishedAt}</span>
+					{categories && (
+						<ul className='text-right'>
+							Posted in
+							{categories.map((category) => (
+								<li key={category}>{category}</li>
+							))}
+						</ul>
+					)}
+				</aside>
+				<div className='mx-12 w-full '>
+					<h1 className='text-6xl font-bold mt-8'>{title}</h1>
+					<BlockContent
+						blocks={body}
+						imageOptions={{ w: 320, h: 240, fit: 'max' }}
+						{...client.config()}
+					/>
 				</div>
-			)}
-			<BlockContent
-				blocks={body}
-				imageOptions={{ w: 320, h: 240, fit: 'max' }}
-				{...client.config()}
-			/>
+			</div>
+			<div className='bg-cyan-500 h-[2px] w-3/4 mx-auto my-36'></div>
 		</article>
 	)
 }
@@ -46,6 +63,8 @@ const query = groq`*[_type == "post" && slug.current == $slug][0]{
     "name": author->name,
     "categories": categories[]->title,
 	"authorImage": author->image,
+	mainImage,
+	publishedAt,
 	body
 }`
 

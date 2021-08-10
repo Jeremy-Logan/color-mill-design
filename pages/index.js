@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {useEffect} from 'react'
+import { useEffect } from 'react'
 // import Instagram from 'instagram-web-api'
 import MendocinoSpiritsSection from '@components/mendocinoSpiritsSection'
 import FoodBankSection from '@components/foodBankSection'
@@ -50,19 +50,15 @@ const SlideIn = ({ children }) => {
 	)
 }
 
-
-
 export default function Home({ data }) {
-
 	useEffect(() => {
-    if (window.instgrm)
-        window.instgrm.Embeds.process();
-    }, [instagramPosts.id]);
-	
+		if (window.instgrm) window.instgrm.Embeds.process()
+	}, [instagramPosts.id])
+
 	const token = process.env.IG_TOKEN
 	const { scrollYProgress } = useViewportScroll()
-	const yRange = useTransform(scrollYProgress, [0, 1.5], [0, 1])
-	const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 })
+	const yRange = useTransform(scrollYProgress, [0, 1], [0, 1])
+	const pathLength = useSpring(yRange, { stiffness: 400, damping: 80 })
 	return (
 		<div className='overflow-hidden'>
 			<Head>
@@ -71,50 +67,38 @@ export default function Home({ data }) {
 			</Head>
 
 			<main className='overflow-hidden '>
-				<div className='md:top-80 px-8 md:pl-24 lg:pl-36 w-screen md:w-[70vw] lg:w-[60vw] z-0 mt-36 h-[400px] md:h-[600px] '>
-					<h1 className='text-2xl md:text-5xl lg:text-6xl font-serif font-bold md:leading-loose'>
-						Designing delightful branding and web experiences.
-					</h1>
-					<h2 className='hidden md:block text-lg md:text-xl lg:text-2xl leading-relaxed mt-12'>
-						We are a branding and web design studio in <br />{' '}
-						Mendocino County, California and Portland, Oregon.
-						<br /> We use design and creative thinking to help
-						businesses tell their story.
-					</h2>
-					<h2 className=' text-lg mt-4 md:hidden'>
-						We are a branding and web design studio in Mendocino
-						County, California and Portland, Oregon. We use design
-						and creative thinking to help businesses tell their
-						story.
-					</h2>
-				</div>
-				<svg
+			{/* <svg
 					className='absolute top-[550px]'
 					xmlns='http://www.w3.org/2000/svg'
-					viewBox='0 0 1200 2200'>
+					viewBox='0 0 1200 3800'>
 					<motion.path
 						style={{ pathLength }}
 						fill='none'
 						stroke='#27aae1'
 						strokeMiterlimit='10'
 						strokeWidth='3px'
-						d='M1200,25.2h-159.5c-5.3,0-9.5,4.3-9.5,9.5v330.9c0,5.3-4.3,9.5-9.5,9.5H878c-5.3,0-9.5-4.3-9.5-9.5v-44.7
-	c0-5.3-4.3-9.5-9.5-9.5H585.3c-5.3,0-9.5,4.3-9.5,9.5V717c0,5.3-4.3,9.5-9.5,9.5H293.8c-5.3,0-9.5,4.3-9.5,9.5v396.7
-	c0,6.4,5.2,11.5,11.5,11.5h208.6c6.4,0,11.5-5.2,11.5-11.5V892c0-6.4-5.2-11.5-11.5-11.5H184.6c-6.4,0-11.5,5.2-11.5,11.5v582.2
-	c0,6.4,5.2,11.5,11.5,11.5h588.2c6.4,0,11.5,5.2,11.5,11.5v114.5c0,6.4,5.2,11.5,11.5,11.5h229.6c6.4,0,11.5,5.2,11.5,11.5v523
-	c0,6.4-5.2,11.5-11.5,11.5H768.2c-6.4,0-11.5-5.2-11.5-11.5v-86.2c0-6.4,5.2-11.5,11.5-11.5h135.5c6.4,0,11.5,5.2,11.5,11.5v175.7
-	c0,6.4-5.2,11.5-11.5,11.5H285.9c-6.4,0-11.5,5.2-11.5,11.5v562.2'
-					/>
-				</svg>
+						d="M1200,25.2H1040.5a9.5,9.5,0,0,0-9.5,9.5V365.6a9.5,9.5,0,0,1-9.5,9.5H878a9.5,9.5,0,0,1-9.5-9.5V320.9a9.5,9.5,0,0,0-9.5-9.5H585.3a9.5,9.5,0,0,0-9.5,9.5V717a9.5,9.5,0,0,1-9.5,9.5H293.8a9.5,9.5,0,0,0-9.5,9.5v396.7a11.5,11.5,0,0,0,11.5,11.5H504.4a11.5,11.5,0,0,0,11.5-11.5V892a11.5,11.5,0,0,0-11.5-11.5H184.6A11.5,11.5,0,0,0,173.1,892v582.2a11.5,11.5,0,0,0,11.5,11.5H772.8a11.5,11.5,0,0,1,11.5,11.5v114.5a11.5,11.5,0,0,0,11.5,11.5h229.6a11.5,11.5,0,0,1,11.5,11.5v523a11.5,11.5,0,0,1-11.5,11.5H768.2a11.5,11.5,0,0,1-11.5-11.5v-86.2a11.5,11.5,0,0,1,11.5-11.5H903.7a11.5,11.5,0,0,1,11.5,11.5v175.7a11.5,11.5,0,0,1-11.5,11.5H285.9a11.5,11.5,0,0,0-11.5,11.5v240.51s-3,16.05,14,16.05H580.89c8.2,0,14.84,4,14.84,13v7.92c0,15.21,6.64,14.31,14.83,14.31h625.19a14.83,14.83,0,0,1,14.83,14.83v741.4a14.83,14.83,0,0,1-14.83,14.83H456.42c-10.13,0-14.83,3.74-14.83,10.56s5.65,10.23,14.83,10.23H585.17c8.19,0,14.83,4.7,14.83,12.08V4518.61"/></svg>
+				 */}
+				<div className='md:top-80 px-8 md:pl-24 xl:pl-48 lg:pl-36 w-screen md:w-[70vw] lg:w-[60vw] z-0 mt-36 h-[400px] md:h-[500px] '>
+					<h1 className='text-2xl md:text-5xl lg:text-6xl font-serif font-bold md:leading-loose'>
+						Designing delightful branding and web experiences.
+					</h1>
+					<h2 className='hidden md:block text-lg md:text-xl lg:text-2xl leading-relaxed mt-12'>
+						We use design and creative thinking to help businesses tell their story.
+					</h2>
+					<h2 className=' text-lg mt-4 md:hidden'>
+						We use design and creative thinking to help businesses tell their story.
+					</h2>
+				</div>
 				<div>
 					<MendocinoSpiritsSection />
 					<FoodBankSection />
 					<CapabilitiesSection />
 					<SlideIn>
-							<h3 className='text-5xl font-bold mt-36 mb-12 z-20 mx-[15vw]'>
-								From Instagram
-							</h3>
-						</SlideIn>
+						<h3 className='text-5xl font-bold mt-36 mb-12 z-20 mx-[15vw]'>
+							From Instagram
+						</h3>
+					</SlideIn>
 					<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-6 w-screen px-12'>
 						{instagramPosts.map((post) => (
 							<div className=' flex flex-col relative -mb-24'>

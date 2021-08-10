@@ -9,16 +9,16 @@ import {
 
 export default function About() {
 	const { scrollYProgress } = useViewportScroll()
-	const rotateRange1 = useTransform(scrollYProgress, [0, 0.3], [0, 10])
+	const rotateRange1 = useTransform(scrollYProgress, [0, 0.4], [0, 5])
 	const heightRange1 = useTransform(
 		scrollYProgress,
-		[0, 0.2],
+		[0, 0.4],
 		['200px', '600px']
 	)
-	const rotateRange2 = useTransform(scrollYProgress, [0.4, 0.6], [0, -8])
+	const rotateRange2 = useTransform(scrollYProgress, [0.8, 1.2], [0, -5])
 	const heightRange2 = useTransform(
 		scrollYProgress,
-		[0.3, 0.5],
+		[0.8, 1.1],
 		['200px', '600px']
 	)
 
@@ -39,8 +39,9 @@ export default function About() {
 
 			<main>
 				<section className='mt-36 mx-[15vw] overflow-hidden'>
-					<h1 className='font-serif font-bold text-6xl '>About Us</h1>
-					<h2 className='text-lg md:text-xl lg:text-2xl leading-relaxed mt-12 '>
+					<h1 className='font-serif font-bold text-6xl '>Hello, we are Color Mill Design</h1>
+<h2 className='font-serif text-4xl mt-12'>We'll help you tell your story.</h2>
+					<h3 className='text-lg md:text-xl lg:text-2xl leading-relaxed mt-12 '>
 						A team of escapees from the corporate world who decided
 						that the forests of entrepreneurship seemed incredibly
 						more rewarding than the daily grind. Our priorities lie
@@ -53,7 +54,7 @@ export default function About() {
 						chaos. We are small enough to be personally involved
 						with every one of our clients and nimble enough to
 						deliver what we say we will.{' '}
-					</h2>
+					</h3>
 				
 				
 				<div className=' grid grid-cols-1 gap-6 justify-items-center mt-16'>
@@ -114,7 +115,7 @@ export default function About() {
 					</svg>
 					
 				</div></section>
-				<section className='overflow-hidden flex flex-col h-[400vh]'>
+				<section className='overflow-hidden flex flex-col h-[160vh]'>
 					<div className='w-screen bg-white h-12 z-30 relative mb-24'>
 						<div className='absolute flex flex-row top-[250px] w-screen z-50'>
 							<div className='w-2/12'></div>
@@ -169,7 +170,7 @@ export default function About() {
 						className='w-[150vw] bg-gradient-to-r to-[indigo] from-[red] -mt-96 z-0'></motion.div>
 					<div className='h-[600px] bg-transparent'></div>
 					<div className='w-screen bg-white h-96 z-30 relative'>
-						<div className='absolute flex flex-row top-[580px] w-screen z-50'>
+						<div className='absolute flex flex-row top-[480px] w-screen z-50'>
 							<div className='w-2/12'></div>
 							<div className='w-3/12 pl-[5vw] '>
 								<div className='shadow-2xl w-[315px] h-[473px]'>

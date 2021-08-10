@@ -52,7 +52,7 @@ export default function Header({ title }) {
 	return (
 		<>
 			<div className='h-12 md:h-36 w-screen '>
-				<motion.div className='w-screen h-screen overflow-hidden'>
+				<motion.div className='w-screen h-screen overflow-hidden' >
 					<motion.nav
 						className=' z-30 '
 						// initial={false}
@@ -66,8 +66,9 @@ export default function Header({ title }) {
 						/>
 						<MenuToggle toggle={() => toggleOpen()}/>
 						<motion.div
-							initial={{ opacity: 0 }}
-							animate={{ opacity: [0, 0, 0, 0, 1] }}>
+							initial={{ opacity: 0}}
+							animate={{ opacity: [0, 0, 0, 0, 1]}}>
+							
 							<Navigation toggle={() => toggleOpen()} />
 						</motion.div>
 					</motion.nav>

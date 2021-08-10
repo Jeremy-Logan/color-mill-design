@@ -10,13 +10,13 @@ import {
 
 export default function MendocinoSpirits() {
 	return (
-		<div >
+		<div>
 			<Head>
 				<title>Color Mill Design | Mendocino Spirits</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<main >
-				<section className='px-[5vw] mt-24 h-[180vh] overflow-hidden'>
+			<main>
+				<section className=' mt-24 h-[130vh] overflow-hidden'>
 					<div className='w-screen m-12 '>
 						<motion.h2
 							animate={{ x: [-70, 0], opacity: [0.2, 1] }}
@@ -42,17 +42,20 @@ export default function MendocinoSpirits() {
 							className='absolute h-auto p-16 ml-[20vw] top-40 left-0 w-1/2 bg-[#F5E4C5] z-20'
 							animate={{ y: [600, 0], opacity: [0, 1] }}>
 							<h3 className='text-lg leading-loose'>
-								<span className='font-bold'>Mendocino Spirits is quality, integrity and
-								excellence.</span> A small craft distillery born of
-								tradition and old world practices stretching
-								back generations, always innovating and building
-								on what is known to create something new and
-								fresh. Mendocino Spirits is lighthearted yet
-								take traditional distilling methods seriously.
-								These may seem like contrasting elements, but
-								when they combine they make a spirit that fills
-								the palette with the warmth, love and passion
-								distilled into every barrel.
+								<span className='font-bold'>
+									Mendocino Spirits is quality, integrity and
+									excellence.
+								</span>{' '}
+								A small craft distillery born of tradition and
+								old world practices stretching back generations,
+								always innovating and building on what is known
+								to create something new and fresh. Mendocino
+								Spirits is lighthearted yet take traditional
+								distilling methods seriously. These may seem
+								like contrasting elements, but when they combine
+								they make a spirit that fills the palette with
+								the warmth, love and passion distilled into
+								every barrel.
 							</h3>
 						</motion.div>
 						<motion.div
@@ -70,12 +73,13 @@ export default function MendocinoSpirits() {
 								alt='Mendocino Spirits'
 								quality='100'></Image>
 						</motion.div>
-						<div className='relative top-[600px] bg-[#57a89b] h-[900px] w-screen -ml-24 z-0'>
+						<div className='relative top-[600px] bg-[#57a89b] h-[900px] w-screen  z-0'>
 							<Image
 								src='v1618268630/Color%20Mill%20Design/Mendocino-Spirits-wallpaper_wsyhyj.svg'
-								width='1440'
-								height='900px'
-								layout='responsive'></Image>
+								// width='1440'
+								// height='900px'
+								layout='fill'
+								objectFit='cover'></Image>
 						</div>
 						<div className='absolute h-auto p-16 ml-12 top-[700px] left-0 w-1/2 bg-[#F5E4C5] z-30 shadow-lg '>
 							<h4 className='font-alice text-5xl text-[#23160c]'>
@@ -140,7 +144,7 @@ export default function MendocinoSpirits() {
 				<section className='px-[5vw] mt-24  overflow-hidden'>
 					<div className='w-screen ml-12'>
 						<h2 className='font-alice text-6xl text-[#23160c]'>
-							Design Brief
+							Going forward by looking back
 						</h2>
 						<svg height='6' width='500' className='mt-6'>
 							<line
@@ -152,15 +156,13 @@ export default function MendocinoSpirits() {
 							/>
 						</svg>
 						<h3 className='w-3/4 mt-12 text-lg'>
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit, sed do eiusmod tempor incididunt ut labore et
-							dolore magna aliqua. Ut enim ad minim veniam, quis
-							nostrud exercitation ullamco laboris nisi ut aliquip
-							ex ea commodo consequat. Duis aute irure dolor in
-							reprehenderit in voluptate velit esse cillum dolore
-							eu fugiat nulla pariatur. Excepteur sint occaecat
-							cupidatat non proident, sunt in culpa qui officia
-							deserunt mollit anim id est laborum.
+							Mendocino Spirits makes amazing bourbon. And gin.
+							And rye. And... the list is growing. When we met
+							Crispin and Tamar, they were fearlessly forging
+							their own way after decades of working with others.
+							We wanted their new brand to shine-- to reflect the
+							glorious amber liquid in the bottles and represent
+							the rich personalities of their offerings.
 						</h3>
 					</div>
 				</section>
@@ -179,12 +181,13 @@ export default function MendocinoSpirits() {
 							/>
 						</svg>
 						<div className='relative w-[90vw] h-[20vw] shadow-lg mb-12'>
-						<Image
-							src='v1618251531/Color%20Mill%20Design/Mendocino-Spirits-Stylescape_md0ylw.jpg'
-							layout='fill'
-							objectFit='contain'
-							alt='Mendocino Spirits'
-							quality='100'></Image></div>
+							<Image
+								src='v1618251531/Color%20Mill%20Design/Mendocino-Spirits-Stylescape_md0ylw.jpg'
+								layout='fill'
+								objectFit='contain'
+								alt='Mendocino Spirits'
+								quality='100'></Image>
+						</div>
 					</div>
 				</section>
 				<section className='mx-[5vw] mt-24 '>

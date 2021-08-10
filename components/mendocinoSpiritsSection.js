@@ -74,7 +74,7 @@ export default function MendocinoSpiritsSection() {
 										Mendocino Spirits
 									</h3>
 									<h4 className='text-lg text-left z-30 mt-2'>
-										Branding, Package Design, Web Design{' '}
+										Branding, Illustration, Web Design, Print Design{' '}
 									</h4>
 									<h5 className='text-[#2da8dc] underline text-left mt-2'>See the case study...</h5>
 								</button>
@@ -95,7 +95,7 @@ export default function MendocinoSpiritsSection() {
 							</Link>
 						</motion.button>
 					</FadeIn>
-					<div className='absolute top-[1200px] hidden md:block'>
+					<div className='absolute top-[1060px] hidden md:block'>
 						<HexGrid className='z-0' />
 					</div>
 					
