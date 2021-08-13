@@ -8,42 +8,48 @@ import {
 	useSpring,
 } from 'framer-motion'
 
-export default function MendocinoSpirits() {
-	const paletteColors = [
-		'#077893',
-		'#E68242',
-		'#57A89B',
-		'#A6A36D',
-		'#F3C268',
-		'#552919',
-		'#8E513A',
-		'#BF8D53',
-		'#22150c',
-		'#f4e3c5',
-	]
+const paletteColors = [
+	{ bg: '#077893', text: 'white' },
+	{ bg: '#E68242', text: 'white' },
+	{ bg: '#57A89B', text: 'white' },
+	{ bg: '#A6A36D', text: 'white' },
+	{ bg: '#F3C268', text: '#22150c' },
+	{ bg: '#552919', text: 'white' },
+	{ bg: '#8E513A', text: 'white' },
+	{ bg: '#BF8D53', text: 'white' },
+	{ bg: '#22150c', text: 'white' },
+	{ bg: '#F4E3C5', text: '#22150c' },
+]
 
-	const PaletteSection = ({ color }) => {
-		return (
-			<div className='w-[10%] flex flex-col justify-center '>
-				<div
-					className={`bg-[${color}] text-black text-lg text-center py-2`}>
-					{color}
-				</div>
-				<div
-					className={`bg-[${color}]  opacity-75 h-10 text-center py-2`}
-				/>
-				<div
-					className={`bg-[${color}]  opacity-50 h-10 text-center py-2`}
-				/>
-				<div
-					className={`bg-[${color}]  opacity-25 h-10 text-center py-2`}
-				/>
-				<div
-					className={`bg-[${color}]  opacity-10 h-10 text-center py-2`}
-				/>
+const PaletteSection = ({ color, text }) => {
+	return (
+		<div className='w-[10%] flex flex-col justify-center h-48'>
+			<div
+				style={{ backgroundColor: `${color}`, color: `${text}` }}
+				className={`text-md text-center py-2`}>
+				{color}
 			</div>
-		)
-	}
+			<div
+				style={{ backgroundColor: `${color}` }}
+				className='opacity-80 h-full'
+			/>
+			<div
+				style={{ backgroundColor: `${color}` }}
+				className='opacity-60 h-full'
+			/>
+			<div
+				style={{ backgroundColor: `${color}` }}
+				className='opacity-40 h-full'
+			/>
+			<div
+				style={{ backgroundColor: `${color}` }}
+				className='opacity-20 h-full'
+			/>
+		</div>
+	)
+}
+
+export default function MendocinoSpirits() {
 	return (
 		<div>
 			<Head>
@@ -70,7 +76,7 @@ export default function MendocinoSpirits() {
 					</h2>
 				</section>
 				<section className='mx-[20vw] mt-36'>
-					<div className='bg-[hsl(38,72%,89%)] h-[60vh] flex justify-center'>
+					<div className='bg-[#f4e8da] h-[60vh] flex justify-center'>
 						<div className='relative h-full w-5/12 '>
 							<Image
 								src='c_scale,fl_sanitize,q_100,w_1280/v1628797580/Color%20Mill%20Design/mendocinoSpiritsLogo.svg'
@@ -128,7 +134,7 @@ export default function MendocinoSpirits() {
 						objectFit='none'
 					/>
 				</div>
-				<section className='mx-[25vw] mt-36'>
+				<section className='mx-[25vw] my-36 '>
 					<h2 className='text-6xl font-serif italic text-gray-500 mb-6'>
 						"This is where a big testimonial from the customer will
 						go."
@@ -137,7 +143,7 @@ export default function MendocinoSpirits() {
 						-Customer's name and company name
 					</p>
 				</section>
-				<section className='mx-[25vw] mt-36'>
+				<section className='mx-[25vw]'>
 					<div className='bg-[#077893] h-[40vh] flex justify-center py-20 px-10'>
 						<div className='w-1/2 mx-16'>
 							<h3 className='text-white text-7xl font-alice mb-8'>
@@ -158,13 +164,44 @@ export default function MendocinoSpirits() {
 							</h4>
 						</div>
 					</div>
-					<div className='flex h-36 bg-white '>
-						{paletteColors && paletteColors.map((color, index) => (
-							<PaletteSection color={color} key={index} />
+					<div className='flex h-36 bg-white'>
+						{paletteColors.map((color, index) => (
+							<PaletteSection
+								color={color.bg}
+								key={index}
+								text={color.text}
+							/>
 						))}
 					</div>
 				</section>
-				<section className=' mt-36 bg-[#bfddda] xl:py-24 py-8'>
+				<section className='mt-60 mx-[25vw]'>
+				<h3 className=' text-4xl font-serif font-bold mb-12'>
+						Designing the Logo
+					</h3>
+					<p className='text-3xl mb-24 leading-relaxed'>
+						Write something insightful about the logo design process
+						here... Lorem ipsum dolor sit amet, consectetur adipiscing
+						elit, sed do eiusmod tempor incididunt ut labore et
+						dolore magna aliqua. Ut enim ad minim veniam, quis
+						nostrud exercitation ullamco laboris nisi ut aliquip ex
+						ea commodo consequat.{' '}
+					</p>
+				</section>
+				<section className='bg-[#f4e3c5] w-screen my-36 py-20'>
+					<div className='relative h-[70vh] mx-[25vw]'>
+						<Image
+							src='v1628892703/Color%20Mill%20Design/mendocino-spirits-logo-comp_tztjbh.jpg'
+							layout='fill'
+							objectFit='contain'
+						/>
+					</div>
+				</section>
+				<section className='mx-[25vw] my-36 '>
+					<h2 className='text-6xl font-serif italic text-gray-500 mb-6'>
+						"Big statement about our design philosophy"
+					</h2>
+				</section>
+				<section className=' mt-48 bg-[#bfddda] xl:py-24 py-8'>
 					<div className='grid grid-cols-2 xl:grid-cols-5 gap-8 xl:gap-2 xl:mx-[15vw] mx-8 justify-items-center'>
 						<div className='hidden xl:block relative h-[50vh] w-[15vw]'>
 							<Image
