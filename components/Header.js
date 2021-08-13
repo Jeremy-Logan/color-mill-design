@@ -51,8 +51,8 @@ export default function Header({ title }) {
 
 	return (
 		<>
-			<div className='h-12 md:h-36 w-screen '>
-				<motion.div className='w-screen h-screen overflow-hidden' >
+			<div className='h-12 md:h-36 w-screen  bg-white z-50'>
+				<motion.div className='w-screen h-screen ' >
 					<motion.nav
 						className=' z-30 '
 						// initial={false}

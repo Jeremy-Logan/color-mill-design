@@ -83,7 +83,7 @@ export default function Home({ data }) {
 					<h1 className='text-2xl md:text-5xl lg:text-6xl font-serif font-bold md:leading-loose'>
 						Designing delightful branding and web experiences.
 					</h1>
-					<h2 className='hidden md:block text-lg md:text-xl lg:text-2xl leading-relaxed mt-12'>
+					<h2 className='hidden md:block text-lg md:text-xl lg:text-3xl leading-relaxed mt-12'>
 						We use design and creative thinking to help businesses tell their story.
 					</h2>
 					<h2 className=' text-lg mt-4 md:hidden'>

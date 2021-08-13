@@ -17,7 +17,10 @@ module.exports = {
       indigo: colors.indigo,
       red: colors.rose,
       yellow: colors.amber,
-      cyan: colors.cyan
+      cyan: colors.cyan,
+      orange: colors.orange,
+      green: colors.green,
+      sky: colors.sky
     },
     fontFamily:{
       'sans': ['ui-sans-serif', 'system-ui'],
