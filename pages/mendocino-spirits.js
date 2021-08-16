@@ -143,22 +143,22 @@ export default function MendocinoSpirits() {
 						-Customer's name and company name
 					</p>
 				</section>
-				<section className='mx-[25vw]'>
-					<div className='bg-[#077893] h-[40vh] flex justify-center py-20 px-10'>
-						<div className='w-1/2 mx-16'>
-							<h3 className='text-white text-7xl font-alice mb-8'>
+				<section className='xl:mx-[25vw] lg:mx-[10vw] md:mx-[5vw]'>
+					<div className='bg-[#077893] flex justify-center py-20 md:px-10 sm:px-2'>
+						<div className='w-1/2 md:mx-16 xs:mx-6'>
+							<h3 className='text-white xl:text-7xl lg:text-5xl sm:text-3xl font-alice mb-8'>
 								Alice
 							</h3>
-							<h4 className=' text-white text-4xl leading-relaxed tracking-wide font-alice'>
+							<h4 className=' text-white xl:text-3xl lg:text-2xl sm:text-lg leading-relaxed tracking-wide font-alice'>
 								Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp
 								Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
 							</h4>
 						</div>
-						<div className='w-1/2 mx-16'>
-							<h3 className='text-white text-6xl font-fira mb-8'>
+						<div className='w-1/2 md:mx-16 xs:mx-6'>
+							<h3 className='text-white xl:text-6xl lg:text-4xl sm:text-2xl font-fira mb-8'>
 								Fira Sans
 							</h3>
-							<h4 className=' text-white text-4xl leading-relaxed tracking-wide font-fira'>
+							<h4 className=' text-white xl:text-3xl lg:text-2xl sm:text-lg leading-relaxed tracking-wide font-fira'>
 								Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp
 								Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
 							</h4>
