@@ -84,7 +84,7 @@ export default function FoodBankSection() {
 				<div className='w-1/3 my-36 z-20 '>
 					<SlideIn>
 						<Link href='/fort-bragg-food-bank'>
-							<button>
+							<button className='focus:outline-none bg-[#e2efff] p-10 shadow-xl '>
 								<h3 className='text-5xl font-bold my-auto z-20'>
 									Fort Bragg Food Bank
 								</h3>

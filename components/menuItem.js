@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const MenuItem = ({ i }) => {
 	const colors = ['#FF008C', '#D309E1', '#9C1AFF', '#7700FF', '#4400FF']
 	const rotate = [0.001, 15, 30, 46, 60]
-	const links = ['/', '/about', '/#contact', '/news', '/']
+	const links = ['/', '/about', '/contact', '/news', '/']
 	const names = ['Home', 'About', 'Contact', 'News', '']
 	const menuLink = `${links[i]}`
 	const menuName = `${names[i]}`

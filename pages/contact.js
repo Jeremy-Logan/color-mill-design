@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import ContactForm from '@components/contactForm'
 
 
 export default function Contact() {
@@ -11,7 +12,8 @@ export default function Contact() {
 
 			<main>
 				<section className='mx-12'>
-				<h1 className='font-serif font-bold text-6xl ml-[15vw]'>Contact Us</h1>
+				<h1 className='font-serif text-6xl ml-[25vw]'>Let's talk.</h1>
+				<ContactForm/>
 				</section>
 			</main>
 

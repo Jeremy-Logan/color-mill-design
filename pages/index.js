@@ -81,7 +81,7 @@ export default function Home({ data }) {
 				 */}
 				<div className='md:top-80 px-8 md:pl-24 xl:pl-48 lg:pl-36 w-screen md:w-[70vw] lg:w-[60vw] z-0 mt-36 h-[400px] md:h-[500px] '>
 					<h1 className='text-2xl md:text-5xl lg:text-6xl font-serif font-bold md:leading-loose'>
-						Designing delightful branding and web experiences.
+						Designing delightful branding and custom web experiences.
 					</h1>
 					<h2 className='hidden md:block text-lg md:text-xl lg:text-3xl leading-relaxed mt-12'>
 						We use design and creative thinking to help businesses tell their story.
@@ -96,7 +96,7 @@ export default function Home({ data }) {
 					<CapabilitiesSection />
 					<SlideIn>
 						<h3 className='text-5xl font-bold mt-36 mb-12 z-20 mx-[15vw]'>
-							From Instagram
+							See us on Instagram...
 						</h3>
 					</SlideIn>
 					<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-6 w-screen px-12'>

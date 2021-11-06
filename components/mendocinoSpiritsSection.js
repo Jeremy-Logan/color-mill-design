@@ -66,10 +66,10 @@ export default function MendocinoSpiritsSection() {
 		<div className='h-[1000px] w-screen z-50'>
 			
 				<div className='flex flex-col md:flex-row'>
-					<div className='w-screen md:my-36 mb-12 ml-8 md:ml-[20vw] z-20 '>
+					<div className='w-screen md:my-36 mb-12 ml-8 md:ml-[30vw] z-20 '>
 						<SlideIn>
 							<Link href='/mendocino-spirits'>
-								<button className='focus:outline-none'>
+								<button className='focus:outline-none bg-[#e2efff] p-10 shadow-xl '>
 									<h3 className='text-2xl md:text-5xl font-bold my-auto text-left z-20'>
 										Mendocino Spirits
 									</h3>

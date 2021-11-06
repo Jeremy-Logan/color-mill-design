@@ -4,7 +4,10 @@ const ContactForm = () => {
 	const { register, errors } = useForm()
 
 	return (
-		<div className='bg-[#4077dd] rounded-3xl w-[90vw] h-[90vw] md:w-[50px] md:h-[50px] lg:w-[40vw] lg:h-[40vw] 2xl:w-[700px] 2xl:h-[500px] justify-center mx-auto flex shadow-xl items-center'>
+		<div className='mt-36 mx-[25vw] justify-leftflex items-center'>
+			<h3 className='text-4xl mb-16'>
+				Tell us about your project and goals.
+			</h3>
 			<form
 				method='POST'
 				name='contact'
@@ -12,15 +15,8 @@ const ContactForm = () => {
 				netlify-honeypot='bot-field'
 				id='contact'>
 				<input type='hidden' name='form-name' value='contact' />
-				<div
-					className={
-						'flex flex-col w-full -mt-10 items-center mx-auto'
-					}><h3 className='text-3xl text-center text-white mb-8 font-bold focus-none '>
-					Get in touch...
-				</h3>
-
-				
-					<div className={'text-black flex-grow w-8/12 '}>
+				<div className={'flex flex-col w-full items-left mx-auto'}>
+					<div className={'text-black flex-grow w-8/12'}>
 						<p className='hidden'>
 							<label>
 								Don’t fill this out if you're human:{' '}
@@ -28,46 +24,116 @@ const ContactForm = () => {
 							</label>
 						</p>
 
-						<label htmlFor='name' className='mr-2'>
+						<label htmlFor='name' className='mr-2 text-xl'>
+							<h3 className='text-2xl mt-16'>
+								What's your name?
+							</h3>
 							<input
 								type='text'
 								name='contactName'
 								id='contactName'
-								placeholder='Name'
+								placeholder=''
 								{...register('name', {
-									required: 'Name is required',
+									required: 'Please enter your name.',
 								})}
-								className={'w-full my-2 pl-2'}
+								className={
+									'text-xl w-full my-4 pl-2 h-12 border-b-2'
+								}
+							/>
+						</label>
+						<label htmlFor='orgName' className='mr-2 text-xl '>
+							<h3 className='text-2xl mt-16'>
+								What's your organization's name?
+							</h3>
+							<input
+								type='text'
+								name='orgName'
+								id='orgName'
+								placeholder=''
+								{...register('orgName', {
+									required:
+										"Please enter your organization's name.",
+								})}
+								className={
+									'text-xl w-full my-4 pl-2 h-12 border-b-2'
+								}
 							/>
 						</label>
 
-						<label htmlFor='email'>
+						<label htmlFor='email' className='mr-2 text-xl '>
+							<h3 className='text-2xl mt-16'>
+								What's your email address?
+							</h3>
 							<input
 								type='email'
 								name='contactEmail'
 								id='contactEmail'
-								placeholder='Email Address'
+								placeholder=''
 								{...register('email', {
-									required: 'Valid email is required',
+									required:
+										'Please enter a valid email address.',
 								})}
-								className={'w-full my-2 pl-2'}
+								className={
+									'text-xl w-full my-4 pl-2 h-12 border-b-2'
+								}
 							/>
 						</label>
-						<label htmlFor='question'>
+						<label htmlFor='question' className='mr-2 text-xl '>
+							<h3 className='text-2xl mt-16'>
+								Briefly tell us about your project goals.
+							</h3>
 							<textarea
 								type='text'
-								name='contactQuestion'
-								id='contactQuestion'
+								name='contactGoals'
+								id='contactGoals'
 								rows='3'
-								placeholder='How can we help?'
-								className={'w-full my-2 pl-2'}
+								placeholder=''
+								{...register('contactGoals', {
+									required:
+										'Please tell us about you project goals.',
+								})}
+								className={'w-full my-2 pl-2 border-b-2'}
 							/>
 						</label>
-
+						<label htmlFor='question' className='mr-2 text-xl '>
+							<h3 className='text-2xl mt-16'>
+								Do you have a timeline in mind?
+							</h3>
+							<input
+								type='text'
+								name='contactTimeline'
+								id='contactTimeline'
+								placeholder=''
+								{...register('contactTimeline', {
+									required:
+										'Please let us know your timeline.',
+								})}
+								className={'text-xl w-full my-4 pl-2 h-12 border-b-2 '}
+							/>
+						</label>
+						<label htmlFor='question' className='mr-2 text-xl '>
+							<h3 className='text-2xl mt-16'>
+								What have you budgeted for this project?
+							</h3>
+							<select
+								type='text'
+								name='contactBudget'
+								id='contactTimeline'
+								placeholder=''
+								{...register('contactBudget', {
+									required:
+										'Please let us know your budget.',
+								})}
+								className={'w-full my-2 pl-2 border-b-2 mb-12 focus:border-none'}
+							><option className='focus:border-none' value='$1,000-$5,000'>$1,000-$5,000</option>
+							<option value='$5,000-$15,000'>$5,000-$15,000</option>
+							<option value='$15,000-$30,000'>$15,000-$30,000</option>
+							<option value='$30,000+'>$30,000+</option></select>
+						</label>
 						<button
 							type='submit'
-							className='bg-[#fae06a] text-gray-800 font-semibold w-full py-1 mt-4 hover:bg-[#94df57] transform hover:scale-105 shadow-md hover:shadow-lg transition duration-250'>
-							Send
+							className='bg-[#fae06a] text-gray-800 text-xl font-semibold w-1/4 py-4 mt-4 hover:bg-[#94df57] transform hover:scale-105 shadow-md hover:shadow-lg transition duration-250'>
+							SEND
 						</button>
 					</div>
 				</div>

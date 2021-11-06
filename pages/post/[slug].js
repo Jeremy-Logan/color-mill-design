@@ -45,7 +45,7 @@ const Post = (props) => {
 					)}
 				</aside>
 				<div className='mx-12 w-full '>
-					<h1 className='text-6xl font-bold mt-8'>{title}</h1>
+					<h1 className='text-5xl font-bold mt-8 mb-4'>{title}</h1>
 					<BlockContent
 						blocks={body}
 						imageOptions={{ w: 320, h: 240, fit: 'max' }}
