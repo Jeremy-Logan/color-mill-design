@@ -170,9 +170,9 @@ export default function About() {
 						className='w-[150vw] bg-gradient-to-r to-[indigo] from-[red] -mt-96 z-0'></motion.div>
 					<div className='h-[600px] bg-transparent'></div>
 					<div className='w-screen bg-white h-96 z-30 relative'>
-						<div className='absolute flex flex-row top-[480px] w-screen z-50'>
-							<div className='w-2/12'></div>
-							<div className='w-3/12 pl-[5vw] '>
+						<div className='absolute flex flex-row top-[480px] w-screen z-50 pt-24'>
+							<div className='w-1/12'></div>
+							<div className='w-3/12 flex justify-end'>
 								<div className='shadow-2xl w-[315px] h-[473px]'>
 									<Image
 										src='c_scale,h_1200,w_800/v1619826510/Color%20Mill%20Design/Jeremy-portrait.jpg'
