@@ -27,7 +27,7 @@ export default function CapabilitiesCard({ title, description }) {
 	]
 	const titleColor = colors[(Math.random() * colors.length) | 0]
 	return (
-		<li className='text-3xl mb-24' style={{ color: titleColor }}>
+		<li className='text-3xl mb-12' style={{ color: titleColor }}>
 			<div className='-mt-1'>{title}</div>
 
 			<div className='text-xl w-5/6 mt-6 font-normal text-black text-left overflow-hidden ml-24 max-w-6xl'>

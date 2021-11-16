@@ -63,7 +63,7 @@ const SlideIn = ({ children }) => {
 
 export default function MendocinoSpiritsSection() {
 	return (
-		<div className='h-[1000px] w-screen z-50'>
+		<div className='h-[80vh] w-screen z-50'>
 			
 				<div className='flex flex-col md:flex-row'>
 					<div className='w-screen md:my-36 mb-12 ml-8 md:ml-[30vw] z-20 '>

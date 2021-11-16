@@ -96,10 +96,10 @@ export default function FoodBankSection() {
 						</Link>
 					</SlideIn>
 				</div>
-
-				<div className='absolute top-[1950px] w-screen '>
+<div className='absolute'>
+				<div className='absolute top-[10vh] w-screen '>
 					<WallOfHotdogs className='z-0' />
-				</div>
+				</div></div>
 			</div>
 		</div>
 	)

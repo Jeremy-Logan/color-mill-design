@@ -62,7 +62,7 @@ export default function MendocinoSpirits() {
 						Mendocino Spirits
 					</h1>
 
-					<p className='text-3xl mb-24 leading-relaxed'>
+					<p className='text-2xl mb-24 leading-relaxed'>
 						Mendocino Spirits makes amazing bourbon. And gin. And
 						rye. And... the list is growing. When we met Crispin and
 						Tamar, they were fearlessly forging their own way after

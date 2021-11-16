@@ -69,13 +69,9 @@ export default function CapabilitiesSection() {
 				<div className='flex '>
 					<div className='w-screen mx-[15vw] z-20'>
 						<SlideIn>
-							<h3 className='text-5xl font-bold z-20 '>
-								Our Capabilities
+							<h3 className='text-5xl font-bold z-20 mb-24'>
+								What we do
 							</h3>
-							<h4 className='text-2xl mt-8 mb-24 z-20 '>
-								Crafting beautiful and inspired work for
-								businesses we believe in.
-							</h4>
 						</SlideIn>
 						<AnimateSharedLayout>
 							<ul>
@@ -188,7 +184,7 @@ export default function CapabilitiesSection() {
 						</AnimateSharedLayout>
 						<SlideIn>
 							<h3 className='text-5xl font-bold my-24 z-20'>
-								Our Approach
+								How We Work
 							</h3>
 						</SlideIn>
 						<SlideUp>

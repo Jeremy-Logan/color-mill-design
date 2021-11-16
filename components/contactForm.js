@@ -4,8 +4,8 @@ const ContactForm = () => {
 	const { register, errors } = useForm()
 
 	return (
-		<div className='mt-36 mx-[25vw] justify-leftflex items-center'>
-			<h3 className='text-4xl mb-16'>
+		<div className='mt-12 mx-[25vw] justify-leftflex items-center'>
+			<h3 className='text-4xl'>
 				Tell us about your project and goals.
 			</h3>
 			<form
@@ -25,7 +25,7 @@ const ContactForm = () => {
 						</p>
 
 						<label htmlFor='name' className='mr-2 text-xl'>
-							<h3 className='text-2xl mt-16'>
+							<h3 className='text-2xl mt-12'>
 								What's your name?
 							</h3>
 							<input

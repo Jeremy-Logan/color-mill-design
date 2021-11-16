@@ -40,8 +40,8 @@ export default function About() {
 			<main>
 				<section className='mt-36 mx-[15vw] overflow-hidden'>
 					<h1 className='font-serif font-bold text-6xl '>Hello, we are Color Mill Design</h1>
-<h2 className='font-serif text-4xl mt-12'>We'll help you tell your story.</h2>
-					<h3 className='text-lg md:text-xl lg:text-2xl leading-relaxed mt-12 '>
+<h2 className='font-serif text-3xl mt-12'>We'll help you tell your story.</h2>
+					<h3 className='text-md md:text-lg lg:text-xl leading-relaxed mt-12 '>
 						A team of escapees from the corporate world who decided
 						that the forests of entrepreneurship seemed incredibly
 						more rewarding than the daily grind. Our priorities lie
@@ -49,9 +49,7 @@ export default function About() {
 						that make people go Wow!, and using our unique blend of
 						talents to bring ideas to life.
 						<br />
-						<br /> We value conversations over texts, creativity
-						over blandness, martinis over water, and structure over
-						chaos. We are small enough to be personally involved
+						<br />We are small enough to be personally involved
 						with every one of our clients and nimble enough to
 						deliver what we say we will.{' '}
 					</h3>
