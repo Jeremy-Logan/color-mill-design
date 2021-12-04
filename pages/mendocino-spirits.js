@@ -234,8 +234,8 @@ export default function MendocinoSpirits() {
 								Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
 							</p>
 						</div>
-						<div className='md:w-1/2 flex-col'>
-							<div className='flex bg-white ml-12'>
+						<div className='md:w-1/2 flex-col '>
+							<div className='flex bg-white ml-12 shadow-2xl'>
 								{paletteColors
 									.slice(0, 5)
 									.map((color, index) => (
@@ -246,7 +246,7 @@ export default function MendocinoSpirits() {
 										/>
 									))}
 							</div>
-							<div className='flex bg-white ml-12'>
+							<div className='flex bg-white ml-12 shadow-2xl'>
 								{paletteColors.slice(5).map((color, index) => (
 									<PaletteSection
 										color={color.bg}
@@ -259,8 +259,8 @@ export default function MendocinoSpirits() {
 					</div>
 				</section>
 
-				<section className='mx-[5vw] 2xl:mx-[20vw] mt-36'>
-					<div className='flex flex-col md:flex-row'>
+				<section className='mx-[5vw] 2xl:mx-[20vw] mt-48 '>
+					<div className='flex flex-col md:flex-row' style={{height: '1400px'}}>
 						<div className='relative w-[90vw] h-[90vw] md:w-1/2 md:hidden'>
 							<Image
 								src='v1628892703/Color%20Mill%20Design/mendocino-spirits-logo-comp_tztjbh.jpg'
@@ -289,9 +289,9 @@ export default function MendocinoSpirits() {
 								viewed.
 							</p>
 						</div>
-						<div className='relative w-full md:w-1/2 hidden md:block'>
+						<div className='relative w-full md:w-1/2 hidden md:block ml-24'>
 							<Image
-								src='v1628892703/Color%20Mill%20Design/mendocino-spirits-logo-comp_tztjbh.jpg'
+								src='v1638656091/Color%20Mill%20Design/MS-Home-Page-Shadow_lz7f6z.jpg'
 								layout='fill'
 								objectFit='contain'
 							/>
