@@ -115,7 +115,7 @@ export default function MendocinoSpirits() {
 								the spirits inside.
 							</p>
 						</div>
-						<div className='relative w-full md:w-1/2 hidden md:block'>
+						<div className='relative w-full md:w-1/2 hidden md:block '>
 							<Image
 								src='v1638557076/Color%20Mill%20Design/4-bottles_kvoqtt.jpg'
 								layout='fill'
@@ -124,7 +124,7 @@ export default function MendocinoSpirits() {
 						</div>
 					</div>
 				</section>
-				<section className='md:mx-[20vw] mt-36'>
+				{/* <section className='md:mx-[20vw] mt-36 '>
 					<div className='bg-[#f4e8da] h-[60vh] flex justify-center'>
 						<div className='relative h-full w-5/12 '>
 							<Image
@@ -135,7 +135,7 @@ export default function MendocinoSpirits() {
 							/>
 						</div>
 					</div>
-				</section>
+				</section> */}
 
 				<section className='mx-[25vw] mt-36'>
 					<h3 className=' text-4xl font-serif font-bold mb-12'>
