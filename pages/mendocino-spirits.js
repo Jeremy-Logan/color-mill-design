@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useHorizontalScroll } from '../components/hooks/useHorizontalScroll'
 import {
 	motion,
 	useAnimation,
@@ -23,59 +24,107 @@ const paletteColors = [
 
 const PaletteSection = ({ color, text }) => {
 	return (
-		<div className='w-[10%] flex flex-col justify-center h-48'>
-			<div
-				style={{ backgroundColor: `${color}`, color: `${text}` }}
-				className={`text-md text-center py-2`}>
-				{color}
+		<div className='w-1/5'>
+			<div className='flex flex-col justify-center h-48'>
+				<div
+					style={{ backgroundColor: `${color}`, color: `${text}` }}
+					className={`text-md text-center py-2`}>
+					{color}
+				</div>
+				<div
+					style={{ backgroundColor: `${color}` }}
+					className='opacity-80 h-full'
+				/>
+				<div
+					style={{ backgroundColor: `${color}` }}
+					className='opacity-60 h-full'
+				/>
+				<div
+					style={{ backgroundColor: `${color}` }}
+					className='opacity-40 h-full'
+				/>
+				<div
+					style={{ backgroundColor: `${color}` }}
+					className='opacity-20 h-full'
+				/>
 			</div>
-			<div
-				style={{ backgroundColor: `${color}` }}
-				className='opacity-80 h-full'
-			/>
-			<div
-				style={{ backgroundColor: `${color}` }}
-				className='opacity-60 h-full'
-			/>
-			<div
-				style={{ backgroundColor: `${color}` }}
-				className='opacity-40 h-full'
-			/>
-			<div
-				style={{ backgroundColor: `${color}` }}
-				className='opacity-20 h-full'
-			/>
 		</div>
 	)
 }
 
 export default function MendocinoSpirits() {
+	const scrollRef = useHorizontalScroll()
 	return (
 		<div>
 			<Head>
 				<title>Color Mill Design | Mendocino Spirits</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<main className='mt-24'>
+			<main className='mt-24 '>
 				<section className='mx-[25vw]'>
-					<h1 className=' text-6xl font-serif font-bold mb-12'>
+					<h1 className=' text-6xl font-serif font-bold mb-20'>
 						Mendocino Spirits
 					</h1>
-
-					<p className='text-2xl mb-24 leading-relaxed'>
-						Mendocino Spirits makes amazing bourbon. And gin. And
-						rye. And... the list is growing. When we met Crispin and
-						Tamar, they were fearlessly forging their own way after
-						decades of working with others. We wanted their new
-						brand to shine-- to reflect the glorious amber liquid in
-						the bottles and represent the rich personalities of
-						their offerings.
-					</p>
-					<h2 className=' text-5xl font-serif italic text-gray-500'>
-						Mendocino Spirits is quality, integrity and excellence.
+					<h2 className=' text-5xl font-serif italic text-gray-500 mb-12'>
+						Quality. Integrity. Excellence.
 					</h2>
+					<p className='sm:text-lg xl:text-xl mb-24 leading-relaxed'>
+						Mendocino Spirits is a delicious mix of old world
+						traditions and constant innovation. They use ancient
+						casks, rare botanicals and sparkling copper stills to
+						produce their spirits. In such a competitive market-
+						when people choose their drink based on the label then
+						discover something fantastic waiting inside- we wanted
+						to ensure that their brand was as unique and inspiring
+						as the product itself. And that it would entice new
+						customers and old to pick their bottle off the shelf. We
+						had been stalking Mendocino Spirits for years-- showing
+						up to their whiskey dinners, going to tastings, becoming
+						super fans of their work-- so we were thrilled when they
+						asked us to do their branding.
+					</p>
 				</section>
-				<section className='mx-[20vw] mt-36'>
+
+				<section className='mx-[5vw] 2xl:mx-[20vw] mt-36'>
+					<div className='flex flex-col md:flex-row'>
+						<div className='relative w-[90vw] h-[90vw] md:w-1/2 md:hidden'>
+							<Image
+								src='v1638557076/Color%20Mill%20Design/4-bottles_kvoqtt.jpg'
+								layout='fill'
+								objectFit='contain'
+							/>
+						</div>
+						<div className='md:w-1/2'>
+							<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-2 mt-4 sm:mt-0 xl:mb-12 '>
+								The Seasons of Mendo
+							</h3>
+							<p className='sm:text-lg xl:text-xl mb-24 pr-12 text-justify'>
+								Owners Tamar Kaye and Crispin Cain came to us in
+								the early stages of their company’s life wanting
+								a label that would stand out from the crowd- to
+								be so different that it couldn't be ignored.{' '}
+								<br />
+								<br />
+								We started with a vague notion that the brand
+								should be Art Nouveau inspired, feminine feeling
+								and embody the local Mendocino County,
+								California area. This lead us to create a
+								quartet of bottles: Bourbon, Aged Gin, Rye and
+								Dry Gin. Each label was illustrated by hand and
+								its subject matter carefully chosen to reflect
+								the spirits inside.
+							</p>
+						</div>
+						<div className='relative w-full md:w-1/2 hidden md:block'>
+							<Image
+								src='v1638557076/Color%20Mill%20Design/4-bottles_kvoqtt.jpg'
+								layout='fill'
+								objectFit='contain'
+							/>
+						</div>
+					</div>
+				</section>
+				<section className='md:mx-[20vw] mt-36'>
 					<div className='bg-[#f4e8da] h-[60vh] flex justify-center'>
 						<div className='relative h-full w-5/12 '>
 							<Image
@@ -87,52 +136,28 @@ export default function MendocinoSpirits() {
 						</div>
 					</div>
 				</section>
-				<section className='mx-[25vw] mt-36'>
-					<h3 className=' text-4xl font-serif font-bold mb-12'>
-						Our Approach
-					</h3>
-					<div className='flex'>
-						<p className='text-2xl mb-24 pr-12'>
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit, sed do eiusmod tempor incididunt ut labore et
-							dolore magna aliqua. Ut enim ad minim veniam, quis
-							nostrud exercitation ullamco laboris nisi ut aliquip
-							ex ea commodo consequat. Duis aute irure dolor in
-							reprehenderit in voluptate velit esse cillum dolore
-							eu fugiat nulla pariatur. Excepteur sint occaecat
-							cupidatat non proident, sunt in culpa qui officia
-							deserunt mollit anim id est laborum.
-						</p>
-						<p className='text-2xl mb-24 '>
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit, sed do eiusmod tempor incididunt ut labore et
-							dolore magna aliqua. Ut enim ad minim veniam, quis
-							nostrud exercitation ullamco laboris nisi ut aliquip
-							ex ea commodo consequat. Duis aute irure dolor in
-							reprehenderit in voluptate velit esse cillum dolore
-							eu fugiat nulla pariatur. Excepteur sint occaecat
-							cupidatat non proident, sunt in culpa qui officia
-							deserunt mollit anim id est laborum.
-						</p>
-					</div>
-				</section>
 
 				<section className='mx-[25vw] mt-36'>
 					<h3 className=' text-4xl font-serif font-bold mb-12'>
-						The Stylescape
+						Identity
 					</h3>
-					<p className='text-3xl mb-24 leading-relaxed'>
-						We begin all new branding projects by developing a
-						stylescape-an exploration of visual elements that ground
-						the brand in a mood blah, blah, blah...
+					<p className='sm:text-lg xl:text-xl mb-8 leading-relaxed'>
+						Inspiration for the stylescape was drawn from the
+						established Art Nouveau direction and the colors of deep
+						golden grains, the bright copper still and of course,
+						the amber liquid inside the bottles. We wanted to evoke
+						thoughts of sitting in a velvet parlor chair, sipping a
+						glass of the warming, spicy, smooth whiskey.
 					</p>
 				</section>
-				<div className='relative w-screen h-[40vh] '>
-					<Image
-						src='v1618251531/Color%20Mill%20Design/Mendocino-Spirits-Stylescape.jpg'
-						layout='fill'
-						objectFit='none'
-					/>
+				<div className='overflow-auto '>
+					<div className='relative w-[3000px] h-[700px]  '>
+						<Image
+							src='v1618251531/Color%20Mill%20Design/Mendocino-Spirits-Stylescape.jpg'
+							layout='fill'
+							objectFit='contain'
+						/>
+					</div>
 				</div>
 				<section className='mx-[25vw] my-36 '>
 					<h2 className='text-6xl font-serif italic text-gray-500 mb-6'>
@@ -143,63 +168,135 @@ export default function MendocinoSpirits() {
 						-Customer's name and company name
 					</p>
 				</section>
-				<section className='xl:mx-[25vw] lg:mx-[10vw] md:mx-[5vw]'>
-					<div className='bg-[#077893] flex justify-center py-20 md:px-10 sm:px-2'>
-						<div className='w-1/2 md:mx-16 xs:mx-6'>
-							<h3 className='text-white xl:text-7xl lg:text-5xl sm:text-3xl font-alice mb-8'>
-								Alice
-							</h3>
-							<h4 className=' text-white xl:text-3xl lg:text-2xl sm:text-lg leading-relaxed tracking-wide font-alice'>
-								Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp
-								Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
-							</h4>
-						</div>
-						<div className='w-1/2 md:mx-16 xs:mx-6'>
-							<h3 className='text-white xl:text-6xl lg:text-4xl sm:text-2xl font-fira mb-8'>
-								Fira Sans
-							</h3>
-							<h4 className=' text-white xl:text-3xl lg:text-2xl sm:text-lg leading-relaxed tracking-wide font-fira'>
-								Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp
-								Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
-							</h4>
-						</div>
-					</div>
-					<div className='flex h-36 bg-white'>
-						{paletteColors.map((color, index) => (
-							<PaletteSection
-								color={color.bg}
-								key={index}
-								text={color.text}
+				<section className='mx-[5vw] 2xl:mx-[20vw] mt-36'>
+					<div className='flex flex-col md:flex-row'>
+						<div className='relative w-[90vw] h-[90vw] md:w-1/2 md:hidden'>
+							<Image
+								src='v1628892703/Color%20Mill%20Design/mendocino-spirits-logo-comp_tztjbh.jpg'
+								layout='fill'
+								objectFit='contain'
 							/>
-						))}
+						</div>
+						<div className='md:w-1/2'>
+							<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-2 mt-4 sm:mt-0 xl:mb-12 '>
+								Logo
+							</h3>
+							<p className='sm:text-lg xl:text-xl mb-24 pr-12 text-justify'>
+								The logo was distilled from the essences of the
+								stylescape, Art Nouveau illustrations, and a
+								desire to establish Mendocino Spirits as a
+								premium product: all while maintaining a link to
+								old-world traditions. <br />
+								<br />
+								Swirling grains and a distinct font choice
+								subtly hint at the Art Nouveau style without
+								restricting the brand to only that narrow style.
+								The blue evokes images of blue sky above wheat
+								fields, while the copper not only represents the
+								grains the spirits are made of, but also the
+								copper stills the spirits spend much of their
+								lives in.
+							</p>
+						</div>
+						<div className='relative w-full md:w-1/2 hidden md:block'>
+							<Image
+								src='v1628892703/Color%20Mill%20Design/mendocino-spirits-logo-comp_tztjbh.jpg'
+								layout='fill'
+								objectFit='contain'
+							/>
+						</div>
 					</div>
 				</section>
-				<section className='mt-60 mx-[25vw]'>
-				<h3 className=' text-4xl font-serif font-bold mb-12'>
-						Designing the Logo
+				<section className='mx-[5vw] 2xl:mx-[20vw] my-36'>
+					<h3 className='text-3xl xl:text-4xl font-serif font-bold mb-12 mt-4 sm:mt-0 xl:mb-12 '>
+						Typography and Palette
 					</h3>
-					<p className='text-3xl mb-24 leading-relaxed'>
-						Write something insightful about the logo design process
-						here... Lorem ipsum dolor sit amet, consectetur adipiscing
-						elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua. Ut enim ad minim veniam, quis
-						nostrud exercitation ullamco laboris nisi ut aliquip ex
-						ea commodo consequat.{' '}
-					</p>
-				</section>
-				<section className='bg-[#f4e3c5] w-screen my-36 py-20'>
-					<div className='relative h-[70vh] mx-[25vw]'>
-						<Image
-							src='v1628892703/Color%20Mill%20Design/mendocino-spirits-logo-comp_tztjbh.jpg'
-							layout='fill'
-							objectFit='contain'
-						/>
+					<div className='flex flex-col md:flex-row'>
+						<div className='md:w-1/2'>
+							<h3 className='text-black xl:text-5xl lg:text-5xl text-3xl font-alice mb-2'>
+								Alice{'  '}
+								<span className='font-sans text-xl'>
+									(headings)
+								</span>
+							</h3>
+							<p className='text-black sm:text-xl xl:text-3xl leading-relaxed tracking-wide font-alice'>
+								Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp
+								Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+							</p>
+							<h3 className='text-black xl:text-4xl lg:text-5xl text-3xl font-fira mt-8 mb-4'>
+								Fira Sans{'  '}
+								<span className='font-sans text-xl'>
+									(body)
+								</span>
+							</h3>
+							<p className='text-black sm:text-xl xl:text-xl leading-relaxed tracking-wide font-fira'>
+								Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp
+								Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+							</p>
+						</div>
+						<div className='md:w-1/2 flex-col'>
+							<div className='flex bg-white ml-12'>
+								{paletteColors
+									.slice(0, 5)
+									.map((color, index) => (
+										<PaletteSection
+											color={color.bg}
+											key={index}
+											text={color.text}
+										/>
+									))}
+							</div>
+							<div className='flex bg-white ml-12'>
+								{paletteColors.slice(5).map((color, index) => (
+									<PaletteSection
+										color={color.bg}
+										key={index}
+										text={color.text}
+									/>
+								))}
+							</div>
+						</div>
 					</div>
 				</section>
-				<section className='mx-[25vw] my-36 '>
-					<h2 className='text-6xl font-serif italic text-gray-500 mb-6'>
-						"Big statement about our design philosophy"
-					</h2>
+
+				<section className='mx-[5vw] 2xl:mx-[20vw] mt-36'>
+					<div className='flex flex-col md:flex-row'>
+						<div className='relative w-[90vw] h-[90vw] md:w-1/2 md:hidden'>
+							<Image
+								src='v1628892703/Color%20Mill%20Design/mendocino-spirits-logo-comp_tztjbh.jpg'
+								layout='fill'
+								objectFit='contain'
+							/>
+						</div>
+						<div className='md:w-1/2'>
+							<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-2 mt-4 sm:mt-0 xl:mb-12 '>
+								Selling to the whole world (or close to it)
+							</h3>
+							<p className='sm:text-lg xl:text-xl mb-24 pr-12 text-justify'>
+								Mendocino Spirits are true artists, but until
+								now their brand has not been as well known as
+								some of their colleagues. The new website was
+								designed to reposition them as a top-shelf
+								brand, elevating their unique spirits and
+								creating a far reaching brand that can be
+								discovered and experienced throughout the
+								county, country and globe. <br/> <br/>The integration of a
+								strong ecommerce platform allows them to sell
+								and ship their spirits nationally. As many
+								people view websites on their mobile devices, we
+								designed the site across both mobile and desktop
+								ensuring a great experience no matter where it’s
+								viewed.
+							</p>
+						</div>
+						<div className='relative w-full md:w-1/2 hidden md:block'>
+							<Image
+								src='v1628892703/Color%20Mill%20Design/mendocino-spirits-logo-comp_tztjbh.jpg'
+								layout='fill'
+								objectFit='contain'
+							/>
+						</div>
+					</div>
 				</section>
 				<section className=' mt-48 bg-[#bfddda] xl:py-24 py-8'>
 					<div className='grid grid-cols-2 xl:grid-cols-5 gap-8 xl:gap-2 xl:mx-[15vw] mx-8 justify-items-center'>

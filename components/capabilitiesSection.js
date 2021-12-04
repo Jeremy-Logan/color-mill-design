@@ -67,7 +67,7 @@ export default function CapabilitiesSection() {
 		<>
 			<div className='w-screen z-30 mt-24'>
 				<div className='flex '>
-					<div className='w-screen mx-[15vw] z-20'>
+					<div className='w-screen mx-8 2xl:mx-[15vw] z-20'>
 						<SlideIn>
 							<h3 className='text-5xl font-bold z-20 mb-24'>
 								What we do
@@ -118,8 +118,7 @@ export default function CapabilitiesSection() {
 													back. We guide you through
 													the process of finding your
 													voice, your style and that
-													emotional hook that people
-													will resonant with.
+													emotional hook that will have people coming back time and again.
 												</p>
 											</div>
 										}
@@ -227,10 +226,10 @@ export default function CapabilitiesSection() {
 							</div>
 						</SlideUp>
 						<SlideUp>
-							<div className='grid gap-12 grid-cols-2'>
+							<div className='grid gap-12 grid-cols-1 lg:grid-cols-2'>
 								<motion.p
 									variants={stagger}
-									className='mb-2 mx-24 p-10 shadow-md bg-[#f0f8ff]'>
+									className='mb-2 2xl:mx-24 p-10 shadow-md bg-[#f0f8ff]'>
 									<h4 className='font-bold text-xl text-[#2fa7d9] mb-2'>
 										Discover:
 									</h4>{' '}
@@ -238,7 +237,7 @@ export default function CapabilitiesSection() {
 								</motion.p>
 								<motion.p
 									variants={stagger}
-									className='mb-2 mx-24 p-10 shadow-md bg-[#fcf7f1]'>
+									className='mb-2 2xl:mx-24 p-10 shadow-md bg-[#fcf7f1]'>
 									<h4 className='font-bold text-xl text-[#FF7A2E] mb-2'>
 										Define:
 									</h4>
@@ -247,7 +246,7 @@ export default function CapabilitiesSection() {
 								</motion.p>
 								<motion.p
 									variants={stagger}
-									className='mb-2 mx-24 p-10 shadow-md bg-[#fdf3f7]'>
+									className='mb-2 2xl:mx-24 p-10 shadow-md bg-[#fdf3f7]'>
 									<h4 className='font-bold text-xl text-[#FF006A] mb-2'>
 										Do:
 									</h4>
@@ -255,7 +254,7 @@ export default function CapabilitiesSection() {
 								</motion.p>
 								<motion.p
 									variants={stagger}
-									className='mb-2 mx-24 p-10 shadow-md bg-[#f0fff2]'>
+									className='mb-2 2xl:mx-24 p-10 shadow-md bg-[#f0fff2]'>
 									<h4 className='font-bold text-xl text-[#41c71f] mb-2'>
 										Deliver!:
 									</h4>

@@ -6,7 +6,7 @@ const ContactForm = () => {
 	return (
 		<div className='mt-12 mx-[25vw] justify-leftflex items-center'>
 			<h3 className='text-4xl'>
-				Tell us about your project and goals.
+				How can we work together? Let's talk it over.
 			</h3>
 			<form
 				method='POST'

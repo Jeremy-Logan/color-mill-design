@@ -61,7 +61,7 @@ export default function Header({ title }) {
 						ref={containerRef}>
 						
 						<motion.div
-							className='absolute top-0 left-0 bottom-0 w-screen bg-cyan-300 z-50'
+							className={`absolute top-0 left-0 bottom-0 w-screen bg-cyan-300 z-50`}
 							variants={menu}
 						/>
 						<MenuToggle toggle={() => toggleOpen()}/>
@@ -84,7 +84,7 @@ export default function Header({ title }) {
 							</h1>
 						</Link>
 						<Link href='/'>
-							<img className='h-36 md:h-48' src='https://res.cloudinary.com/the-color-mill/image/upload/v1616105305/Color%20Mill%20Design/color-mill-animated-logo_bxjcpm.webp' />
+							<img className='h-36 2xl:h-48' src='https://res.cloudinary.com/the-color-mill/image/upload/v1616105305/Color%20Mill%20Design/color-mill-animated-logo_bxjcpm.webp' />
 						</Link>
 					</motion.button>
 				</motion.div>

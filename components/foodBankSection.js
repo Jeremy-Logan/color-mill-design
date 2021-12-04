@@ -81,17 +81,16 @@ export default function FoodBankSection() {
 						</Link>
 					</motion.button>
 				</FadeIn>
-				<div className='w-1/3 my-36 z-20 '>
+				<div className='w-[30vw] my-36 z-20 '>
 					<SlideIn>
 						<Link href='/fort-bragg-food-bank'>
 							<button className='focus:outline-none bg-[#e2efff] p-10 shadow-xl '>
-								<h3 className='text-5xl font-bold my-auto z-20'>
+								<h3 className='text-left text-5xl font-bold my-auto z-20'>
 									Fort Bragg Food Bank
 								</h3>
 								<h4 className='text-lg text-left mt-2 z-30'>
 									Branding, Print Design, Web Design{' '}
 								</h4>
-								<h5 className='text-[#2da8dc] underline text-left mt-2'>See the case study...</h5>
 							</button>
 						</Link>
 					</SlideIn>

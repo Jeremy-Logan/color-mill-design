@@ -33,15 +33,16 @@ const News = (props) => {
 							slug && (
 								<li
 									key={_id}
-									className='list-none flex flex-col mb-12'>
+									className='list-none flex flex-col mb-12 '>
 									<Link
 										
 										href='/post/[slug]'
 										as={`/post/${slug.current}`}>
 										<img
-											className='h-96 cursor-pointer'
+											className='cursor-pointer'
 											src={urlFor(mainImage)
-												.width(800)
+												.width(800).
+												height(600)
 												.url()}
 										/>
 									</Link>{' '}

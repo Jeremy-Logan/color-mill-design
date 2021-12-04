@@ -63,10 +63,10 @@ const SlideIn = ({ children }) => {
 
 export default function MendocinoSpiritsSection() {
 	return (
-		<div className='h-[80vh] w-screen z-50'>
+		<div className='relative h-[80vh] w-screen z-10'>
 			
 				<div className='flex flex-col md:flex-row'>
-					<div className='w-screen md:my-36 mb-12 ml-8 md:ml-[30vw] z-20 '>
+					<div className='w-screen md:my-36 mb-12 mx-[7vw] 2xl:ml-[30vw] z-20 '>
 						<SlideIn>
 							<Link href='/mendocino-spirits'>
 								<button className='focus:outline-none bg-[#e2efff] p-10 shadow-xl '>
@@ -76,7 +76,6 @@ export default function MendocinoSpiritsSection() {
 									<h4 className='text-lg text-left z-30 mt-2'>
 										Branding, Illustration, Web Design, Print Design{' '}
 									</h4>
-									<h5 className='text-[#2da8dc] underline text-left mt-2'>See the case study...</h5>
 								</button>
 							</Link>
 						</SlideIn>
@@ -90,12 +89,12 @@ export default function MendocinoSpiritsSection() {
 									height='600'
 									alt='Mendocino Spirits'
 									quality={100}
-									src='ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_600/v1616447175/Color%20Mill%20Design/mendocino-spirits-cover_tzgrip.jpg'
+									src='ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_600/v1638489233/Color%20Mill%20Design/Mendocino-Spirits-3-Bottles_i8oym6.jpg'
 								/>
 							</Link>
 						</motion.button>
 					</FadeIn>
-					<div className='absolute top-[1060px] hidden md:block'>
+					<div className='absolute top-48 hidden md:block'>
 						<HexGrid className='z-0' />
 					</div>
 					
