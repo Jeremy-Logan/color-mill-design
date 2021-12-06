@@ -259,17 +259,10 @@ export default function MendocinoSpirits() {
 					</div>
 				</section>
 
-				<section className='mx-[5vw] 2xl:mx-[20vw] mt-48 '>
-					<div className='flex flex-col md:flex-row' style={{height: '1400px'}}>
-						<div className='relative w-[90vw] h-[90vw] md:w-1/2 md:hidden'>
-							<Image
-								src='v1628892703/Color%20Mill%20Design/mendocino-spirits-logo-comp_tztjbh.jpg'
-								layout='fill'
-								objectFit='contain'
-							/>
-						</div>
-						<div className='md:w-1/2'>
-							<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-2 mt-4 sm:mt-0 xl:mb-12 '>
+				<section className='mx-[5vw] 2xl:mx-[10vw] mt-48 '>
+					<div className='flex flex-col md:flex-row w-full' style={{height: '1400px'}}>
+						<div className='w-full md:w-1/2 flex flex-col place-content-start'>
+							<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-2 mt-4 sm:mt-0 xl:mb-12'>
 								Selling to the whole world (or close to it)
 							</h3>
 							<p className='sm:text-lg xl:text-xl mb-24 pr-12 text-justify'>
@@ -289,13 +282,22 @@ export default function MendocinoSpirits() {
 								viewed.
 							</p>
 						</div>
-						<div className='relative w-full md:w-1/2 hidden md:block ml-24'>
+						<div className='flex w-full md:w-1/2 '>
+						<div className='relative w-1/2 md:w-1/2 ml-10 '>
+							<Image
+								src='v1638745772/Color%20Mill%20Design/MS-Product-Page-Shadow_s5fcjo.jpg'
+								layout='fill'
+								objectFit='contain'
+								
+							/>
+						</div>
+						<div className='relative w-1/2 md:w-1/2 '>
 							<Image
 								src='v1638656091/Color%20Mill%20Design/MS-Home-Page-Shadow_lz7f6z.jpg'
 								layout='fill'
 								objectFit='contain'
 							/>
-						</div>
+						</div></div>
 					</div>
 				</section>
 				<section className=' mt-48 bg-[#bfddda] xl:py-24 py-8'>

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useHorizontalScroll } from '../components/hooks/useHorizontalScroll'
 import {
 	motion,
 	useAnimation,
@@ -8,111 +9,319 @@ import {
 	useSpring,
 } from 'framer-motion'
 
-export default function MendocinoSpirits() {
+const paletteColors = [
+	{ bg: '#077893', text: 'white' },
+	{ bg: '#E68242', text: 'white' },
+	{ bg: '#57A89B', text: 'white' },
+	{ bg: '#A6A36D', text: 'white' },
+	{ bg: '#F3C268', text: '#22150c' },
+	{ bg: '#552919', text: 'white' },
+	{ bg: '#8E513A', text: 'white' },
+	{ bg: '#BF8D53', text: 'white' },
+	{ bg: '#22150c', text: 'white' },
+	{ bg: '#F4E3C5', text: '#22150c' },
+]
+
+const PaletteSection = ({ color, text }) => {
 	return (
-		<>
+		<div className='w-1/5'>
+			<div className='flex flex-col justify-center h-48'>
+				<div
+					style={{ backgroundColor: `${color}`, color: `${text}` }}
+					className={`text-md text-center py-2`}>
+					{color}
+				</div>
+				<div
+					style={{ backgroundColor: `${color}` }}
+					className='opacity-80 h-full'
+				/>
+				<div
+					style={{ backgroundColor: `${color}` }}
+					className='opacity-60 h-full'
+				/>
+				<div
+					style={{ backgroundColor: `${color}` }}
+					className='opacity-40 h-full'
+				/>
+				<div
+					style={{ backgroundColor: `${color}` }}
+					className='opacity-20 h-full'
+				/>
+			</div>
+		</div>
+	)
+}
+
+export default function FortBraggFoodBank() {
+	const scrollRef = useHorizontalScroll()
+	return (
+		<div>
 			<Head>
 				<title>Color Mill Design | Fort Bragg Food Bank</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<main>
-				<section className='px-[5vw] mt-24 h-[180vh] '>
-					<div className='w-screen ml-12'>
-						<motion.h2
-							animate={{ x: [-70, 0], opacity: [0.2, 1] }}
-							className='font-serif text-6xl text-[#23160c]'>
-							Fort Bragg Food Bank
-						</motion.h2>
-						<motion.svg
-							height='6'
-							width='500'
-							className='mt-6'
-							animate={{ x: [-100, 0], opacity: [0.2, 1] }}>
-							<line
-								x1='0'
-								y1='0'
-								x2='500'
-								y2='0'
-								style={{ stroke: '#23160c', strokeWidth: 5 }}
+			<main className='mt-24 '>
+				<section className='mx-[25vw]'>
+					<h1 className=' text-6xl font-serif font-bold mb-12'>
+						Fort Bragg Food Bank
+					</h1>
+					<h2 className=' text-5xl font-serif italic text-gray-500 mb-12'>
+						People coming together to create hope for an abundant
+						life for everyone.
+					</h2>
+					<p className='sm:text-lg xl:text-xl mb-24 leading-relaxed'>
+						Established in 1979, Fort Bragg Food Bank has been
+						taking care of the community for many years. They offer
+						hope and health to those in need and shine a light on
+						food insecurity in our community. When they approached
+						us to update their brand and redesign their website, we
+						knew we had to create a vibrant bright look that would
+						reflect this mission.
+					</p>
+				</section>
+
+				{/* <section className='mx-[5vw] 2xl:mx-[20vw] mt-36'>
+					<div className='flex flex-col md:flex-row'>
+						<div className='relative w-[90vw] h-[90vw] md:w-1/2 md:hidden'>
+							<Image
+								src='v1638557076/Color%20Mill%20Design/4-bottles_kvoqtt.jpg'
+								layout='fill'
+								objectFit='contain'
 							/>
-						</motion.svg>
-					</div>
-					<div className='relative mt-16'>
-						<motion.div
-							className='absolute h-auto p-16 ml-12 top-40 left-0 w-1/2 bg-[#1c3c79] z-20'
-							animate={{ y: [600, 0], opacity: [0, 1] }}>
-							<h3 className='text-white'>
-								Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. Ut
-								enim ad minim veniam, quis nostrud exercitation
-								ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in
-								reprehenderit in voluptate velit esse cillum
-								dolore eu fugiat nulla pariatur. Excepteur sint
-								occaecat cupidatat non proident, sunt in culpa
-								qui officia deserunt mollit anim id est laborum.
+						</div>
+						<div className='md:w-1/2'>
+							<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-2 mt-4 sm:mt-0 xl:mb-12 '>
+								The Seasons of Mendo
 							</h3>
-						</motion.div>
-						<motion.div
-							className='absolute ml-[25vw] top-0 right-0 z-10'
-							animate={{
-								x: [500, 0],
-								opacity: [0, 1],
-								scale: [0.8, 1],
-							}}>
-							<Image
-								src='v1616447180/Color Mill Design/food-bank-cover_adu1gk.jpg'
-								layout='intrinsic'
-								width='1920'
-								height='1280'
-								alt='Fort Bragg Food Bank Newsletter'
-								quality='100'></Image>
-						</motion.div>
-						<div className='absolute top-[600px] bg-[#018ea9] h-[150vh] w-screen -ml-24 z-0'></div>
-						<div className='absolute h-[auto] p-16 ml-12 top-[700px] left-0 w-1/2 bg-[#5b2c89] z-30 '>
-							<h4 className='font-fira text-4xl text-white'>
-								Website
-							</h4>
-							<h5 className='font-sans text-2xl text-white pr-36'>
-								Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. Ut
-								enim ad minim veniam, quis nostrud exercitation
-								ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in
-								reprehenderit in voluptate velit esse cillum
-								dolore eu fugiat nulla pariatur. Excepteur sint
-								occaecat cupidatat non proident, sunt in culpa
-								qui officia deserunt mollit anim id est laborum.
-							</h5>
+							<p className='sm:text-lg xl:text-xl mb-24 pr-12 text-justify'>
+								Owners Tamar Kaye and Crispin Cain came to us in
+								the early stages of their company’s life wanting
+								a label that would stand out from the crowd- to
+								be so different that it couldn't be ignored.{' '}
+								<br />
+								<br />
+								We started with a vague notion that the brand
+								should be Art Nouveau inspired, feminine feeling
+								and embody the local Mendocino County,
+								California area. This lead us to create a
+								quartet of bottles: Bourbon, Aged Gin, Rye and
+								Dry Gin. Each label was illustrated by hand and
+								its subject matter carefully chosen to reflect
+								the spirits inside.
+							</p>
 						</div>
-                        <div className='flex flex-row z-50 absolute left-[40%] top-[900px]'>
-                        <div className='w-1/2 m-16'>
+						<div className='relative w-full md:w-1/2 hidden md:block '>
 							<Image
-								src='v1619467473/Color%20Mill%20Design/Food-Bank-Website-Page-01_pnbtck.jpg'
-								layout='intrinsic'
-								width='1228'
-								height='3200'
-								alt='Fort Bragg Food Bank Webpage 1'
+								src='v1638557076/Color%20Mill%20Design/4-bottles_kvoqtt.jpg'
+								layout='fill'
+								objectFit='contain'
+							/>
+						</div>
+					</div>
+				</section> */}
+				{/* <section className='md:mx-[20vw] mt-36 '>
+					<div className='bg-[#f4e8da] h-[60vh] flex justify-center'>
+						<div className='relative h-full w-5/12 '>
+							<Image
+								src='c_scale,fl_sanitize,q_100,w_1280/v1628797580/Color%20Mill%20Design/mendocinoSpiritsLogo.svg'
+								layout='fill'
+								objectFit='contain'
 								quality='100'
 							/>
 						</div>
-						<div className='w-1/2 pt-32'>
+					</div>
+				</section> */}
+
+				<section className='mx-[25vw] mt-36'>
+					<h3 className=' text-4xl font-serif font-bold mb-12'>
+						Identity - How do you build a new brand around an
+						existing logo?
+					</h3>
+					<p className='sm:text-lg xl:text-xl mb-8 leading-relaxed'>
+						Along with bright new leadership, facility upgrades, new
+						delivery vans and an expanded staff, FBFB was ready for
+						an upgrade to their brand. Their logo, established
+						around the organization’s conception, is steadfast and
+						very recognizable. It’s a legacy they want to maintain.
+						So how do we build a brand that radiates vibrancy and
+						progress around a B&W logo created in the 80s? We create
+						a palette of bright painterly colors and watercolor
+						textures, adding splashes of color to everything:
+						accentuating the intricate line work of the pen and ink
+						drawing while also expressing their vibrant new
+						direction.
+					</p>
+				</section>
+				{/* <div className='overflow-auto '>
+					<div className='relative w-[3000px] h-[700px]  '>
+						<Image
+							src='v1618251531/Color%20Mill%20Design/Mendocino-Spirits-Stylescape.jpg'
+							layout='fill'
+							objectFit='contain'
+						/>
+					</div>
+				</div> */}
+				<section className='mx-[25vw] my-36 '>
+					<h2 className='text-6xl font-serif italic text-gray-500 mb-6'>
+						"This is where a big testimonial from the customer will
+						go."
+					</h2>
+					<p className='text-2xl mb-24 leading-relaxed text-center'>
+						-Customer's name and company name
+					</p>
+				</section>
+				<section className='mx-[5vw] 2xl:mx-[20vw] mt-36'>
+					<div className='flex flex-col md:flex-row'>
+						<div className='relative w-[90vw] h-[90vw] md:w-1/2 md:hidden'>
 							<Image
-								src='v1619467472/Color%20Mill%20Design/Food-Bank-Website-Page-02_nqucig.jpg'
-								layout='intrinsic'
-								width='1134'
-								height='3200'
-								alt='Fort Bragg Food Bank Webpage 1'
-								quality='100'
+								src='v1616447180/Color%20Mill%20Design/food-bank-cover_adu1gk.jpg'
+								layout='fill'
+								objectFit='contain'
 							/>
-						</div><div className='h-[150vh] bg-black'></div></div>
+						</div>
+						<div className='md:w-1/2'>
+							<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-2 mt-4 sm:mt-0 xl:mb-12 '>
+								Print - Expressing a message of inspiration.
+							</h3>
+							<p className='sm:text-lg xl:text-xl mb-24 pr-12 text-justify'>
+								The design of the Food Bank’s newsletters needed
+								to appeal to donors and potential donors while
+								also creating a lasting impression for the
+								months between publications. Merging elements of
+								the brand’s new strategy with their bright
+								visual identity helped express their message of
+								openness, vibrancy and inspiring the community.
+								This created a publication that is inspiring,
+								easy to digest and inviting. The infographics
+								show off the organization’s accomplishments and
+								help the potential donor see the possibilities
+								and the achievements of the organization. <br />
+								<br />
+								With the first issue of the newsletter came
+								praise from donors saying the new look changed
+								the entire feeling of the Food Bank-- it felt
+								more vibrant and happier than ever before. The
+								newly designed newsletter has also increased
+								donations by over 100%, year over year. This,
+								along with a newly designed services brochure,
+								stickers, magnets and staff business cards
+								rounds out the Food Bank's brand and delivers a
+								consistent message in everything they do.
+							</p>
+						</div>
+						<div className='relative w-full md:w-1/2 hidden md:block'>
+							<Image
+								src='v1616447180/Color%20Mill%20Design/food-bank-cover_adu1gk.jpg'
+								layout='fill'
+								objectFit='contain'
+							/>
+						</div>
 					</div>
 				</section>
-                <section></section>
+				{/* <section className='mx-[5vw] 2xl:mx-[20vw] my-36'>
+					<h3 className='text-3xl xl:text-4xl font-serif font-bold mb-12 mt-4 sm:mt-0 xl:mb-12 '>
+						Typography and Palette
+					</h3>
+					<div className='flex flex-col md:flex-row'>
+						<div className='md:w-1/2'>
+							<h3 className='text-black xl:text-5xl lg:text-5xl text-3xl font-alice mb-2'>
+								Alice{'  '}
+								<span className='font-sans text-xl'>
+									(headings)
+								</span>
+							</h3>
+							<p className='text-black sm:text-xl xl:text-3xl leading-relaxed tracking-wide font-alice'>
+								Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp
+								Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+							</p>
+							<h3 className='text-black xl:text-4xl lg:text-5xl text-3xl font-fira mt-8 mb-4'>
+								Fira Sans{'  '}
+								<span className='font-sans text-xl'>
+									(body)
+								</span>
+							</h3>
+							<p className='text-black sm:text-xl xl:text-xl leading-relaxed tracking-wide font-fira'>
+								Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp
+								Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+							</p>
+						</div>
+						<div className='md:w-1/2 flex-col '>
+							<div className='flex bg-white ml-12 shadow-2xl'>
+								{paletteColors
+									.slice(0, 5)
+									.map((color, index) => (
+										<PaletteSection
+											color={color.bg}
+											key={index}
+											text={color.text}
+										/>
+									))}
+							</div>
+							<div className='flex bg-white ml-12 shadow-2xl'>
+								{paletteColors.slice(5).map((color, index) => (
+									<PaletteSection
+										color={color.bg}
+										key={index}
+										text={color.text}
+									/>
+								))}
+							</div>
+						</div>
+					</div>
+				</section> */}
+
+				<section className='mx-[5vw] 2xl:mx-[10vw] mt-48 '>
+					<div
+						className='flex flex-col md:flex-row w-full'
+						style={{ height: '1400px' }}>
+						<div className='w-full md:w-1/2 flex flex-col place-content-start'>
+							<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-2 mt-4 sm:mt-0 xl:mb-12'>
+								Information delivered beautifully.
+							</h3>
+							<p className='sm:text-lg xl:text-xl mb-24 pr-12 text-justify'>
+								Our goal was to create a site that embodied the
+								brightness and inspiring nature of the
+								organization, while also creating a site that
+								could be easily updated and maintained by their
+								busy team. The result is a colorful, well
+								organized platform that captures and
+								demonstrates the Food Bank’s mission of being a
+								helpful community resource. <br /> <br />
+								When it came to designing the site and
+								establishing the overall look and flow, we used
+								the existing site as a loose guide to help us
+								understand what was important to the customers--
+								and what wasn’t working. We introduced a bright
+								color palette paired with custom photography
+								that was created specifically for the website.
+								This allowed for very targeted and appropriate
+								content that fit seamlessly into the design.
+								Through this effort, we were able to redefine
+								the look and feel of the brand and also make
+								resources and information available and easily
+								accessible to the Food Bank’s clients.
+							</p>
+						</div>
+						<div className='flex w-full md:w-1/2 '>
+							<div className='relative w-1/2 md:w-1/2 mx-8 '>
+								<Image
+									src='v1619467473/Color%20Mill%20Design/Food-Bank-Website-Page-01_pnbtck.jpg'
+									layout='fill'
+									objectFit='contain'
+								/>
+							</div>
+							<div className='relative w-1/2 md:w-1/2 '>
+								<Image
+									src='v1619467472/Color%20Mill%20Design/Food-Bank-Website-Page-02_nqucig.jpg'
+									layout='fill'
+									objectFit='contain'
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
 				
 			</main>
-		</>
+		</div>
 	)
 }
