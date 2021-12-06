@@ -285,7 +285,7 @@ export default function MendocinoSpirits() {
 						<div className='flex w-full md:w-1/2 '>
 						<div className='relative w-1/2 md:w-1/2 ml-10 '>
 							<Image
-								src='v1638745772/Color%20Mill%20Design/MS-Product-Page-Shadow_s5fcjo.jpg'
+								src='v1638656091/Color%20Mill%20Design/MS-Home-Page-Shadow_lz7f6z.jpg'
 								layout='fill'
 								objectFit='contain'
 								
@@ -293,7 +293,7 @@ export default function MendocinoSpirits() {
 						</div>
 						<div className='relative w-1/2 md:w-1/2 '>
 							<Image
-								src='v1638656091/Color%20Mill%20Design/MS-Home-Page-Shadow_lz7f6z.jpg'
+								src='v1638815347/Color%20Mill%20Design/MS-Product-Page-Shadow_f3ojfo.jpg'
 								layout='fill'
 								objectFit='contain'
 							/>

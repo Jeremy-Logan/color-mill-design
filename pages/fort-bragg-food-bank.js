@@ -131,14 +131,22 @@ export default function FortBraggFoodBank() {
 						</div>
 					</div>
 				</section> */}
-
-				<section className='mx-[25vw] mt-36'>
-					<h3 className=' text-4xl font-serif font-bold mb-12'>
-						Identity - How do you build a new brand around an
+<section className='mx-[5vw] 2xl:mx-[10vw] mt-36'>
+					<div className='flex flex-col md:flex-row'>
+						<div className='relative w-[90vw] h-[90vw] md:w-1/2 md:hidden'>
+							<Image
+								src='v1616447180/Color%20Mill%20Design/food-bank-cover_adu1gk.jpg'
+								layout='fill'
+								objectFit='contain'
+							/>
+						</div>
+						<div className='md:w-1/2'>
+							<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-2 mt-4 sm:mt-0 xl:mb-12 '>
+								Identity - How do you build a new brand around an
 						existing logo?
-					</h3>
-					<p className='sm:text-lg xl:text-xl mb-8 leading-relaxed'>
-						Along with bright new leadership, facility upgrades, new
+							</h3>
+							<p className='sm:text-lg xl:text-xl mb-24 pr-12 text-justify'>
+								Along with bright new leadership, facility upgrades, new
 						delivery vans and an expanded staff, FBFB was ready for
 						an upgrade to their brand. Their logo, established
 						around the organization’s conception, is steadfast and
@@ -150,8 +158,18 @@ export default function FortBraggFoodBank() {
 						accentuating the intricate line work of the pen and ink
 						drawing while also expressing their vibrant new
 						direction.
-					</p>
+							</p>
+						</div>
+						<div className='relative w-full md:w-1/2 hidden md:block'>
+							<Image
+								src='v1638817822/Color%20Mill%20Design/Food-Bank-before-after_fvfsq1.jpg'
+								layout='fill'
+								objectFit='contain'
+							/>
+						</div>
+					</div>
 				</section>
+				
 				{/* <div className='overflow-auto '>
 					<div className='relative w-[3000px] h-[700px]  '>
 						<Image
@@ -161,16 +179,15 @@ export default function FortBraggFoodBank() {
 						/>
 					</div>
 				</div> */}
-				<section className='mx-[25vw] my-36 '>
-					<h2 className='text-6xl font-serif italic text-gray-500 mb-6'>
-						"This is where a big testimonial from the customer will
-						go."
+				<section className='mx-[15vw] my-36 '>
+					<h2 className='text-5xl font-serif italic text-gray-500 mb-6'>
+						"The Color Mill's work increased donations and added vibrancy to our entire organization."
 					</h2>
 					<p className='text-2xl mb-24 leading-relaxed text-center'>
-						-Customer's name and company name
+						Amanda Friscia - Executive Director, Fort Bragg Food Bank
 					</p>
 				</section>
-				<section className='mx-[5vw] 2xl:mx-[20vw] mt-36'>
+				<section className='mx-[5vw] 2xl:mx-[10vw] mt-36'>
 					<div className='flex flex-col md:flex-row'>
 						<div className='relative w-[90vw] h-[90vw] md:w-1/2 md:hidden'>
 							<Image
@@ -305,14 +322,14 @@ export default function FortBraggFoodBank() {
 						<div className='flex w-full md:w-1/2 '>
 							<div className='relative w-1/2 md:w-1/2 mx-8 '>
 								<Image
-									src='v1619467473/Color%20Mill%20Design/Food-Bank-Website-Page-01_pnbtck.jpg'
+									src='v1638815894/Color%20Mill%20Design/Food-Bank-Website-Page-01-Shadow-01_xvkupd.jpg'
 									layout='fill'
 									objectFit='contain'
 								/>
 							</div>
 							<div className='relative w-1/2 md:w-1/2 '>
 								<Image
-									src='v1619467472/Color%20Mill%20Design/Food-Bank-Website-Page-02_nqucig.jpg'
+									src='v1638815892/Color%20Mill%20Design/Food-Bank-Website-Page-02-Shadow-01_rttial.jpg'
 									layout='fill'
 									objectFit='contain'
 								/>
