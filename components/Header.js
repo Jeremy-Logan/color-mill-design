@@ -84,7 +84,7 @@ export default function Header({ title }) {
 							</h1>
 						</Link>
 						<Link href='/'>
-							<img className='h-36 2xl:h-48' src='https://res.cloudinary.com/the-color-mill/image/upload/v1616105305/Color%20Mill%20Design/color-mill-animated-logo_bxjcpm.webp' />
+							<img className='h-36' src='https://res.cloudinary.com/the-color-mill/image/upload/v1616105305/Color%20Mill%20Design/color-mill-animated-logo_bxjcpm.webp' />
 						</Link>
 					</motion.button>
 				</motion.div>

@@ -69,7 +69,7 @@ export default function CapabilitiesSection() {
 				<div className='flex '>
 					<div className='w-screen mx-8 2xl:mx-[15vw] z-20'>
 						<SlideIn>
-							<h3 className='text-5xl font-bold z-20 mb-24'>
+							<h3 className='text-4xl lg:text-5xl font-bold z-20 mb-24'>
 								What we do
 							</h3>
 						</SlideIn>

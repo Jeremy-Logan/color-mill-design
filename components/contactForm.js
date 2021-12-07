@@ -132,7 +132,7 @@ const ContactForm = () => {
 						</label>
 						<button
 							type='submit'
-							className='bg-[#fae06a] text-gray-800 text-xl font-semibold w-1/4 py-4 mt-4 hover:bg-[#94df57] transform hover:scale-105 shadow-md hover:shadow-lg transition duration-250'>
+							className='bg-[#fae06a] text-gray-800 text-xl font-semibold w-1/4 py-4 px-2 mt-4 hover:bg-[#94df57] transform hover:scale-105 shadow-md hover:shadow-lg transition duration-250'>
 							SEND
 						</button>
 					</div>

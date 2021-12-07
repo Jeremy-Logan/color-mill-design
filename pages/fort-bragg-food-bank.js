@@ -9,49 +9,6 @@ import {
 	useSpring,
 } from 'framer-motion'
 
-const paletteColors = [
-	{ bg: '#077893', text: 'white' },
-	{ bg: '#E68242', text: 'white' },
-	{ bg: '#57A89B', text: 'white' },
-	{ bg: '#A6A36D', text: 'white' },
-	{ bg: '#F3C268', text: '#22150c' },
-	{ bg: '#552919', text: 'white' },
-	{ bg: '#8E513A', text: 'white' },
-	{ bg: '#BF8D53', text: 'white' },
-	{ bg: '#22150c', text: 'white' },
-	{ bg: '#F4E3C5', text: '#22150c' },
-]
-
-const PaletteSection = ({ color, text }) => {
-	return (
-		<div className='w-1/5'>
-			<div className='flex flex-col justify-center h-48'>
-				<div
-					style={{ backgroundColor: `${color}`, color: `${text}` }}
-					className={`text-md text-center py-2`}>
-					{color}
-				</div>
-				<div
-					style={{ backgroundColor: `${color}` }}
-					className='opacity-80 h-full'
-				/>
-				<div
-					style={{ backgroundColor: `${color}` }}
-					className='opacity-60 h-full'
-				/>
-				<div
-					style={{ backgroundColor: `${color}` }}
-					className='opacity-40 h-full'
-				/>
-				<div
-					style={{ backgroundColor: `${color}` }}
-					className='opacity-20 h-full'
-				/>
-			</div>
-		</div>
-	)
-}
-
 export default function FortBraggFoodBank() {
 	const scrollRef = useHorizontalScroll()
 	return (
@@ -60,16 +17,16 @@ export default function FortBraggFoodBank() {
 				<title>Color Mill Design | Fort Bragg Food Bank</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<main className='mt-24 '>
-				<section className='mx-[25vw]'>
-					<h1 className=' text-6xl font-serif font-bold mb-12'>
+			<main className='lg:mt-24 mt-36 '>
+				<section className='mx-[5vw] lg:mx-[25vw]'>
+					<h1 className='text-4xl xl:text-6xl font-serif font-bold mb-12'>
 						Fort Bragg Food Bank
 					</h1>
-					<h2 className=' text-5xl font-serif italic text-gray-500 mb-12'>
+					<h2 className='text-3xl xl:text-5xl font-serif italic text-gray-500 mb-12'>
 						People coming together to create hope for an abundant
 						life for everyone.
 					</h2>
-					<p className='sm:text-lg xl:text-xl mb-24 leading-relaxed'>
+					<p className='sm:text-lg xl:text-xl xl:mb-24 leading-relaxed'>
 						Established in 1979, Fort Bragg Food Bank has been
 						taking care of the community for many years. They offer
 						hope and health to those in need and shine a light on
@@ -131,33 +88,35 @@ export default function FortBraggFoodBank() {
 						</div>
 					</div>
 				</section> */}
-<section className='mx-[5vw] 2xl:mx-[10vw] mt-36'>
+				<section className='mx-[5vw] 2xl:mx-[10vw] mt-12 xl:mt-36'>
 					<div className='flex flex-col md:flex-row'>
 						<div className='relative w-[90vw] h-[90vw] md:w-1/2 md:hidden'>
 							<Image
-								src='v1616447180/Color%20Mill%20Design/food-bank-cover_adu1gk.jpg'
+								src='v1638817822/Color%20Mill%20Design/Food-Bank-before-after_fvfsq1.jpg'
 								layout='fill'
 								objectFit='contain'
 							/>
 						</div>
-						<div className='md:w-1/2'>
-							<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-2 mt-4 sm:mt-0 xl:mb-12 '>
-								Identity - How do you build a new brand around an
-						existing logo?
+						<div className='w-full md:w-1/2'>
+							<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-4 mt-4 sm:mt-0 xl:mb-12 '>
+								Identity - How do you build a new brand around
+								an existing logo?
 							</h3>
-							<p className='sm:text-lg xl:text-xl mb-24 pr-12 text-justify'>
-								Along with bright new leadership, facility upgrades, new
-						delivery vans and an expanded staff, FBFB was ready for
-						an upgrade to their brand. Their logo, established
-						around the organization’s conception, is steadfast and
-						very recognizable. It’s a legacy they want to maintain.
-						So how do we build a brand that radiates vibrancy and
-						progress around a B&W logo created in the 80s? We create
-						a palette of bright painterly colors and watercolor
-						textures, adding splashes of color to everything:
-						accentuating the intricate line work of the pen and ink
-						drawing while also expressing their vibrant new
-						direction.
+							<p className='sm:text-lg xl:text-xl mb-24 xl:pr-12 text-justify'>
+								Along with bright new leadership, facility
+								upgrades, new delivery vans and an expanded
+								staff, FBFB was ready for an upgrade to their
+								brand. Their logo, established around the
+								organization’s conception, is steadfast and very
+								recognizable. It’s a legacy they want to
+								maintain. So how do we build a brand that
+								radiates vibrancy and progress around a B&W logo
+								created in the 80s? We create a palette of
+								bright painterly colors and watercolor textures,
+								adding splashes of color to everything:
+								accentuating the intricate line work of the pen
+								and ink drawing while also expressing their
+								vibrant new direction.
 							</p>
 						</div>
 						<div className='relative w-full md:w-1/2 hidden md:block'>
@@ -169,7 +128,7 @@ export default function FortBraggFoodBank() {
 						</div>
 					</div>
 				</section>
-				
+
 				{/* <div className='overflow-auto '>
 					<div className='relative w-[3000px] h-[700px]  '>
 						<Image
@@ -179,28 +138,30 @@ export default function FortBraggFoodBank() {
 						/>
 					</div>
 				</div> */}
-				<section className='mx-[15vw] my-36 '>
-					<h2 className='text-5xl font-serif italic text-gray-500 mb-6'>
-						"The Color Mill's work increased donations and added vibrancy to our entire organization."
+				<section className='mx-[15vw] xl:my-36 mb-4 xl:mb-24'>
+					<h2 className='text-3xl xl:text-5xl font-serif italic text-gray-500 mb-6'>
+						"The Color Mill's work increased donations and added
+						vibrancy to our entire organization."
 					</h2>
-					<p className='text-2xl mb-24 leading-relaxed text-center'>
-						Amanda Friscia - Executive Director, Fort Bragg Food Bank
+					<p className='text-lg xl:text-2xl  leading-relaxed text-center'>
+						Amanda Friscia - Executive Director, Fort Bragg Food
+						Bank
 					</p>
 				</section>
-				<section className='mx-[5vw] 2xl:mx-[10vw] mt-36'>
+				<section className='mx-[5vw] 2xl:mx-[10vw] xl:mt-36'>
 					<div className='flex flex-col md:flex-row'>
-						<div className='relative w-[90vw] h-[90vw] md:w-1/2 md:hidden'>
+						<div className='relative w-[90vw] h-[90vw] md:hidden'>
 							<Image
 								src='v1616447180/Color%20Mill%20Design/food-bank-cover_adu1gk.jpg'
 								layout='fill'
 								objectFit='contain'
 							/>
 						</div>
-						<div className='md:w-1/2'>
+						<div className='md:w-1/2 w-full'>
 							<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-2 mt-4 sm:mt-0 xl:mb-12 '>
 								Print - Expressing a message of inspiration.
 							</h3>
-							<p className='sm:text-lg xl:text-xl mb-24 pr-12 text-justify'>
+							<p className='sm:text-lg xl:text-xl mb-24 xl:pr-12 text-justify'>
 								The design of the Food Bank’s newsletters needed
 								to appeal to donors and potential donors while
 								also creating a lasting impression for the
@@ -287,15 +248,31 @@ export default function FortBraggFoodBank() {
 					</div>
 				</section> */}
 
-				<section className='mx-[5vw] 2xl:mx-[10vw] mt-48 '>
+				<section className='mx-[5vw] 2xl:mx-[10vw]  xl:mt-48 '>
 					<div
 						className='flex flex-col md:flex-row w-full'
 						style={{ height: '1400px' }}>
+						<div className='relative flex w-full h-[80vh] md:hidden'>
+							<div className='relative w-1/2 mx-0 xl:mx-8 '>
+								<Image
+									src='v1638815894/Color%20Mill%20Design/Food-Bank-Website-Page-01-Shadow-01_xvkupd.jpg'
+									layout='fill'
+									objectFit='contain'
+								/>
+							</div>
+							<div className='relative w-1/2 mx-0'>
+								<Image
+									src='v1638815892/Color%20Mill%20Design/Food-Bank-Website-Page-02-Shadow-01_rttial.jpg'
+									layout='fill'
+									objectFit='contain'
+								/>
+							</div>
+						</div>
 						<div className='w-full md:w-1/2 flex flex-col place-content-start'>
 							<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-2 mt-4 sm:mt-0 xl:mb-12'>
 								Information delivered beautifully.
 							</h3>
-							<p className='sm:text-lg xl:text-xl mb-24 pr-12 text-justify'>
+							<p className='sm:text-lg xl:text-xl mb-24 xl:pr-12 text-justify'>
 								Our goal was to create a site that embodied the
 								brightness and inspiring nature of the
 								organization, while also creating a site that
@@ -337,7 +314,6 @@ export default function FortBraggFoodBank() {
 						</div>
 					</div>
 				</section>
-				
 			</main>
 		</div>
 	)

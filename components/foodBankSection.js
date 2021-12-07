@@ -65,40 +65,56 @@ export default function FoodBankSection() {
 
 	const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 })
 	return (
-		<div className='h-[70vh] w-screen overflow-hidden z-30'>
-			<div className='flex overflow-hidden'>
-				<FadeIn>
-					<motion.button className='w-[50%vw] ml-[15vw] pr-20 focus:outline-none'>
-						<Link href='/fort-bragg-food-bank'>
-							<Image
-								layout='intrinsic'
-								width='600'
-								height='600'
-								alt='Fort Bragg Food Bank'
-								quality='100'
-								src='ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_600/v1616447180/Color Mill Design/food-bank-cover_adu1gk.jpg'
-							/>
-						</Link>
-					</motion.button>
-				</FadeIn>
-				<div className='w-[30vw] my-36 z-20 '>
-					<SlideIn>
-						<Link href='/fort-bragg-food-bank'>
-							<button className='focus:outline-none bg-[#e2efff] p-10 shadow-xl '>
-								<h3 className='text-left text-5xl font-bold my-auto z-20'>
-									Fort Bragg Food Bank
-								</h3>
-								<h4 className='text-lg text-left mt-2 z-30'>
-									Branding, Print Design, Web Design{' '}
-								</h4>
-							</button>
-						</Link>
-					</SlideIn>
+		<div className='relative  sm:h-[80vh] w-screen overflow-hidden z-10'>
+			<div className='flex xs:flex-col sm:flex-row mx-auto justify-center'>
+				
+					<FadeIn>
+						<motion.button className='relative h-full w-[40vw] mr-0 justify-start focus:outline-none sm:flex hidden z-20'>
+							<Link href='/fort-bragg-food-bank'>
+								<Image
+									layout='fill'
+									objectFit='contain'
+									alt='Fort Bragg Food Bank'
+									quality={100}
+									src='ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_600/v1616447180/Color%20Mill%20Design/food-bank-cover_adu1gk.jpg'
+								/>
+							</Link>
+						</motion.button>
+					</FadeIn>
+				
+				<div className='md:my-36 mb-12 z-20 '>
+					<FadeIn>
+						<motion.button className='relative mx-4 w-[90vw] h-[90vw] mr-0 focus:outline-none sm:hidden'>
+							<Link href='/fort-bragg-food-bank'>
+								<Image
+									layout='fill'
+									objectFit='contain'
+									alt='Fort Bragg Food Bank'
+									quality={100}
+									src='ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_600/v1616447180/Color%20Mill%20Design/food-bank-cover_adu1gk.jpg'
+								/>
+							</Link>
+						</motion.button>
+					</FadeIn>
+
+					<div>
+						<SlideIn>
+							<Link href='/fort-bragg-food-bank'>
+								<button className='focus:outline-none bg-[#e2efff] p-10 shadow-xl sm:mt-0 -mt-8'>
+									<h3 className='text-2xl xl:text-5xl md:text-3xl font-bold my-auto text-left z-20'>
+										Fort Bragg Food Bank
+									</h3>
+									<h4 className='xl:text-lg text-left z-30 mt-2'>
+										Branding, Print Design, Web Design{' '}
+									</h4>
+								</button>
+							</Link>
+						</SlideIn>
+					</div>
 				</div>
-<div className='absolute'>
-				<div className='absolute top-[10vh] w-screen '>
+				<div className='absolute top-[10vh] w-screen hidden md:block'>
 					<WallOfHotdogs className='z-0' />
-				</div></div>
+				</div>
 			</div>
 		</div>
 	)
