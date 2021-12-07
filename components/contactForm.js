@@ -4,7 +4,7 @@ const ContactForm = () => {
 	const { register, errors } = useForm()
 
 	return (
-		<div className='mt-12 md:mx-[25vw] justify-start flex flex-col'>
+		<div className='mt-12 lg:mx-[25vw] sm:mx-[10vw] justify-center flex flex-col'>
 			<h3 className='text-3xl md:text-4xl'>
 				How can we work together? Let's talk it over.
 			</h3>
@@ -132,7 +132,7 @@ const ContactForm = () => {
 						</label>
 						<button
 							type='submit'
-							className='bg-[#fae06a] text-gray-800 text-xl font-semibold w-full md:w-1/4 py-4 px-2 mt-4 hover:bg-[#94df57] transform hover:scale-105 shadow-md hover:shadow-lg transition duration-250'>
+							className='bg-[#fae06a] text-gray-800 text-xl font-semibold w-full md:w-1/3 py-4 px-2 mt-4 hover:bg-[#94df57] transform hover:scale-105 shadow-md hover:shadow-lg transition duration-250'>
 							SEND
 						</button>
 					</div>
