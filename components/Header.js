@@ -77,7 +77,7 @@ export default function Header({ title }) {
 						initial={{ opacity: 1 }}
 						animate={isOpen ? 'hidden' : 'visible'}
 						variants={logo}
-						className='absolute top-0 lg:right-4 right-1 ml-24 flex flex-row focus:outline-none outline-none z-40'>
+						className='absolute top-0 lg:right-4 right-1 ml-24 flex flex-row focus:outline-none outline-none z-10'>
 						<Link href='/'>
 							<h1 className='font-bold my-auto lg:text-4xl md:text-3xl hidden md:block text-2xl'>
 								Color Mill Design

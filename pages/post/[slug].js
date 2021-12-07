@@ -21,31 +21,34 @@ const Post = (props) => {
 	
 
 	return (
-		<article className='mt-24 mx-[10vw]'>
+		<article className='mt-24 mx-[5vw] md:mx-[10vw]'>
 			{mainImage && <img className='mx-auto' src={urlFor(mainImage).width(1440).url()} />}
-			<div className='flex w-[1440px] mx-auto'>
-				<aside className='w-1/5 m-10 flex flex-col'>
+			<div className='flex flex-col xl:flex-row w-[90vw] md:w-[80vw] mx-auto'>
+				<aside className='w-1/2 md:w-1/4 m-4 md:m-10 flex flex-row md:flex-col'>
+				<div className='flex flex-col md:flex-row ml-4 '>
 					{authorImage && (
-						<div className='my-2 mx-auto mr-0'>
+						<div className='my-2 md:mx-auto mr-0 w-7/12'>
 							<img
 								className='rounded-full'
 								src={urlFor(authorImage).width(70).url()}
 							/>
 						</div>
 					)}
-					<span className='text-right font-bold'>{name}</span>
-					<span className='text-right mb-8'>{publishedAt}</span>
+					<div className='flex flex-col  lg:w-5/12'>
+					<span className='xl:text-right font-bold'>{name}</span>
+					<span className='xl:text-right mb-8'>{publishedAt}</span></div></div>
 					{categories && (
-						<ul className='text-right'>
+						<ul className='xl:text-right font-semibold'>
 							Posted in
 							{categories.map((category) => (
-								<li key={category}>{category}</li>
+								<li className='font-normal' key={category}>{category}</li>
 							))}
 						</ul>
 					)}
 				</aside>
-				<div className='mx-12 w-full '>
-					<h1 className='text-5xl font-bold mt-8 mb-4'>{title}</h1>
+				<div className='mx-auto md:mx-12 w-[85vw] xl:w-full '>
+					<h1 className='text-2xl text-center xl:text-left md:text-5xl font-bold mt-4 md:mt-8 mb-4'>{title}</h1>
+					<div className='bg-cyan-500 h-[2px] w-3/4 mx-auto lg:mx-0 my-8'></div>
 					<BlockContent
 						blocks={body}
 						imageOptions={{ w: 320, h: 240, fit: 'max' }}

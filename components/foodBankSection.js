@@ -65,11 +65,11 @@ export default function FoodBankSection() {
 
 	const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 })
 	return (
-		<div className='relative  sm:h-[80vh] w-screen overflow-hidden z-10'>
+		<div className='relative mx-auto sm:h-[80vh] w-screen overflow-hidden z-10'>
 			<div className='flex xs:flex-col sm:flex-row mx-auto justify-center'>
 				
 					<FadeIn>
-						<motion.button className='relative h-full w-[40vw] mr-0 justify-start focus:outline-none sm:flex hidden z-20'>
+						<motion.button className='relative h-full w-[40vw] justify-start focus:outline-none sm:flex hidden z-20'>
 							<Link href='/fort-bragg-food-bank'>
 								<Image
 									layout='fill'
@@ -100,7 +100,7 @@ export default function FoodBankSection() {
 					<div>
 						<SlideIn>
 							<Link href='/fort-bragg-food-bank'>
-								<button className='focus:outline-none bg-[#e2efff] p-10 shadow-xl sm:mt-0 -mt-8'>
+								<button className='focus:outline-none bg-[#e2efff] w-full p-10 shadow-xl sm:mt-0 '>
 									<h3 className='text-2xl xl:text-5xl md:text-3xl font-bold my-auto text-left z-20'>
 										Fort Bragg Food Bank
 									</h3>

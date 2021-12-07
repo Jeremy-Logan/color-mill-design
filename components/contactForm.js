@@ -4,8 +4,8 @@ const ContactForm = () => {
 	const { register, errors } = useForm()
 
 	return (
-		<div className='mt-12 mx-[25vw] justify-leftflex items-center'>
-			<h3 className='text-4xl'>
+		<div className='mt-12 md:mx-[25vw] justify-start flex flex-col'>
+			<h3 className='text-3xl md:text-4xl'>
 				How can we work together? Let's talk it over.
 			</h3>
 			<form
@@ -15,8 +15,8 @@ const ContactForm = () => {
 				netlify-honeypot='bot-field'
 				id='contact'>
 				<input type='hidden' name='form-name' value='contact' />
-				<div className={'flex flex-col w-full items-left mx-auto'}>
-					<div className={'text-black flex-grow w-8/12'}>
+				<div className={'flex flex-col w-full items-left '}>
+					<div className={'text-black flex-grow md:w-8/12'}>
 						<p className='hidden'>
 							<label>
 								Don’t fill this out if you're human:{' '}
@@ -132,7 +132,7 @@ const ContactForm = () => {
 						</label>
 						<button
 							type='submit'
-							className='bg-[#fae06a] text-gray-800 text-xl font-semibold w-1/4 py-4 px-2 mt-4 hover:bg-[#94df57] transform hover:scale-105 shadow-md hover:shadow-lg transition duration-250'>
+							className='bg-[#fae06a] text-gray-800 text-xl font-semibold w-full md:w-1/4 py-4 px-2 mt-4 hover:bg-[#94df57] transform hover:scale-105 shadow-md hover:shadow-lg transition duration-250'>
 							SEND
 						</button>
 					</div>

@@ -66,7 +66,7 @@ export default function Home({ data }) {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<main className='overflow-hidden'>
+			<main className='overflow-hidden '>
 			{/* <svg
 					className='absolute top-[550px]'
 					xmlns='http://www.w3.org/2000/svg'
