@@ -229,7 +229,7 @@ export default function CapabilitiesSection() {
 						</SlideUp>
 						<SlideUp>
 							<div className='grid gap-6 grid-cols-1 lg:grid-cols-2'>
-								<motion.p
+								<motion.div
 									variants={stagger}
 									className='mb-2   p-10 shadow-md bg-[#f0f8ff]'>
 									<h4 className='font-bold text-xl text-[#2fa7d9] mb-2'>
@@ -239,8 +239,8 @@ export default function CapabilitiesSection() {
 									immerse ourselves in your business. What we
 									get from this is an action plan on executing
 									a holistic brand and user experience.
-								</motion.p>
-								<motion.p
+								</motion.div>
+								<motion.div
 									variants={stagger}
 									className='mb-2  p-10 shadow-md bg-[#fcf7f1]'>
 									<h4 className='font-bold text-xl text-[#FF7A2E] mb-2'>
@@ -251,8 +251,8 @@ export default function CapabilitiesSection() {
 									you to see the aesthetics and flow before we
 									start production—this lets us make changes
 									easily before we start programming.
-								</motion.p>
-								<motion.p
+								</motion.div>
+								<motion.div
 									variants={stagger}
 									className='mb-2 p-10 shadow-md bg-[#fdf3f7]'>
 									<h4 className='font-bold text-xl text-[#FF006A] mb-2'>
@@ -265,8 +265,8 @@ export default function CapabilitiesSection() {
 									create are completely custom, easy to use,
 									look great, and represent your brand in the
 									best way possible.
-								</motion.p>
-								<motion.p
+								</motion.div>
+								<motion.div
 									variants={stagger}
 									className='mb-2  p-10 shadow-md bg-[#f0fff2]'>
 									<h4 className='font-bold text-xl text-[#41c71f] mb-2'>
@@ -278,7 +278,7 @@ export default function CapabilitiesSection() {
 									on the site. Once any issues have been
 									addressed, we then launch the site to the
 									public.
-								</motion.p>
+								</motion.div>
 							</div>
 						</SlideUp>
 					</div>

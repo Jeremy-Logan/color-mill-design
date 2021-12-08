@@ -13,7 +13,7 @@ import HexGrid from '@components/hexGrid'
 
 const FadeIn = ({ children }) => {
 	const controls = useAnimation()
-	const [ref, inView] = useInView()
+	const { ref, inView, entry } = useInView()
 
 	useEffect(() => {
 		inView ? controls.start('visible') : controls.start('hidden')
@@ -37,7 +37,7 @@ const FadeIn = ({ children }) => {
 
 const SlideIn = ({ children }) => {
 	const controls = useAnimation()
-	const [ref, inView] = useInView()
+	const { ref, inView, entry } = useInView()
 
 	useEffect(() => {
 		inView ? controls.start('visible') : controls.start('hidden')
@@ -73,6 +73,8 @@ export default function MendocinoSpiritsSection() {
 									alt='Mendocino Spirits'
 									quality={100}
 									src='ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_600/v1638489233/Color%20Mill%20Design/Mendocino-Spirits-3-Bottles_i8oym6.jpg'
+									placeholder='blur'
+									blurDataURL='ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_600/t_placeholder/v1638489233/Color%20Mill%20Design/Mendocino-Spirits-3-Bottles_i8oym6.jpg'
 								/>
 							</Link>
 						</motion.button>
@@ -100,6 +102,8 @@ export default function MendocinoSpiritsSection() {
 								alt='Mendocino Spirits'
 								quality={100}
 								src='ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_600/v1638489233/Color%20Mill%20Design/Mendocino-Spirits-3-Bottles_i8oym6.jpg'
+								placeholder='blur'
+								blurDataURL='ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_600/t_placeholder/v1638489233/Color%20Mill%20Design/Mendocino-Spirits-3-Bottles_i8oym6.jpg'
 							/>
 						</Link>
 					</motion.button>

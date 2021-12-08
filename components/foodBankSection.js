@@ -77,6 +77,8 @@ export default function FoodBankSection() {
 									alt='Fort Bragg Food Bank'
 									quality={100}
 									src='ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_600/v1616447180/Color%20Mill%20Design/food-bank-cover_adu1gk.jpg'
+									placeholder='blur'
+									blurDataURL='ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_600/t_placeholder/v1616447180/Color%20Mill%20Design/food-bank-cover_adu1gk.jpg'
 								/>
 							</Link>
 						</motion.button>
@@ -92,6 +94,8 @@ export default function FoodBankSection() {
 									alt='Fort Bragg Food Bank'
 									quality={100}
 									src='ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_600/v1616447180/Color%20Mill%20Design/food-bank-cover_adu1gk.jpg'
+									placeholder='blur'
+									blurDataURL='ar_1:1,bo_0px_solid_rgb:ffffff,c_fill,co_rgb:ffffff,fl_alpha.preserve_transparency,g_auto,o_100,r_max,w_600/t_placeholder/v1616447180/Color%20Mill%20Design/food-bank-cover_adu1gk.jpg'
 								/>
 							</Link>
 						</motion.button>

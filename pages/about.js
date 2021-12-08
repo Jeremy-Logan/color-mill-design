@@ -122,17 +122,19 @@ export default function About() {
 							<div className='mx-8 md:mx-auto md:w-[50vw]'>
 								<div className='relative h-96 w-full '>
 									<Image
-										src='c_scale,h_1200,w_800/v1621889891/Color%20Mill%20Design/aspen-portrait-web_xgufpr.jpg'
+										src='v1621889891/Color%20Mill%20Design/aspen-portrait-web_xgufpr.jpg'
 										layout='fill'
 										objectFit='contain'
 										className=' z-50'
+										placeholder='blur'
+										blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1621889891/Color%20Mill%20Design/aspen-portrait-web_xgufpr.jpg'
 									/>
 								</div>
 
 								<h2 className='font-bold text-3xl mb-2 mt-2'>
-									Aspen Logan{' '}
-									<h3 className='text-xl mt-2'>CEO</h3>
-								</h2>
+									Aspen Logan{' '}</h2>
+									<h3 className=' text-xl my-2'>CEO</h3>
+								
 								<h3 className='text-md leading-7'>
 									Aspen is a project manager, writer, a Myers
 									Briggs certified extrovert and a Canadian.
@@ -157,42 +159,46 @@ export default function About() {
 							</div>
 						</div>
 						<div className='mx-8 md:mx-auto md:w-[50vw]'>
-						<div className='relative h-96 w-full mt-12 md:mt-24'>
-							<Image
-								src='c_scale,h_1200,w_800/v1619826510/Color%20Mill%20Design/Jeremy-portrait.jpg'
-								layout='fill'
-								objectFit='contain'
-								className=' z-50'
-							/>
-						</div>
-						<div className='mx-8'>
-							<h2 className='font-bold text-3xl mb-2 mt-2'>
-								Jeremy Logan
-								<h3 className='text-xl mt-2'>
-									{' '}
-									Creative Director and CFO
+							<div className='relative h-96 w-full mt-12 md:mt-24'>
+								<Image
+									src='v1619826510/Color%20Mill%20Design/Jeremy-portrait.jpg'
+									layout='fill'
+									objectFit='contain'
+									className=' z-50'
+									placeholder='blur'
+									blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1619826452/Color%20Mill%20Design/Jeremy-portrait.jpg'
+								/>
+							</div>
+							<div className='mx-8'>
+								<h2 className='font-bold text-3xl mb-2 mt-2'>
+									Jeremy Logan</h2>
+									<h3 className='text-xl my-2'>
+										{' '}
+										Creative Director and CFO
+									</h3>
+								
+								<h3 className='text-md leading-7'>
+									Jeremy is a fine art oil painter, animator
+									and coder. He spent 20 years in software,
+									animating AAA video games before
+									transitioning his creative skills to design.
+									He has an innate sense of curiosity which
+									has allowed him to simultaneously master
+									coding and create beautifully intricate
+									illustrations. Jeremy is an expert in
+									front-end web development and oversees all
+									creative projects. He has shaped the Color
+									Mill into what it is today by bringing a
+									relentless design sense, an unwavering drive
+									to push creative boundaries and a gift for
+									imagining the unimaginable.
+									<br />
+									<br />
+									“To be an artist means never to avert one's
+									eyes.” ― Akira Kurosawa
 								</h3>
-							</h2>
-							<h3 className='text-md leading-7'>
-								Jeremy is a fine art oil painter, animator and
-								coder. He spent 20 years in software, animating
-								AAA video games before transitioning his
-								creative skills to design. He has an innate
-								sense of curiosity which has allowed him to
-								simultaneously master coding and create
-								beautifully intricate illustrations. Jeremy is
-								an expert in front-end web development and
-								oversees all creative projects. He has shaped
-								the Color Mill into what it is today by bringing
-								a relentless design sense, an unwavering drive
-								to push creative boundaries and a gift for
-								imagining the unimaginable.
-								<br />
-								<br />
-								“To be an artist means never to avert one's
-								eyes.” ― Akira Kurosawa
-							</h3>
-						</div></div>
+							</div>
+						</div>
 					</div>
 				</section>
 				{/* <section className='overflow-hidden flex flex-col h-[160vh]'>
