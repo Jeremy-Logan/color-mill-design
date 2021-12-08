@@ -97,7 +97,7 @@ export default function Home({ data }) {
 							See us on Instagram...
 						</h3>
 					</SlideIn>
-					<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-6 w-screen px-12'>
+					<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-screen px-12'>
 						{instagramPosts.map((post) => (
 							<div key={post.id} className=' flex flex-col relative -mb-24'>
 								<div className='bg-white z-50 absolute top-0 w-screen h-14' />
