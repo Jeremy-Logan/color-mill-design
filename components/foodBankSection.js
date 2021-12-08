@@ -65,7 +65,7 @@ export default function FoodBankSection() {
 
 	const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 })
 	return (
-		<div className='relative mx-auto sm:h-[80vh] w-screen overflow-hidden z-10'>
+		<div className='relative mx-auto sm:h-[70vh] w-screen overflow-hidden z-10'>
 			<div className='flex xs:flex-col sm:flex-row mx-auto justify-center'>
 				
 					<FadeIn>

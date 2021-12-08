@@ -65,7 +65,7 @@ const SlideUp = ({ children }) => {
 export default function CapabilitiesSection() {
 	return (
 		<>
-			<div className='w-screen z-30 mt-24'>
+			<div className='w-screen z-30 mt-12'>
 				<div className='flex '>
 					<div className='w-screen mx-8 2xl:mx-[15vw] z-20'>
 						<SlideIn>
