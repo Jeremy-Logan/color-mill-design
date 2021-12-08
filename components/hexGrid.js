@@ -11,8 +11,8 @@ const delayArray=[0, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10,
 
 	return (
 		<div className='w-screen z-0 relative ' >
-		<div className='absolute  w-screen h-[500px] '>
-			<motion.div className='flex absolute'>
+		<div className='absolute w-[200vw] lg:w-screen h-[800px] '>
+			<motion.div className='flex absolute '>
 				{delayArray.map(delay=> <Hexagon delay={delay} key={delay}/>)}
 			</motion.div>
 			<motion.div className='flex absolute transform translate-y-[100%] translate-x-[-2.4%] -mt-1'>
@@ -22,6 +22,12 @@ const delayArray=[0, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10,
 				{delayArray.map(delay=> <Hexagon delay={delay} key={delay}/>)}
 			</motion.div>
             <motion.div className='flex absolute transform translate-y-[300%] translate-x-[-2.4%] -mt-1'>
+				{delayArray.map(delay=> <Hexagon delay={delay} key={delay}/>)}
+			</motion.div>
+			<motion.div className='flex absolute transform translate-y-[400%] -mt-1 2xl:hidden'>
+				{delayArray.map(delay=> <Hexagon delay={delay} key={delay}/>)}
+			</motion.div>
+            <motion.div className='flex absolute transform translate-y-[500%] translate-x-[-2.4%] -mt-1 2xl:hidden'>
 				{delayArray.map(delay=> <Hexagon delay={delay} key={delay}/>)}
 			</motion.div>
 			</div>

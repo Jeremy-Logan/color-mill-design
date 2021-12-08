@@ -24,7 +24,7 @@ const paletteColors = [
 
 const PaletteSection = ({ color, text }) => {
 	return (
-		<div className='w-1/5'>
+		<div className='md:w-1/5 w-full'>
 			<div className='flex flex-col justify-center h-48'>
 				<div
 					style={{ backgroundColor: `${color}`, color: `${text}` }}
@@ -234,8 +234,8 @@ export default function MendocinoSpirits() {
 								Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
 							</p>
 						</div>
-						<div className='md:w-1/2 flex-col '>
-							<div className='flex bg-white ml-12 shadow-2xl'>
+						<div className='md:w-1/2 flex-col mt-8 md:mt-0'>
+							<div className='flex bg-white md:ml-12 shadow-2xl'>
 								{paletteColors
 									.slice(0, 5)
 									.map((color, index) => (
@@ -246,7 +246,7 @@ export default function MendocinoSpirits() {
 										/>
 									))}
 							</div>
-							<div className='flex bg-white ml-12 shadow-2xl'>
+							<div className='flex bg-white md:ml-12 shadow-2xl'>
 								{paletteColors.slice(5).map((color, index) => (
 									<PaletteSection
 										color={color.bg}
@@ -260,12 +260,14 @@ export default function MendocinoSpirits() {
 				</section>
 
 				<section className='mx-[5vw] 2xl:mx-[10vw] mt-48 '>
-					<div className='flex flex-col md:flex-row w-full' style={{height: '1400px'}}>
-						<div className='w-full md:w-1/2 flex flex-col place-content-start'>
+					<div
+						className='flex flex-col lg:flex-row w-full '
+						>
+						<div className='w-full lg:w-5/12 flex flex-col '>
 							<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-2 mt-4 sm:mt-0 xl:mb-12'>
 								Selling to the whole world (or close to it)
 							</h3>
-							<p className='sm:text-lg xl:text-xl mb-24 pr-12 text-justify'>
+							<p className='sm:text-lg xl:text-xl pr-4 text-justify'>
 								Mendocino Spirits are true artists, but until
 								now their brand has not been as well known as
 								some of their colleagues. The new website was
@@ -273,34 +275,41 @@ export default function MendocinoSpirits() {
 								brand, elevating their unique spirits and
 								creating a far reaching brand that can be
 								discovered and experienced throughout the
-								county, country and globe. <br/> <br/>The integration of a
-								strong ecommerce platform allows them to sell
-								and ship their spirits nationally. As many
-								people view websites on their mobile devices, we
-								designed the site across both mobile and desktop
-								ensuring a great experience no matter where it’s
-								viewed.
+								county, country and globe. <br /> <br />
+								The integration of a strong ecommerce platform
+								allows them to sell and ship their spirits
+								nationally. As many people view websites on
+								their mobile devices, we designed the site
+								across both mobile and desktop ensuring a great
+								experience no matter where it’s viewed.
 							</p>
 						</div>
-						<div className='flex w-full md:w-1/2 '>
-						<div className='relative w-1/2 md:w-1/2 ml-10 '>
-							<Image
-								src='v1638656091/Color%20Mill%20Design/MS-Home-Page-Shadow_lz7f6z.jpg'
-								layout='fill'
-								objectFit='contain'
-								
-							/>
-						</div>
-						<div className='relative w-1/2 md:w-1/2 '>
-							<Image
-								src='v1638815347/Color%20Mill%20Design/MS-Product-Page-Shadow_f3ojfo.jpg'
-								layout='fill'
-								objectFit='contain'
-							/>
-						</div></div>
+						<a
+							href='https://www.mendocinospirits.com'
+							alt='mendocino spirits'
+							target='_blank'
+							rel='noopener noreferrer'>
+							<div className='flex flex-row w-full h-[50vh] lg:h-[100vh] lg:w-[55vw] content-start mt-12 lg:mt-0'>
+								<div className='relative w-1/2 ml-10'>
+									<Image
+										src='v1638656091/Color%20Mill%20Design/MS-Home-Page-Shadow_lz7f6z.jpg'
+										layout='fill'
+										objectFit='contain'
+									/>
+								</div>
+								<div className='relative w-1/2 '>
+									<Image
+										src='v1638815347/Color%20Mill%20Design/MS-Product-Page-Shadow_f3ojfo.jpg'
+										layout='fill'
+										objectFit='contain'
+										
+									/>
+								</div>
+							</div>
+						</a>
 					</div>
 				</section>
-				<section className=' mt-48 bg-[#bfddda] xl:py-24 py-8'>
+				{/* <section className=' mt-48 bg-[#bfddda] xl:py-24 py-8'>
 					<div className='grid grid-cols-2 xl:grid-cols-5 gap-8 xl:gap-2 xl:mx-[15vw] mx-8 justify-items-center'>
 						<div className='hidden xl:block relative h-[50vh] w-[15vw]'>
 							<Image
@@ -344,7 +353,7 @@ export default function MendocinoSpirits() {
 							/>
 						</div>
 					</div>
-				</section>
+				</section> */}
 			</main>
 		</div>
 	)

@@ -99,7 +99,7 @@ export default function FortBraggFoodBank() {
 						</div>
 						<div className='w-full md:w-1/2'>
 							<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-4 mt-4 sm:mt-0 xl:mb-12 '>
-								Identity - How do you build a new brand around
+								How do you build a new brand around
 								an existing logo?
 							</h3>
 							<p className='sm:text-lg xl:text-xl mb-24 xl:pr-12 text-justify'>
@@ -159,7 +159,7 @@ export default function FortBraggFoodBank() {
 						</div>
 						<div className='md:w-1/2 w-full'>
 							<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-2 mt-4 sm:mt-0 xl:mb-12 '>
-								Print - Expressing a message of inspiration.
+								Expressing a message of inspiration.
 							</h3>
 							<p className='sm:text-lg xl:text-xl mb-24 xl:pr-12 text-justify'>
 								The design of the Food Bank’s newsletters needed
@@ -248,31 +248,16 @@ export default function FortBraggFoodBank() {
 					</div>
 				</section> */}
 
-				<section className='mx-[5vw] 2xl:mx-[10vw]  xl:mt-48 '>
+				<section className='mx-[5vw] 2xl:mx-[10vw] mt-48 '>
 					<div
-						className='flex flex-col md:flex-row w-full'
-						style={{ height: '1400px' }}>
-						<div className='relative flex w-full h-[80vh] md:hidden'>
-							<div className='relative w-1/2 mx-0 xl:mx-8 '>
-								<Image
-									src='v1638815894/Color%20Mill%20Design/Food-Bank-Website-Page-01-Shadow-01_xvkupd.jpg'
-									layout='fill'
-									objectFit='contain'
-								/>
-							</div>
-							<div className='relative w-1/2 mx-0'>
-								<Image
-									src='v1638815892/Color%20Mill%20Design/Food-Bank-Website-Page-02-Shadow-01_rttial.jpg'
-									layout='fill'
-									objectFit='contain'
-								/>
-							</div>
-						</div>
-						<div className='w-full md:w-1/2 flex flex-col place-content-start'>
+						className='flex flex-col lg:flex-row w-full'
+						>
+						
+						<div className='w-full lg:w-5/12 flex flex-col '>
 							<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-2 mt-4 sm:mt-0 xl:mb-12'>
 								Information delivered beautifully.
 							</h3>
-							<p className='sm:text-lg xl:text-xl mb-24 xl:pr-12 text-justify'>
+							<p className='text-sm xl:text-xl xl:pr-12 text-justify'>
 								Our goal was to create a site that embodied the
 								brightness and inspiring nature of the
 								organization, while also creating a site that
@@ -296,22 +281,27 @@ export default function FortBraggFoodBank() {
 								accessible to the Food Bank’s clients.
 							</p>
 						</div>
-						<div className='flex w-full md:w-1/2 '>
-							<div className='relative w-1/2 md:w-1/2 mx-8 '>
+						<a
+							href='https://www.fortbraggfoodbank.org'
+							alt='Fort Bragg Food Bank'
+							target='_blank'
+							rel='noopener noreferrer'>
+						<div className='flex flex-row mx-auto w-full h-[40vh] lg:h-[90vh] lg:w-[55vw] content-start mt-12 lg:mt-0'>
+							<div className='relative w-1/2 lg:ml-10'>
 								<Image
 									src='v1638815894/Color%20Mill%20Design/Food-Bank-Website-Page-01-Shadow-01_xvkupd.jpg'
 									layout='fill'
 									objectFit='contain'
 								/>
 							</div>
-							<div className='relative w-1/2 md:w-1/2 '>
+							<div className='relative w-1/2 '>
 								<Image
 									src='v1638815892/Color%20Mill%20Design/Food-Bank-Website-Page-02-Shadow-01_rttial.jpg'
 									layout='fill'
 									objectFit='contain'
 								/>
 							</div>
-						</div>
+						</div></a>
 					</div>
 				</section>
 			</main>

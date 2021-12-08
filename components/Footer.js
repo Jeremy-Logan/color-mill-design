@@ -5,8 +5,8 @@ export default function Footer() {
 	return (
 		<>
 			<footer className='w-screen overflow-hidden mt-24'>
-				<div className='flex justify-center items-center h-full w-screen px-16 py-12 mt-12'>
-					<span className='text-center align-middle text-3xl mx-8 text-black'>
+				<div className='flex flex-col sm:flex-row justify-center items-center h-full w-screen sm:px-16 py-12 mt-12'>
+					<span className='text-center align-middle text-3xl mx-8 text-black mb-4'>
 						Let's talk!
 					</span>
 					<button className='bg-[#fae06a] text-gray-800 text-xl font-semibold py-4 px-6 hover:bg-[#94df57] transform hover:scale-105 shadow-md hover:shadow-lg transition duration-250'>

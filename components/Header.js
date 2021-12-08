@@ -6,16 +6,17 @@ import Link from 'next/link'
 
 const menu = {
 	closed: {
-		clipPath: 'circle(30px at 30px 30px)',
+		clipPath: 'circle(50px at 36px 36px)',
+		opacity: 0,
 		transition: {
-			delay: 0.5,
+			delay: 0.6,
 			type: 'spring',
 			stiffness: 400,
 			damping: 40,
 		},
 	},
 	open: {
-		clipPath: `circle(50px at 26px 26px)`,
+		clipPath: `circle(50px at 36px 36px)`,
 		
 		transition: {
 			type: 'spring',

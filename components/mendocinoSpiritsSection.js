@@ -63,7 +63,7 @@ export default function MendocinoSpiritsSection() {
 	return (
 		<div className='relative mb-24 sm:h-[80vh] w-screen z-10 md:pr-4'>
 			<div className='flex flex-col md:flex-row mx-auto justify-center'>
-				<div className='md:my-36 mb-12 z-20 mx-auto'>
+				<div className='md:my-36 mb-12 z-20 mx-auto md:mx-0'>
 					<FadeIn>
 						<motion.button className='relative  w-[90vw] h-[90vw] mr-0 focus:outline-none sm:hidden'>
 							<Link href='/mendocino-spirits'>
@@ -79,7 +79,7 @@ export default function MendocinoSpiritsSection() {
 					</FadeIn>
 					<SlideIn>
 						<Link href='/mendocino-spirits'>
-							<button className='focus:outline-none bg-[#e2efff] p-10 shadow-xl sm:mt-0  '>
+							<button className='focus:outline-none bg-[#e2efff] p-10 shadow-xl sm:mt-0  sm:ml-10'>
 								<h3 className='text-2xl xl:text-5xl md:text-3xl font-bold my-auto text-left z-20'>
 									Mendocino Spirits
 								</h3>
