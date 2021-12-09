@@ -158,7 +158,7 @@ export default function MendocinoSpirits() {
 						glass of the warming, spicy, smooth whiskey.
 					</p>
 				</section>
-				<div className='overflow-auto '>
+				<div className='overflow-auto mb-12'>
 					<div className='relative w-[3000px] h-[700px]  '>
 						<Image
 							src='v1618251531/Color%20Mill%20Design/Mendocino-Spirits-Stylescape.jpg'
