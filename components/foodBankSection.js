@@ -69,16 +69,15 @@ export default function FoodBankSection() {
 			<div className='flex xs:flex-col sm:flex-row mx-auto justify-center'>
 				
 					<FadeIn>
-						<motion.button className='relative h-full w-[40vw] justify-start focus:outline-none sm:flex hidden z-20'>
+						<motion.button className='relative h-full w-[40vw] mr-0 focus:outline-none sm:flex hidden'>
 							<Link href='/fort-bragg-food-bank'>
 								<Image
 									layout='fill'
 									objectFit='contain'
 									alt='Fort Bragg Food Bank'
 									quality={100}
-									src='r_max/v1616447180/Color%20Mill%20Design/food-bank-cover_adu1gk.jpg'
-									placeholder='blur'
-									blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1638489233/Color%20Mill%20Design/Mendocino-Spirits-3-Bottles_i8oym6.jpg'
+									src='r_max/v1639017304/Color%20Mill%20Design/FB-Food-Bank-3-Newsletters-2020_ujxydi.png'
+									
 								/>
 							</Link>
 						</motion.button>
@@ -93,9 +92,8 @@ export default function FoodBankSection() {
 									objectFit='contain'
 									alt='Fort Bragg Food Bank'
 									quality={100}
-									src='r_max/v1616447180/Color%20Mill%20Design/food-bank-cover_adu1gk.jpg'
-									placeholder='blur'
-									blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1638489233/Color%20Mill%20Design/Mendocino-Spirits-3-Bottles_i8oym6.jpg'
+									src='r_max/v1639017304/Color%20Mill%20Design/FB-Food-Bank-3-Newsletters-2020_ujxydi.png'
+									
 								/>
 							</Link>
 						</motion.button>

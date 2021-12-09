@@ -73,8 +73,7 @@ export default function MendocinoSpiritsSection() {
 									alt='Mendocino Spirits'
 									quality={100}
 									src='r_max/v1638489233/Color%20Mill%20Design/Mendocino-Spirits-3-Bottles_i8oym6.jpg'
-									placeholder='blur'
-									blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/r_max/v1638489233/Color%20Mill%20Design/Mendocino-Spirits-3-Bottles_i8oym6.jpg'
+									
 								/>
 							</Link>
 						</motion.button>
@@ -102,8 +101,7 @@ export default function MendocinoSpiritsSection() {
 								alt='Mendocino Spirits'
 								quality={100}
 								src='r_max/v1638489233/Color%20Mill%20Design/Mendocino-Spirits-3-Bottles_i8oym6.jpg'
-								placeholder='blur'
-								blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/r_max/v1638489233/Color%20Mill%20Design/Mendocino-Spirits-3-Bottles_i8oym6.jpg'
+								
 							/>
 						</Link>
 					</motion.button>
