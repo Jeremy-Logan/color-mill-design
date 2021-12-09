@@ -62,7 +62,7 @@ export default function Header({ title }) {
 						ref={containerRef}>
 						
 						<motion.div
-							className={`absolute top-0 left-0 bottom-0 w-24 bg-cyan-300 z-50`}
+							className={`absolute top-0 left-0 bottom-0 w-24 h-24 bg-cyan-300 z-50`}
 							variants={menu}
 						/>
 						<MenuToggle toggle={() => toggleOpen()}/>
