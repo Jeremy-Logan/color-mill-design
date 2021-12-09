@@ -2,7 +2,7 @@ import client from '../../client'
 import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
 import groq from 'groq'
-import Layout from '../.components/layout.js'
+import Layout from '../components/layout.js'
 
 function urlFor(source) {
 	return imageUrlBuilder(client).image(source)
