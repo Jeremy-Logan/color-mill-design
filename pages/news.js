@@ -14,7 +14,7 @@ const News = (props) => {
 	const { posts = [] } = props
 	return (
 		<>
-			<Layout pageTitle='News' currentURL='https://www.colormilldesign.com/news' description="Thoughts and insights from Mendocino County's Premiere Branding and Web Design Studio">
+			<Layout pageTitle='News'  description="Thoughts and insights from Mendocino County's Premiere Branding and Web Design Studio">
 
 			<main>
 				<h1 className='text-6xl font-serif mt-36 mx-[15vw]'>News</h1>

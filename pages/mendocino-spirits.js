@@ -56,7 +56,7 @@ export default function MendocinoSpirits() {
 	const scrollRef = useHorizontalScroll()
 	return (
 		<>
-			<Layout pageTitle='Mendocino Spirits' currentURL='https://www.colormilldesign.com/mendocino-spirits' description='Mendocino Spirits is a delicious mix of old world
+			<Layout pageTitle='Mendocino Spirits'  description='Mendocino Spirits is a delicious mix of old world
 						traditions and constant innovation. They use ancient
 						casks, rare botanicals and sparkling copper stills to
 						produce their spirits. In such a competitive market-

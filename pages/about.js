@@ -31,7 +31,7 @@ export default function About() {
 
 	return (
 		<>
-			<Layout pageTitle='About Us' currentURL='https://www.colormilldesign.com/about' description='Our priorities lie
+			<Layout pageTitle='About Us' description='Our priorities lie
 						in helping businesses tell their story, creating things
 						that make people go Wow!, and using our unique blend of
 						talents to bring ideas to life.' currentURL='https://www.colormilldesign.com/about'>

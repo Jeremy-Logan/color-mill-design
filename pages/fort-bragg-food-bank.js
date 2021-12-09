@@ -13,7 +13,7 @@ export default function FortBraggFoodBank() {
 	const scrollRef = useHorizontalScroll()
 	return (
 		<>
-			<Layout pageTitle='Fort Bragg Food Bank' currentURL='https://www.colormilldesign.com/contact' description='Established in 1979, Fort Bragg Food Bank has been
+			<Layout pageTitle='Fort Bragg Food Bank' description='Established in 1979, Fort Bragg Food Bank has been
 						taking care of the community for many years. When they approached
 						us to update their brand and redesign their website, we
 						knew we had to create a vibrant bright look that would
