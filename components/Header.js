@@ -84,8 +84,12 @@ export default function Header({ title }) {
 								Color Mill Design
 							</h1>
 						</Link>
-						<Link href='/'>
-							<img className='h-36' src='https://res.cloudinary.com/the-color-mill/image/upload/v1616105305/Color%20Mill%20Design/color-mill-animated-logo_bxjcpm.webp' />
+						<Link href='/' alt='Home'>
+						<picture>
+						<source srcSet='https://res.cloudinary.com/the-color-mill/image/upload/v1616105305/Color%20Mill%20Design/color-mill-animated-logo_bxjcpm.webp' type='image/webp' />
+						<source srcSet='https://res.cloudinary.com/the-color-mill/image/upload/v1639014317/Color%20Mill%20Design/ColorMillLogoHeader-NoText_nvtcqj.png' type='image/png'/>
+							<img className='h-36' srcSet='https://res.cloudinary.com/the-color-mill/image/upload/v1639014317/Color%20Mill%20Design/ColorMillLogoHeader-NoText_nvtcqj.png' alt='Color Mill logo'/>
+							</picture>
 						</Link>
 					</motion.button>
 				</motion.div>
