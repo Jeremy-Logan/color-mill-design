@@ -4,6 +4,7 @@ import Image from 'next/image'
 import client from '../client'
 import imageUrlBuilder from '@sanity/image-url'
 import groq from 'groq'
+import Layout from '../components/layout'
 
 function urlFor(source) {
 	return imageUrlBuilder(client).image(source)
