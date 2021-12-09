@@ -72,7 +72,7 @@ export default function MendocinoSpirits() {
 					<h2 className='text-3xl xl:text-5xl font-serif italic text-gray-500 mb-12'>
 						Quality. Integrity. Excellence.
 					</h2>
-					<p className='sm:text-lg xl:text-xl mb-24 leading-relaxed'>
+					<p className='sm:text-lg xl:text-xl xl:mb-24 leading-relaxed'>
 						Mendocino Spirits is a delicious mix of old world
 						traditions and constant innovation. They use ancient
 						casks, rare botanicals and sparkling copper stills to
