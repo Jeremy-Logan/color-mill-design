@@ -64,8 +64,8 @@ export default function MendocinoSpirits() {
 						discover something fantastic waiting inside- we wanted
 						to ensure that their brand was as unique and inspiring
 						as the product itself.'>
-			<main className='mt-24 '>
-				<section className='mx-[25vw]'>
+			<main className='lg:mt-24 mt-36  '>
+				<section className='mx-[5vw] lg:mx-[25vw]'>
 					<h1 className='text-4xl xl:text-6xl font-serif font-bold mb-12'>
 						Mendocino Spirits
 					</h1>
