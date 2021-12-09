@@ -145,11 +145,11 @@ export default function MendocinoSpirits() {
 					</div>
 				</section> */}
 
-				<section className='mx-[25vw] mt-36'>
-					<h3 className=' text-4xl font-serif font-bold mb-12'>
+				<section className='mx-[5vw] 2xl:mx-[10vw] mt-12 xl:mt-36'>
+					<h3 className='text-2xl xl:text-4xl font-serif font-bold mb-4 mt-4 sm:mt-0 xl:mb-12 '>
 						Bright copper warmth
 					</h3>
-					<p className='sm:text-lg xl:text-xl mb-8 leading-relaxed'>
+					<p className='sm:text-lg xl:text-xl mb-24 xl:pr-12 text-justify'>
 						Inspiration for the stylescape was drawn from the
 						established Art Nouveau direction and the colors of deep
 						golden grains, the bright copper still and of course,
