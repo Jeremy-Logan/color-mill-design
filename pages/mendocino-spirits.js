@@ -1,4 +1,4 @@
-import Layout from '../components/layout.js'
+import Layout from '../components/layout'
 import Image from 'next/image'
 import { useHorizontalScroll } from '../components/hooks/useHorizontalScroll'
 import {
