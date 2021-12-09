@@ -103,7 +103,7 @@ export default function MendocinoSpiritsSection() {
 								quality={100}
 								src='r_max/v1638489233/Color%20Mill%20Design/Mendocino-Spirits-3-Bottles_i8oym6.jpg'
 								placeholder='blur'
-								blurDataURL='r_max/t_placeholder/v1638489233/Color%20Mill%20Design/Mendocino-Spirits-3-Bottles_i8oym6.jpg'
+								blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1638489233/Color%20Mill%20Design/Mendocino-Spirits-3-Bottles_i8oym6.jpg'
 							/>
 						</Link>
 					</motion.button>
