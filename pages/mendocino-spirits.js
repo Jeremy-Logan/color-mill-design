@@ -55,17 +55,21 @@ const PaletteSection = ({ color, text }) => {
 export default function MendocinoSpirits() {
 	const scrollRef = useHorizontalScroll()
 	return (
-		<div>
-			<Head>
-				<title>Color Mill Design | Mendocino Spirits</title>
-				<link rel='icon' href='/favicon.ico' />
-			</Head>
+		<>
+			<Layout pageTitle='Mendocino Spirits' currentURL='https://www.colormilldesign.com/mendocino-spirits' description='Mendocino Spirits is a delicious mix of old world
+						traditions and constant innovation. They use ancient
+						casks, rare botanicals and sparkling copper stills to
+						produce their spirits. In such a competitive market-
+						when people choose their drink based on the label then
+						discover something fantastic waiting inside- we wanted
+						to ensure that their brand was as unique and inspiring
+						as the product itself.'>
 			<main className='mt-24 '>
 				<section className='mx-[25vw]'>
-					<h1 className=' text-6xl font-serif font-bold mb-20'>
+					<h1 className='text-4xl xl:text-6xl font-serif font-bold mb-12'>
 						Mendocino Spirits
 					</h1>
-					<h2 className=' text-5xl font-serif italic text-gray-500 mb-12'>
+					<h2 className='text-3xl xl:text-5xl font-serif italic text-gray-500 mb-12'>
 						Quality. Integrity. Excellence.
 					</h2>
 					<p className='sm:text-lg xl:text-xl mb-24 leading-relaxed'>
@@ -165,12 +169,12 @@ export default function MendocinoSpirits() {
 						/>
 					</div>
 				</div>
-				<section className='mx-[25vw] my-36 '>
-					<h2 className='text-6xl font-serif italic text-gray-500 mb-6'>
+				<section className='mx-[15vw] xl:my-36 mb-4 xl:mb-24 '>
+					<h2 className='text-3xl xl:text-5xl font-serif italic text-gray-500 mb-6'>
 						"The Color Mill has really outdone themselves! Stunning
 						is the feedback we keep hearing!"
 					</h2>
-					<p className='text-2xl mb-24 leading-relaxed text-center'>
+					<p className='text-lg xl:text-2xl leading-relaxed text-center'>
 						-Tamar Kaye, Mendocino Spirits
 					</p>
 				</section>
@@ -365,7 +369,7 @@ export default function MendocinoSpirits() {
 						</div>
 					</div>
 				</section> */}
-			</main>
-		</div>
+			</main></Layout>
+		</>
 	)
 }

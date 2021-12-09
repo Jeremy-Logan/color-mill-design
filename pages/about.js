@@ -1,5 +1,6 @@
-import Head from 'next/head'
+import Layout from '../components/layout.js'
 import Image from 'next/image'
+
 import {
 	motion,
 	useViewportScroll,
@@ -29,11 +30,11 @@ export default function About() {
 	const opacity5 = useTransform(scrollYProgress, [0, 0.08, 0.13], [0, 0, 1])
 
 	return (
-		<div>
-			<Head>
-				<title>Color Mill Design | About</title>
-				<link rel='icon' href='/favicon.ico' />
-			</Head>
+		<>
+			<Layout pageTitle='About Us' currentURL='https://www.colormilldesign.com/about' description='Our priorities lie
+						in helping businesses tell their story, creating things
+						that make people go Wow!, and using our unique blend of
+						talents to bring ideas to life.' currentURL='https://www.colormilldesign.com/about'>
 
 			<main>
 				<section className='mt-36 mx-[5vw] md:mx-[15vw] overflow-hidden'>
@@ -308,7 +309,7 @@ export default function About() {
 						}}
 						className='transform -ml-96 w-[150vw] bg-gradient-to-r from-[cyan] to-[indigo] -mt-96  z-0'></motion.div>
 				</section> */}
-			</main>
-		</div>
+			</main></Layout>
+		</>
 	)
 }

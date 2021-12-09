@@ -2,6 +2,7 @@ import client from '../../client'
 import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
 import groq from 'groq'
+import Layout from '../.components/layout.js'
 
 function urlFor(source) {
 	return imageUrlBuilder(client).image(source)
@@ -16,12 +17,13 @@ const Post = (props) => {
 		authorImage,
 		publishedAt,
 		body,
+		excerpt
 	} = props
 
 	
 
 	return (
-		<article className='mt-24 mx-[5vw] md:mx-[10vw]'>
+		<Layout pageTitle={title} description={excerpt} previewImage={mainImage}>		<article className='mt-24 mx-[5vw] md:mx-[10vw]'>
 			{mainImage && <img className='mx-auto' src={urlFor(mainImage).width(1440).url()} />}
 			<div className='flex flex-col xl:flex-row w-[90vw] md:w-[80vw] mx-auto'>
 				<aside className='w-1/2 md:w-1/4 m-4 md:m-10 flex flex-row md:flex-col'>
@@ -57,7 +59,7 @@ const Post = (props) => {
 				</div>
 			</div>
 			<div className='bg-cyan-500 h-[2px] w-3/4 mx-auto my-36'></div>
-		</article>
+		</article></Layout>
 	)
 }
 

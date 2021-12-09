@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Layout from '../components/layout'
 import Image from 'next/image'
 import { useHorizontalScroll } from '../components/hooks/useHorizontalScroll'
 import {
@@ -12,11 +12,12 @@ import {
 export default function FortBraggFoodBank() {
 	const scrollRef = useHorizontalScroll()
 	return (
-		<div>
-			<Head>
-				<title>Color Mill Design | Fort Bragg Food Bank</title>
-				<link rel='icon' href='/favicon.ico' />
-			</Head>
+		<>
+			<Layout pageTitle='Fort Bragg Food Bank' currentURL='https://www.colormilldesign.com/contact' description='Established in 1979, Fort Bragg Food Bank has been
+						taking care of the community for many years. When they approached
+						us to update their brand and redesign their website, we
+						knew we had to create a vibrant bright look that would
+						reflect their mission.'>
 			<main className='lg:mt-24 mt-36 '>
 				<section className='mx-[5vw] lg:mx-[25vw]'>
 					<h1 className='text-4xl xl:text-6xl font-serif font-bold mb-12'>
@@ -314,7 +315,7 @@ export default function FortBraggFoodBank() {
 						</a>
 					</div>
 				</section>
-			</main>
-		</div>
+			</main></Layout>
+		</>
 	)
 }

@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Layout from '../components/layout.js'
 import { useEffect } from 'react'
 // import Instagram from 'instagram-web-api'
 import MendocinoSpiritsSection from '@components/mendocinoSpiritsSection'
@@ -60,11 +60,8 @@ export default function Home({ data }) {
 	const yRange = useTransform(scrollYProgress, [0, 1], [0, 1])
 	const pathLength = useSpring(yRange, { stiffness: 400, damping: 80 })
 	return (
-		<div >
-			<Head>
-				<title>Color Mill Design</title>
-				<link rel='icon' href='/favicon.ico' />
-			</Head>
+		<>
+			<Layout pageTitle='Home' currentURL='https://www.colormilldesign.com/contact' description="Mendocino County's Premiere Branding and Web Design Studio">
 
 			<main className='overflow-hidden '>
 			{/* <svg
@@ -112,8 +109,8 @@ export default function Home({ data }) {
 						))}
 					</div>
 				</div>
-			</main>
-		</div>
+			</main></Layout>
+		</>
 	)
 }
 
