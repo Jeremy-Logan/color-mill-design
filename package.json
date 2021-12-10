@@ -1,12 +1,13 @@
 {
-  "name": "next-netlify-starter",
+  "name": "color-mill-design",
   "version": "0.3.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@sanity/block-content-to-react": "^2.0.7",
@@ -16,9 +17,10 @@
     "framer-motion": "^4.0.0",
     "groq": "^2.2.6",
     "instagram-web-api": "^2.2.2",
-    "next": "^12.0.5",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "next": "^12.0.7",
+    "next-sitemap": "^1.6.203",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-hook-form": "^7.7.1",
     "react-icons": "^4.3.1",
     "react-intersection-observer": "^8.31.0"
