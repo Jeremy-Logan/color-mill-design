@@ -6,6 +6,7 @@ export default function Layout({ children, pageTitle, description, previewImage}
 	return (
 		<>
 			<Head>
+			<html lang='en' />
 				<title>{`Color Mill Design | ${pageTitle}`}</title>
 				<meta
 					property='og:image'
