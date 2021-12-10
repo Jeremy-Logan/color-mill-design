@@ -106,6 +106,7 @@ export default function Home({ data }) {
 										className='z-0'
 										title="instagram post"
 										key={post.id}
+										rel='noopener noreferrer'
 										dangerouslySetInnerHTML={{
 											__html: post.post,
 										}}></div>
