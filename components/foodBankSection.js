@@ -73,6 +73,7 @@ export default function FoodBankSection() {
 							<Link href='/fort-bragg-food-bank'>
 								<Image
 									layout='fill'
+									alt='Food Bank Newsletters'
 									objectFit='contain'
 									alt='Fort Bragg Food Bank'
 									quality={100}
@@ -89,6 +90,7 @@ export default function FoodBankSection() {
 							<Link href='/fort-bragg-food-bank'>
 								<Image
 									layout='fill'
+									alt='Food Bank Newsletters'
 									objectFit='contain'
 									alt='Fort Bragg Food Bank'
 									quality={100}

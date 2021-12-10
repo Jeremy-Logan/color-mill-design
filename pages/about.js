@@ -125,6 +125,7 @@ export default function About() {
 									<Image
 										src='v1621889891/Color%20Mill%20Design/aspen-portrait-web_xgufpr.jpg'
 										layout='fill'
+										alt='Aspen Logan'
 										objectFit='contain'
 										className=' z-50'
 										placeholder='blur'
@@ -164,6 +165,7 @@ export default function About() {
 								<Image
 									src='v1619826510/Color%20Mill%20Design/Jeremy-portrait.jpg'
 									layout='fill'
+									alt='Jeremy Logan'
 									objectFit='contain'
 									className=' z-50'
 									placeholder='blur'

@@ -95,6 +95,7 @@ export default function FortBraggFoodBank() {
 							<Image
 								src='v1638817822/Color%20Mill%20Design/Food-Bank-before-after_fvfsq1.jpg'
 								layout='fill'
+								alt='Logo before and after'
 								objectFit='contain'
 								placeholder='blur'
 								blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1638817822/Color%20Mill%20Design/Food-Bank-before-after_fvfsq1.jpg'
@@ -126,6 +127,7 @@ export default function FortBraggFoodBank() {
 							<Image
 								src='v1638817822/Color%20Mill%20Design/Food-Bank-before-after_fvfsq1.jpg'
 								layout='fill'
+								alt='Logo before and after'
 								objectFit='contain'
 								placeholder='blur'
 								blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1638817822/Color%20Mill%20Design/Food-Bank-before-after_fvfsq1.jpg'
@@ -159,6 +161,7 @@ export default function FortBraggFoodBank() {
 							<Image
 								src='v1616447180/Color%20Mill%20Design/food-bank-cover_adu1gk.jpg'
 								layout='fill'
+								alt='Food Bank cover'
 								objectFit='contain'
 								placeholder='blur'
 								blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1616447180/Color%20Mill%20Design/food-bank-cover_adu1gk.jpg'
@@ -198,6 +201,7 @@ export default function FortBraggFoodBank() {
 							<Image
 								src='v1616447180/Color%20Mill%20Design/food-bank-cover_adu1gk.jpg'
 								layout='fill'
+								alt='Food Bank cover'
 								objectFit='contain'
 								placeholder='blur'
 								blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1616447180/Color%20Mill%20Design/food-bank-cover_adu1gk.jpg'
@@ -297,6 +301,7 @@ export default function FortBraggFoodBank() {
 									<Image
 										src='v1638815894/Color%20Mill%20Design/Food-Bank-Website-Page-01-Shadow-01_xvkupd.jpg'
 										layout='fill'
+										alt='Website image'
 										objectFit='contain'
 										placeholder='blur'
 										blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1638815894/Color%20Mill%20Design/Food-Bank-Website-Page-01-Shadow-01_xvkupd.jpg'
@@ -306,6 +311,7 @@ export default function FortBraggFoodBank() {
 									<Image
 										src='v1638815892/Color%20Mill%20Design/Food-Bank-Website-Page-02-Shadow-01_rttial.jpg'
 										layout='fill'
+										alt='Website image'
 										objectFit='contain'
 										placeholder='blur'
 										blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1638815892/Color%20Mill%20Design/Food-Bank-Website-Page-02-Shadow-01_rttial.jpg'

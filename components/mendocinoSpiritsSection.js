@@ -69,6 +69,7 @@ export default function MendocinoSpiritsSection() {
 							<Link href='/mendocino-spirits'>
 								<Image
 									layout='fill'
+									alt='bottles'
 									objectFit='contain'
 									alt='Mendocino Spirits'
 									quality={100}
@@ -97,6 +98,7 @@ export default function MendocinoSpiritsSection() {
 						<Link href='/mendocino-spirits'>
 							<Image
 								layout='fill'
+								alt='bottles'
 								objectFit='contain'
 								alt='Mendocino Spirits'
 								quality={100}

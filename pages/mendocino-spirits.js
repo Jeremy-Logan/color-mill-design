@@ -95,6 +95,7 @@ export default function MendocinoSpirits() {
 							<Image
 								src='v1638993398/Color%20Mill%20Design/4-Seasons_i5fakp.jpg'
 								layout='fill'
+								alt='Four bottles'
 								objectFit='contain'
 								placeholder='blur'
 								blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1638993398/Color%20Mill%20Design/4-Seasons_i5fakp.jpg'
@@ -125,6 +126,7 @@ export default function MendocinoSpirits() {
 							<Image
 								src='v1638993398/Color%20Mill%20Design/4-Seasons_i5fakp.jpg'
 								layout='fill'
+								alt='Four bottles'
 								objectFit='contain'
 								placeholder='blur'
 								blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1638993398/Color%20Mill%20Design/4-Seasons_i5fakp.jpg'
@@ -163,6 +165,7 @@ export default function MendocinoSpirits() {
 						<Image
 							src='v1618251531/Color%20Mill%20Design/Mendocino-Spirits-Stylescape.jpg'
 							layout='fill'
+							alt='stylescape'
 							objectFit='contain'
 							placeholder='blur'
 							blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1618251531/Color%20Mill%20Design/Mendocino-Spirits-Stylescape.jpg'
@@ -184,6 +187,7 @@ export default function MendocinoSpirits() {
 							<Image
 								src='v1628892703/Color%20Mill%20Design/mendocino-spirits-logo-comp_tztjbh.jpg'
 								layout='fill'
+								alt='Logo comp'
 								objectFit='contain'
 								placeholder='blur'
 								blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1628892703/Color%20Mill%20Design/mendocino-spirits-logo-comp_tztjbh.jpg'
@@ -214,6 +218,7 @@ export default function MendocinoSpirits() {
 							<Image
 								src='v1628892703/Color%20Mill%20Design/mendocino-spirits-logo-comp_tztjbh.jpg'
 								layout='fill'
+								alt='Logo comp'
 								objectFit='contain'
 								placeholder='blur'
 								blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1628892703/Color%20Mill%20Design/mendocino-spirits-logo-comp_tztjbh.jpg'
@@ -306,6 +311,7 @@ export default function MendocinoSpirits() {
 									<Image
 										src='v1638656091/Color%20Mill%20Design/MS-Home-Page-Shadow_lz7f6z.jpg'
 										layout='fill'
+										alt='Webpage image'
 										objectFit='contain'
 										placeholder='blur'
 										blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1638656091/Color%20Mill%20Design/MS-Home-Page-Shadow_lz7f6z.jpg'
@@ -315,6 +321,7 @@ export default function MendocinoSpirits() {
 									<Image
 										src='v1638815347/Color%20Mill%20Design/MS-Product-Page-Shadow_f3ojfo.jpg'
 										layout='fill'
+										alt='Webpage image'
 										objectFit='contain'
 										placeholder='blur'
 										blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1638656091/Color%20Mill%20Design/MS-Home-Page-Shadow_lz7f6z.jpg'
