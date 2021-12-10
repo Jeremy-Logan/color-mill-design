@@ -35,9 +35,11 @@ const News = (props) => {
 									<Link
 										
 										href='/post/[slug]'
+										alt={title}
 										as={`/post/${slug.current}`}>
 										<img
 											className='cursor-pointer'
+											alt={title}
 											src={urlFor(mainImage)
 												.width(800).
 												height(600)
@@ -45,7 +47,7 @@ const News = (props) => {
 										/>
 									</Link>{' '}
 									<Link
-										
+										alt={title}
 										href='/post/[slug]'
 										as={`/post/${slug.current}`}>
 										<a className='text-2xl font-semibold mx-4 mt-2'>
@@ -58,7 +60,7 @@ const News = (props) => {
 									<p className='mx-4'>
 										{excerpt}
 										<Link 
-											
+											alt={title}
 											href='/post/[slug]'
 											as={`/post/${slug.current}`}>
 											<a className="text-['#7700FF'] underline ml-2">Read more...</a>

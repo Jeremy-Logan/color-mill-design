@@ -11,7 +11,7 @@ const Path = (props) => (
 )
 
 export const MenuToggle = ({ toggle }) => (
-	<button alt='menu toggle' className='overflow-hidden absolute outline-none border-none focus:outline-none cursor-pointer top-[9px] left-[23px] w-[70px] h-[70px] rounded-lg z-50 bg-transparent appearance-none' onClick={toggle}>
+	<button alt='menu toggle' aria-label='Menu Toggle' className='overflow-hidden absolute outline-none border-none focus:outline-none cursor-pointer top-[9px] left-[23px] w-[70px] h-[70px] rounded-lg z-50 bg-transparent appearance-none' onClick={toggle}>
 		<svg width='35' height='35' viewBox='0 0 25 25'>
 			<Path
 				variants={{
