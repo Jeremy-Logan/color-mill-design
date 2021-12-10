@@ -75,112 +75,129 @@ export default function CapabilitiesSection() {
 						</SlideIn>
 						<AnimateSharedLayout>
 							<ul>
-								<SlideIn>
-									<CapabilitiesCard
-										title='Web Design and Development'
-										description={
-											<div>
-												<p className='text-2xl font-semibold'>
-													Always custom, never from
-													templates.
-												</p>
-												<br />
-												<p>
-													Our designs are always fully
-													custom and hand coded, we
-													never force your vision into
-													someone else's pre-made box.
-													Using cutting edge
-													technology, our websites
-													are: lightning fast,
-													inherently secure and
-													require virtually zero
-													monthly maintenance.
-												</p>
-											</div>
-										}
-									/>
-								</SlideIn>
-								<SlideIn>
-									<CapabilitiesCard
-										title='Branding'
-										description={
-											<div>
-												<p className='text-2xl font-semibold'>
-													Your brand is your promise.
-												</p>
-												<br />
-												<p>
-													A brand is much more than
-													just a logo: it promises to
-													inspire customers, insight
-													emotion and keep them coming
-													back. We guide you through
-													the process of finding your
-													voice, your style and that
-													emotional hook that will
-													have people coming back time
-													and again.
-												</p>
-											</div>
-										}
-									/>
-								</SlideIn>
-								<SlideIn>
-									<CapabilitiesCard
-										title='Graphic Design'
-										description={
-											<div>
-												<p className='text-2xl font-semibold'>
-													Design brings inspiration to
-													life.
-												</p>
-												<br />
-												<p>
-													Great design helps you grow
-													your brand by telling your
-													story and engaging your
-													audience. Always user
-													centric, our design is
-													clean, on-brand and
-													inspiring. We specialize in
-													design for collateral,
-													packaging, labels,
-													promotions and marketing.
-												</p>
-											</div>
-										}
-									/>
-								</SlideIn>
-								<SlideIn>
-									<CapabilitiesCard
-										title='Messaging'
-										description={
-											<div>
-												<p className='text-2xl font-semibold'>
-													Great messaging makes your
-													brand relatable.
-												</p>
-												<br />
-												<p>
-													Your messaging leads the
-													conversation about who you
-													are and how you want people
-													to perceive your
-													organization. It compliments
-													the brand visuals and
-													creates a whole, cohesive
-													and consistent feeling. From
-													website copy to headlines on
-													your printed collateral, we
-													create content that gets you
-													more attention, customers
-													and conversions.
-												</p>
-											</div>
-										}
-									/>
-								</SlideIn>
+								<li>
+									<SlideIn>
+										<CapabilitiesCard
+											title='Web Design and Development'
+											description={
+												<div>
+													<p className='text-2xl font-semibold'>
+														Always custom, never
+														from templates.
+													</p>
+													<br />
+													<p>
+														Our designs are always
+														fully custom and hand
+														coded, we never force
+														your vision into someone
+														else's pre-made box.
+														Using cutting edge
+														technology, our websites
+														are: lightning fast,
+														inherently secure and
+														require virtually zero
+														monthly maintenance.
+													</p>
+												</div>
+											}
+										/>
+									</SlideIn>
+								</li>
+								<li>
+									<SlideIn>
+										<CapabilitiesCard
+											title='Branding'
+											description={
+												<div>
+													<p className='text-2xl font-semibold'>
+														Your brand is your
+														promise.
+													</p>
+													<br />
+													<p>
+														A brand is much more
+														than just a logo: it
+														promises to inspire
+														customers, insight
+														emotion and keep them
+														coming back. We guide
+														you through the process
+														of finding your voice,
+														your style and that
+														emotional hook that will
+														have people coming back
+														time and again.
+													</p>
+												</div>
+											}
+										/>
+									</SlideIn>
+								</li>
+								<li>
+									<SlideIn>
+										<CapabilitiesCard
+											title='Graphic Design'
+											description={
+												<div>
+													<p className='text-2xl font-semibold'>
+														Design brings
+														inspiration to life.
+													</p>
+													<br />
+													<p>
+														Great design helps you
+														grow your brand by
+														telling your story and
+														engaging your audience.
+														Always user centric, our
+														design is clean,
+														on-brand and inspiring.
+														We specialize in design
+														for collateral,
+														packaging, labels,
+														promotions and
+														marketing.
+													</p>
+												</div>
+											}
+										/>
+									</SlideIn>
+								</li>
+								<li>
+									<SlideIn>
+										<CapabilitiesCard
+											title='Messaging'
+											description={
+												<div>
+													<p className='text-2xl font-semibold'>
+														Great messaging makes
+														your brand relatable.
+													</p>
+													<br />
+													<p>
+														Your messaging leads the
+														conversation about who
+														you are and how you want
+														people to perceive your
+														organization. It
+														compliments the brand
+														visuals and creates a
+														whole, cohesive and
+														consistent feeling. From
+														website copy to
+														headlines on your
+														printed collateral, we
+														create content that gets
+														you more attention,
+														customers and
+														conversions.
+													</p>
+												</div>
+											}
+										/>
+									</SlideIn>
+								</li>
 							</ul>
 						</AnimateSharedLayout>
 						<SlideIn>
@@ -197,6 +214,7 @@ export default function CapabilitiesSection() {
 								</motion.h4>{' '}
 								<motion.img
 									variants={stagger}
+									alt='arrow'
 									className='hidden md:block transform scale-125 -mt-6 center'
 									src='/arrows-BlueToOrange.svg'
 								/>
@@ -207,6 +225,7 @@ export default function CapabilitiesSection() {
 								</motion.h4>
 								<motion.img
 									variants={stagger}
+									alt='arrow'
 									className='hidden md:block transform scale-125 -mt-6 center'
 									src='/arrows-OrangeToRed.svg'
 								/>
@@ -217,6 +236,7 @@ export default function CapabilitiesSection() {
 								</motion.h4>
 								<motion.img
 									variants={stagger}
+									alt='arrow'
 									className='hidden md:block transform scale-125 -mt-6 center'
 									src='/arrows-RedToGreen.svg'
 								/>

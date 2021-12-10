@@ -104,6 +104,7 @@ export default function Home({ data }) {
 									<div className='bg-white z-50 absolute top-0 w-screen h-14' />
 									<div
 										className='z-0'
+										title="instagram post"
 										key={post.id}
 										dangerouslySetInnerHTML={{
 											__html: post.post,
