@@ -1,5 +1,4 @@
-import Header from './Header'
-import Footer from './Footer'
+
 import Head from 'next/head'
 
 export default function Layout({ children, pageTitle, description, previewImage}) {
@@ -27,9 +26,9 @@ export default function Layout({ children, pageTitle, description, previewImage}
 				<meta property='og:type' content='website' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<Header />
+			
 			{children}
-			<Footer />
+			
 		</>
 	)
 }

@@ -5,6 +5,7 @@ const ContactForm = () => {
 
 	return (
 		<div className='mt-12 lg:mx-[25vw] sm:mx-[10vw] justify-center flex flex-col'>
+		<h1 className='font-serif text-6xl mb-10'>Let's connect.</h1>
 			<h3 className='text-3xl md:text-4xl'>
 				How can we work together? Let's talk it over.
 			</h3>

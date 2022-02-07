@@ -4,6 +4,8 @@ import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
 import '@styles/globals.css'
 import Layout from '@components/layout'
+import Header from '@components/header'
+import Footer from '@components/footer'
 
 function Application({ Component, pageProps }) {
 	const router = useRouter()
@@ -36,8 +38,9 @@ function Application({ Component, pageProps }) {
             });
             `,
 				}}
-			/>
+			/><Header/>
 			<Component {...pageProps} />
+			<Footer/>
 		</div>
 	)
 }
