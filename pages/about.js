@@ -121,15 +121,14 @@ export default function About() {
 					<div className='flex flex-col mt-6'>
 						<div className='flex flex-col '>
 							<div className='mx-8 md:mx-auto md:w-[50vw]'>
-								<div className='relative h-96 w-full '>
+								<div className='relative h-96  '>
 									<Image
 										src='v1621889891/Color%20Mill%20Design/aspen-portrait-web_xgufpr.jpg'
 										layout='fill'
 										alt='Aspen Logan'
 										objectFit='contain'
-										className=' z-50'
-										placeholder='blur'
-										blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1621889891/Color%20Mill%20Design/aspen-portrait-web_xgufpr.jpg'
+										className=' z-0'
+										
 									/>
 								</div>
 
@@ -167,9 +166,8 @@ export default function About() {
 									layout='fill'
 									alt='Jeremy Logan'
 									objectFit='contain'
-									className=' z-50'
-									placeholder='blur'
-									blurDataURL='https://res.cloudinary.com/the-color-mill/image/upload/t_placeholder/v1619826452/Color%20Mill%20Design/Jeremy-portrait.jpg'
+									className=' z-20'
+									
 								/>
 							</div>
 							<div className='mx-8'>
