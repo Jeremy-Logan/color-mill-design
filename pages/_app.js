@@ -3,7 +3,6 @@ import Script from 'next/script'
 import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
 import '@styles/globals.css'
-import Layout from '@components/layout'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
