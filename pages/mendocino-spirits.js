@@ -1,13 +1,7 @@
 import Layout from '../components/layout'
 import Image from 'next/image'
 import { useHorizontalScroll } from '../components/hooks/useHorizontalScroll'
-import {
-	motion,
-	useAnimation,
-	useViewportScroll,
-	useTransform,
-	useSpring,
-} from 'framer-motion'
+
 
 const paletteColors = [
 	{ bg: '#077893', text: 'white' },
